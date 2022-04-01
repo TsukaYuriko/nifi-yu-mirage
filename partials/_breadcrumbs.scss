@@ -1,0 +1,29 @@
+/*============================================================================*\
+| Breadcrumbs                                                                  |
+\*============================================================================*/
+
+#breadcrumbs
+{
+    // Breadcrumbs bar at the bottom
+    background-color: #151921;
+    border-top: 1px solid #171b24;
+    
+    // Breadcrumbs borders
+    #breadcrumbs-left-border, #breadcrumbs-right-border
+    {
+        background: none;
+    }
+
+    // Breadcrumbs links
+    #data-flow-title-container span.link
+    {
+        color: #73d0ff;
+    }
+
+    // Breadcrumbs arrows
+    #data-flow-title-container span span
+    {
+        color: #cccac2;
+    }
+    
+}
