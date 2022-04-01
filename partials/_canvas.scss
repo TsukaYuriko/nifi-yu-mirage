@@ -1,13 +1,13 @@
 /*============================================================================*\
-| Canvas                                                                         |
+| Canvas                                                                       |
 \*============================================================================*/
 
-/* Flow canvas */
+// Flow canvas
 #canvas-container
 {
-    /* Background */
+    // Background
     background-color: #1f2430;
     
-    /* Grid */
+    // Grid
     background-image: linear-gradient(to right, #293040 1px, transparent 1px), linear-gradient(to bottom, #293040 1px, transparent 1px);
 }
