@@ -5,10 +5,10 @@
 md-toolbar#header
 {
     
-    /* Header bar */
+    // Header bar
     background-color: #151921;
     
-    /* Palette items */
+    // Palette items
     .component-button
     {
         color: #80bfff;
@@ -19,26 +19,26 @@ md-toolbar#header
         }
     }
     
-    /* Palette items being dragged */
+    // Palette items being dragged
     .ui-draggable-dragging
     {
         color: #80bfff;
     }
     
-    /* Palette item button grips */
+    // Palette item button grips
     .component-button-grip
     {
         background: repeating-linear-gradient(90deg, #151921, #151921 4px, #15192100 4px, #15192100 6px);
     }
     
-    /* Currently logged in user text */
+    // Currently logged in user text
     #current-user
     {
         color: #cccac2;
         font-family: Roboto, sans-serif;
     }
     
-    /* Menu button */
+    // Menu button
     #global-menu-button
     {
         background-color: #151921;
@@ -48,7 +48,7 @@ md-toolbar#header
             background: #293040;
         }
         
-        /* Hamburger icon */
+        // Hamburger icon
         .fa
         {
             color: #80bfff;
