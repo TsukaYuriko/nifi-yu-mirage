@@ -1,0 +1,58 @@
+/*============================================================================*\
+| Header / Palette                                                             |
+\*============================================================================*/
+
+md-toolbar#header
+{
+    
+    /* Header bar */
+    background-color: #151921;
+    
+    /* Palette items */
+    .component-button
+    {
+        color: #80bfff;
+        
+        &:hover
+        {
+            background: #293040;
+        }
+    }
+    
+    /* Palette items being dragged */
+    .ui-draggable-dragging
+    {
+        color: #80bfff;
+    }
+    
+    /* Palette item button grips */
+    .component-button-grip
+    {
+        background: repeating-linear-gradient(90deg, #151921, #151921 4px, #15192100 4px, #15192100 6px);
+    }
+    
+    /* Currently logged in user text */
+    #current-user
+    {
+        color: #cccac2;
+        font-family: Roboto, sans-serif;
+    }
+    
+    /* Menu button */
+    #global-menu-button
+    {
+        background-color: #151921;
+        
+        &:hover
+        {
+            background: #293040;
+        }
+        
+        /* Hamburger icon */
+        .fa
+        {
+            color: #80bfff;
+        }
+    }
+    
+}
