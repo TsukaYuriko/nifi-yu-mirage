@@ -1,0 +1,63 @@
+/*============================================================================*\
+| Status bar                                                                   |
+\*============================================================================*/
+
+#flow-status
+{
+    
+    // Status bar at the top, below the menu bar
+    background: #1c212b;
+    border-bottom: 1px solid #242936;
+    
+    // Disable icons glow
+    div .icon::before, div .fa::before
+    {
+        text-shadow: none;
+    }
+    
+    // Text next to the icons
+    #flow-status-container
+    {
+        .icon, .fa
+        {
+            span
+            {
+                color: #cccac2;
+            }
+        }
+    }
+    
+    // Search button
+    #search-button
+    {
+        background: #1c212b !important;
+        border-left: 1px solid #242936 !important;
+        
+        &:hover
+        {
+            background: #293040 !important;
+        }
+        
+        // Search button icon
+        .fa-search
+        {
+            color: #73d0ff;
+        }
+        
+    }
+    
+    // Search field
+    #search-container, #search-field
+    {
+        background: #1c212b;
+        color: #aabec7;
+    }
+    
+    // Bulletin button
+    #bulletin-button
+    {
+        background: #1c212b;
+        border-left: 1px solid #242936;
+    }
+    
+}
