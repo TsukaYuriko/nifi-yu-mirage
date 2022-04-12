@@ -1,0 +1,99 @@
+/*================================================================================================================*\
+| Process groups                                                                                                   |
+\*================================================================================================================*/
+
+.process-groups .process-group
+{
+    
+    // Border
+    &.border
+    {
+        stroke: #191d27;
+    }
+    
+    &.selected rect.border
+    {
+        stroke: #80bfff !important;
+    }
+    
+    // Header
+    rect:nth-child(3)
+    {
+        fill: #2a3140;
+    }
+    
+    // Disable version control icon glow
+    text.version-control
+    {
+        text-shadow: none;
+    }
+    
+    // Name in header
+    text.process-group-name
+    {
+        fill: #cccac2;
+    }
+    
+    // Status bars (top/bottom)
+    .process-group-details
+    {
+        rect:first-child, rect:nth-child(2)
+        {
+            fill: #242936;
+        }
+    }
+    
+    // Disable status bar icons glow
+    .process-group-contents-icon
+    {
+        text-shadow: none;
+    }
+    
+    // Status bar numbers
+    .process-group-contents-count
+    {
+        fill: #707a8c;
+    }
+    
+    // Odd rows
+    .process-group-details rect
+    {
+        &:nth-child(4n+5)
+        {
+            fill: #242936;
+        }
+        
+        // Even rows
+        &:nth-child(4n+7)
+        {
+            fill: #1f2430;
+            opacity: 1;
+        }
+        
+        // Row delimiters
+        &:nth-child(2n+6)
+        {
+            fill: #191d27;
+        }
+    }
+    
+    // Stats labels
+    .stats-label
+    {
+        fill: #cccac2;
+    }
+    
+    // Stats counters
+    .stats-value
+    {
+        fill: #707a8c;
+    }
+    
+    // Body (empty space / not otherwise specified)
+    .body
+    {
+        fill: #1f2430;
+        filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 0.25));
+    }
+    
+}
