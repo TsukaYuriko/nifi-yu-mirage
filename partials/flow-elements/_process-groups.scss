@@ -1,8 +1,8 @@
-/*================================================================================================================*\
-| Process groups                                                                                                   |
-\*================================================================================================================*/
+/*============================================================================*\
+| Process groups                                                               |
+\*============================================================================*/
 
-.process-groups .process-group
+.process-groups .process-group, .remote-process-groups .remote-process-group
 {
     
     // Border
@@ -29,7 +29,7 @@
     }
     
     // Name in header
-    text.process-group-name
+    text.process-group-name, text.remote-process-group-name
     {
         fill: #cccac2;
     }
@@ -55,9 +55,9 @@
         fill: #707a8c;
     }
     
-    // Odd rows
     .process-group-details rect
     {
+        // Odd rows
         &:nth-child(4n+5)
         {
             fill: #242936;
@@ -96,4 +96,72 @@
         filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 0.25));
     }
     
+}
+
+/*============================================================================*\
+| Remote process groups                                                        |
+\*============================================================================*/
+
+.remote-process-groups .remote-process-group
+{
+    
+    .remote-process-group-details
+    {
+        // Transmission status
+        text.remote-process-group-transmission-status
+        {
+            // Disable glow
+            text-shadow: none;
+            
+            // Fix icon position
+            transform: translateX(-2px);
+        }
+        
+        // Transmission security icon
+        text.remote-process-group-transmission-secure
+        {
+            fill: #aabec7;
+        }
+        
+        // Address
+        text.remote-process-group-uri
+        {
+            fill: #aabec7;
+        }
+        
+        rect
+        {
+            // Address bar
+            &:nth-child(2)
+            {
+                fill: #242936;
+            }
+            
+            // First row
+            &:nth-child(5)
+            {
+                fill: #242936;
+            }
+            
+            // Second row
+            &:nth-child(7)
+            {
+                fill: #1f2430;
+                opacity: 1;
+            }
+            
+            // Row delimiter
+            &:nth-child(6)
+            {
+                fill: #191d27;
+            }
+            
+            // Status bar
+            &:nth-child(11)
+            {
+                fill: #242936;
+            }
+        }
+    }
+     
 }
