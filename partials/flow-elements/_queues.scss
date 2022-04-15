@@ -1,0 +1,150 @@
+/*============================================================================*\
+| Queues                                                                       |
+\*============================================================================*/
+
+// Line arrows
+marker#normal
+{
+    fill: #cccac2;
+}
+
+.connections .connection
+{
+    
+    /*============================================================================*\
+    | Lines                                                                        |
+    \*============================================================================*/
+    
+    .connection-path
+    {
+        stroke: #cccac2;
+    }
+    
+    // Selected lines
+    .connection-selection-path
+    {
+        stroke: #80bfff;
+        stroke-width: 2;
+    }
+    
+    // Connector points
+    .linepoint
+    {
+        &.startpoint
+        {
+            stroke: #f27983;
+            fill: #f27983;
+        }
+        
+        &.midpoint
+        {
+            stroke: #80bfff;
+            fill: #80bfff;
+        }
+        
+        &.endpoint
+        {
+            stroke: #86b300;
+            fill: #86b300;
+        }
+    }
+    
+    /*============================================================================*\
+    | Labels                                                                       |
+    \*============================================================================*/
+    
+    // Border when selected
+    &.selected .connection-label-container .border
+    {
+        stroke: #80bfff;
+    }
+    
+    .connection-label-container
+    {
+        // Border that covers up the shadow insets
+        .body
+        {
+            fill: #242936;
+        }
+        
+        // Label text
+        .stats-label
+        {
+            fill: #aabec7;
+        }
+        
+        // Label value
+        .stats-value
+        {
+            fill: #cccac2;
+        }
+        
+        // Rows
+        g
+        {
+            // Odd
+            &:nth-of-type(odd) .connection-label-background
+            {
+                fill: #242936;
+            }
+            
+            // Even
+            &:nth-of-type(even) .connection-label-background
+            {
+                fill: #1f2430;
+            }
+            
+            // Separators
+            &:nth-of-type(1n + 2) .connection-label-border
+            {
+                fill: #191d27;
+            }
+        }
+        
+        // Backpressure
+        .queued-container
+        {
+            .backpressure-object-container, .backpressure-data-size-container
+            {
+                // Background
+                .backpressure-object, .backpressure-data-size
+                {
+                    fill: #293040;
+                }
+                
+                // Percent bar
+                .backpressure-percent
+                {
+                    // Default
+                    fill: #6cbf43;
+                    
+                    // At warning threshold
+                    &.warning
+                    {
+                        fill: #f2ae49;
+                    }
+                    
+                    // Not actually error, but at critical threshold
+                    &.error
+                    {
+                        fill: #f07171;
+                    }
+                }
+            }
+        }
+        
+        // Run status
+        .connection-from-run-status, .connection-to-run-status
+        {
+            text-shadow: none;
+        }
+        
+        // Additional status icons
+        .load-balance-icon, .expiration-icon
+        {
+            text-shadow: none;
+            fill: #aabec7;
+        }
+    }
+    
+}
