@@ -116,18 +116,18 @@ marker#normal
                 .backpressure-percent
                 {
                     // Default
-                    fill: #6cbf43;
+                    fill: #86b300;
                     
                     // At warning threshold
                     &.warning
                     {
-                        fill: #f2ae49;
+                        fill: #ffaa33;
                     }
                     
                     // Not actually error, but at critical threshold
                     &.error
                     {
-                        fill: #f07171;
+                        fill: #e65050;
                     }
                 }
             }
