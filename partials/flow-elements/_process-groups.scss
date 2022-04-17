@@ -136,11 +136,17 @@
     // Stats labels
     .stats-label
     {
-        fill: #cccac2;
+        fill: #747b84;
     }
     
     // Stats counters
     .stats-value
+    {
+        fill: #cccac2;
+    }
+    
+    // Timers
+    .stats-info
     {
         fill: #707a8c;
     }
