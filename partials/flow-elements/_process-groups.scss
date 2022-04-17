@@ -34,46 +34,102 @@
         fill: #cccac2;
     }
     
-    // Status bars (top/bottom)
     .process-group-details
     {
+        // Status bars (top/bottom)
         rect:first-child, rect:nth-child(2)
         {
             fill: #242936;
         }
-    }
-    
-    // Disable status bar icons glow
-    .process-group-contents-icon
-    {
-        text-shadow: none;
-    }
-    
-    // Status bar numbers
-    .process-group-contents-count
-    {
-        fill: #707a8c;
-    }
-    
-    .process-group-details rect
-    {
-        // Odd rows
-        &:nth-child(4n+5)
+        
+        // Status bar icons
+        .process-group-contents-icon
         {
-            fill: #242936;
+            fill: #747b84 !important;
+            text-shadow: none;
+            
+            &.transmitting
+            {
+                fill: #399ee6 !important;
+            }
+            
+            &.not-transmitting
+            {
+                fill: #d3e1f5 !important;
+            }
+            
+            &.running
+            {
+                fill: #87d96c !important;
+            }
+            
+            &.stopped
+            {
+                fill: #f07171 !important;
+            }
+            
+            &.invalid
+            {
+                fill: #ffd173 !important;
+            }
+            
+            &.disabled
+            {
+                fill: #d3e1f5 !important;
+            }
+            
+            &.up-to-date
+            {
+                fill: #87d96c !important;
+            }
+            
+            &.locally-modified
+            {
+                fill: #399ee6 !important;
+            }
+            
+            &.stale
+            {
+                fill: #ffd173 !important;
+            }
+            
+            &.locally-modified-and-stale
+            {
+                fill: #f07171 !important;
+            }
+            
+            &.sync-failure
+            {
+                fill: #f07171 !important;
+            }
         }
         
-        // Even rows
-        &:nth-child(4n+7)
+        // Status bar numbers
+        .process-group-contents-count
         {
-            fill: #1f2430;
-            opacity: 1;
+            fill: #cccac2;
         }
         
-        // Row delimiters
-        &:nth-child(2n+6)
+        rect
         {
-            fill: #191d27;
+            // Odd rows
+            &:nth-child(4n+5)
+            {
+                fill: #242936;
+            }
+            
+            // Even rows
+            &:nth-child(4n+7)
+            {
+                fill: #1f2430;
+                opacity: 1;
+            }
+            
+            // Row delimiters
+            &:nth-child(2n+6)
+            {
+                fill: #191d27;
+            }
         }
     }
     

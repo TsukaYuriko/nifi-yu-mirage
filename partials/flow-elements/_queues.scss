@@ -137,6 +137,16 @@ marker#normal
         .connection-from-run-status, .connection-to-run-status
         {
             text-shadow: none;
+            
+            &.running
+            {
+                fill: #87d96c !important;
+            }
+            
+            &.stopped
+            {
+                fill: #f07171 !important;
+            }
         }
         
         // Additional status icons

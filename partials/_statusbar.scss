@@ -9,10 +9,104 @@
     background: #1c212b;
     border-bottom: 1px solid #242936;
     
-    // Disable icons glow
-    div .icon::before, div .fa::before
+    // Icons
+    div .icon, div .fa
     {
-        text-shadow: none;
+        // Disable glow
+        &::before
+        {
+            text-shadow: none;
+        }
+        
+        // Threads
+        &.icon-threads::before
+        {
+            color: #d3e1f5;
+        }
+        
+        // Total queued data
+        &.fa-list::before
+        {
+            color: #d3e1f5;
+        }
+        
+        // Transmitting RPGs
+        &.fa-bullseye::before
+        {
+            color: #399ee6;
+        }
+        
+        // Not Transmitting RPGs
+        &.icon-transmit-false::before
+        {
+            color: #d3e1f5;
+        }
+        
+        // Running Components
+        &.fa-play::before
+        {
+            color: #87d96c;
+        }
+        
+        // Stopped Components
+        &.fa-stop::before
+        {
+            color: #f07171;
+        }
+        
+        // Invalid Components
+        &.fa-warning::before
+        {
+            color: #ffd173;
+        }
+        
+        // Disabled Components
+        &.icon-enable-false::before
+        {
+            color: #d3e1f5;
+        }
+        
+        // Up to date Versioned PGs
+        &.fa-check::before
+        {
+            color: #87d96c;
+        }
+        
+        // Locally modified Versioned PGs
+        &.fa-asterisk::before
+        {
+            color: #399ee6;
+        }
+        
+        // Stale Versioned PGs
+        &.fa-arrow-circle-up::before
+        {
+            color: #ffd173;
+        }
+        
+        // Locally modified and stale Versioned PGs
+        &.fa-exclamation-circle::before
+        {
+            color: #f07171;
+        }
+        
+        // Sync failure Versioned PGs
+        &.fa-question::before
+        {
+            color: #f07171;
+        }
+        
+        // Last refresh
+        &.fa-refresh::before
+        {
+            color: #d3e1f5;
+        }
+        
+        // Any icon when inactive / counter is 0
+        &.zero::before
+        {
+            color: #747b84;
+        }
     }
     
     // Text next to the icons
