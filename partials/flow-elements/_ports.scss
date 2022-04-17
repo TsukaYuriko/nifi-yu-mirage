@@ -1,0 +1,90 @@
+/*============================================================================*\
+| Ports                                                                        |
+\*============================================================================*/
+
+.ports .component
+{
+    
+    // Unselected border
+    rect.border
+    {
+        stroke: #191d27;
+    }
+    
+    // Selected border
+    &.selected rect.border
+    {
+        stroke: #80bfff !important;
+    }
+    
+    // Remote port header
+    .remote-banner
+    {
+        fill: #2a3140;
+    }
+    
+    // Transmission status icon
+    text.port-transmission-icon
+    {
+        text-shadow: none;
+        
+        &.not-transmitting
+        {
+            fill: #d3e1f5;
+        }
+        
+        &.transmitting
+        {
+            fill: #399ee6;
+        }
+    }
+    
+    // Body fill
+    rect.body
+    {
+        fill: #242936;
+    }
+    
+    // Input/Output icon
+    .port-icon
+    {
+        fill: #707a8c;
+    }
+    
+    // Port name
+    .port-name
+    {
+        fill: #cccac2;
+    }
+    
+    // Status icons
+    .run-status-icon
+    {
+        // TODO These have no status-specific classes, unsure if this is the best way to work around it?
+        
+        // Running
+        &[fill="#7dc7a0"]
+        {
+            fill: #87d96c;
+        }
+        
+        // Invalid
+        &[fill="#cf9f5d"]
+        {
+            fill: #ffd173;
+        }
+        
+        // Stopped
+        &[fill="#d18686"]
+        {
+            fill: #f07171;
+        }
+        
+        // Disabled
+        &[fill="#728e9b"]
+        {
+            fill: #d3e1f5;
+        }
+    }
+    
+}
