@@ -1,0 +1,146 @@
+/*============================================================================*\
+| Processors                                                                   |
+\*============================================================================*/
+
+.processors .processor
+{
+    
+    // Border when not selected
+    rect.border
+    {
+        stroke: #191d27;
+    }
+    
+    // Border when selected
+    &.selected rect.border
+    {
+        stroke: #80bfff !important;
+    }
+    
+    .body
+    {
+        fill: #1f2430;
+        filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 0.25));
+    }
+    
+    .processor-icon-container
+    {
+        fill: #1f2430;
+    }
+    
+    .processor-icon
+    {
+        fill: #707a8c !important;
+    }
+    
+    .processor-name
+    {
+        fill: #ccdadb;
+    }
+    
+    .processor-type
+    {
+        fill: #747b84;
+    }
+    
+    .processor-bundle
+    {
+        fill: #707a8c;
+    }
+    
+    // Status icons
+    .run-status-icon
+    {
+        // TODO These have no status-specific classes, unsure if this is the best way to work around it?
+        
+        // Running
+        &[fill="#7dc7a0"]
+        {
+            fill: #87d96c;
+        }
+        
+        // Invalid
+        &[fill="#cf9f5d"]
+        {
+            fill: #ffd173;
+        }
+        
+        // Stopped
+        &[fill="#d18686"]
+        {
+            fill: #f07171;
+        }
+        
+        // Disabled
+        &[fill="#728e9b"]
+        {
+            fill: #d3e1f5;
+        }
+    }
+    
+    .processor-canvas-details
+    {
+        rect
+        {
+            // Odd rows
+            &:nth-of-type(4n + 1)
+            {
+                fill: #242936;
+            }
+            
+            // Even rows
+            &:nth-of-type(4n + 3)
+            {
+                fill: #1f2430;
+            }
+            
+            // Row separators
+            &:nth-of-type(2n + 2)
+            {
+                fill: #191d27;
+            }
+        }
+        
+        // Stat description
+        .stats-label
+        {
+            fill: #747b84;
+        }
+        
+        // Stat metrics
+        .stats-value
+        {
+            fill: #cccac2;
+        }
+        
+        // Stat time span
+        .stats-info
+        {
+            fill: #707a8c;
+        }
+        
+        // Thread count icon
+        .active-thread-count-icon
+        {
+            fill: #626872 !important;
+        }
+        
+        // Thread count text
+        .active-thread-count
+        {
+            fill: #cccac2;
+        }
+        
+        // Error bulletin
+        rect.bulletin-background
+        {
+            fill: #f07171;
+        }
+        
+        .bulletin-icon
+        {
+            fill: #151921;
+        }
+    }
+    
+}
