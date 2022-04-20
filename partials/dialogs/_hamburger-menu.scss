@@ -1,0 +1,37 @@
+/*============================================================================*\
+| Hamburger menu                                                               |
+\*============================================================================*/
+
+#global-menu-content
+{
+    
+    /* Container */
+    background: #1f2430;
+    border: 1px solid #1a1f29;
+    
+    // Menu items
+    md-menu-item a
+    {
+        // Text
+        color: #cccac2;
+        
+        // Highlight on hover
+        &:hover
+        {
+            background: #293040;
+        }
+        
+        // Icons
+        i::before
+        {
+            color: #80bfff;
+        }
+    }
+    
+    // Separator lines
+    md-menu-divider
+    {
+        background: #1a1f29;
+    }
+    
+}
