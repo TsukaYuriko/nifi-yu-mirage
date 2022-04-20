@@ -131,6 +131,17 @@
                 fill: #191d27;
             }
         }
+        
+        // Error bulletin
+        rect.bulletin-background
+        {
+            fill: #f07171;
+        }
+        
+        .bulletin-icon
+        {
+            fill: #151921;
+        }
     }
     
     // Stats labels
