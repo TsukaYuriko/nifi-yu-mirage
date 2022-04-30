@@ -1,0 +1,62 @@
+/*============================================================================*\
+| Modals                                                                       |
+\*============================================================================*/
+// Note: Modals are the dialog boxes that make the background go foggy (the ones that don't are shells)
+
+.modal-glass
+{
+    background: #151921 !important;
+}
+
+.modal
+{
+    
+    // Body
+    background: #1f2430;
+    
+    // Header
+    .dialog-header
+    {
+        background: #2a3140;
+        font-family: Roboto, sans-serif;
+        
+        .dialog-header-text
+        {
+            color: #707a8c;
+        }
+        
+        .dialog-header-subtitle
+        {
+            color: #707a8c;
+            
+            &:not(:empty)
+            {
+                border-left: 1px solid #707a8c;
+            }
+        }
+    }
+    
+    // Status bar below the header
+    .dialog-status-bar
+    {
+        background: #242936;
+        
+        .dialog-status-bar-state
+        {
+            color: #707a8c;
+        }
+    }
+    
+    // Settings
+    .setting-name
+    {
+        color: #ccdadb;
+        font-family: Roboto, sans-serif;
+    }
+    
+    .setting-field
+    {
+        color: #707a8c;
+    }
+    
+}
