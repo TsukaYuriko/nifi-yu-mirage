@@ -1,0 +1,56 @@
+/*=============================================================================*\
+| Shells                                                                        |
+\*============================================================================*/
+// Note: Shells are the dialog boxes that don't make the background go foggy (those are modals)
+
+
+#shell-container
+{
+    
+    // Shell window
+    background: #242936;
+    
+    // Title
+    // These all have separate IDs and no common class which is stupid but I can't do anything about it
+    #process-group-configuration-header-text,
+    #summary-header-text,
+    #counters-header-text,
+    #bulletin-board-header-text,
+    #provenance-header-text,
+    #settings-header-text,
+    #parameter-contexts-header-text,
+    #history-header-text,
+    #users-header-text,
+    #policy-management-header-text,
+    #templates-header-text
+    {
+        color: #707a8c;
+    }
+    
+    // Labels
+    .setting-name
+    {
+        color: #707a8c;
+        font-family: Roboto, sans-serif;
+    }
+    
+    // Last updated timestamp
+    .last-refreshed-container
+    {
+        // Label
+        color: #707a8c;
+        
+        // Timestamp
+        span
+        {
+            color: #cccac2 !important;
+        }
+    }
+    
+    // Horizontal bar at the bottom of scrollable containers
+    .scrollable
+    {
+        border-bottom: 1px solid #171b24;
+    }
+    
+}
