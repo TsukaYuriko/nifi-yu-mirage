@@ -1,0 +1,45 @@
+/*============================================================================*\
+| Tabs                                                                         |
+\*============================================================================*/
+
+.tab-container
+{
+    
+    // Tab container
+    border-bottom: 1px solid #80bfff;
+    
+    // Tabs
+    .tab
+    {
+        background: #282e3b;
+        border: 1px solid #1a1f29;
+        border-bottom: 1px solid #80bfff;
+        
+        // On hover
+        &:hover
+        {
+            background: #293040;
+            border: 1px solid #80bfff;
+        }
+        
+        // Selected tab
+        &.selected-tab
+        {
+            background: #242936;
+            border: 1px solid #80bfff;
+            border-bottom: 1px solid #242936 !important;
+        }
+        
+        // Tab text
+        button
+        {
+            color: #80bfff;
+            
+            // Disable the default weird hover effect
+            &:hover
+            {
+                border: 1px solid #242936 !important;
+            }
+        }
+    }
+}
