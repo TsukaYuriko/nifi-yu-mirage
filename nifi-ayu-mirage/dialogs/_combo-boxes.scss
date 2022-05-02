@@ -1,0 +1,68 @@
+/*============================================================================*\
+| Combo boxes                                                                  |
+\*============================================================================*/
+
+// Closed
+.combo
+{
+    
+    // Container
+    background: #282e3b !important;
+    border: 1px solid #282e3b !important;
+    color: #cccac2;
+    
+    &:hover
+    {
+        background: #293040 !important;
+    }
+    
+    // Arrow
+    .combo-arrow
+    {
+        color: #80bfff;
+    }
+    
+}
+
+// Expanded
+.combo-options
+{
+    // Container
+    border: 1px solid #282e3b;
+    
+    // Rows
+    ul li
+    {
+        background: #282e3b !important;
+        border: 1px solid #282e3b;
+        color: #cccac2;
+        
+        &.pointer
+        {
+            &:hover
+            {
+                background: #293040 !important;
+            }
+            
+            &:focus
+            {
+                background: #293040 !important;
+                border: 1px solid #80bfff !important;
+                box-shadow: none !important;
+            }
+        }
+    
+        // Alternate rows (e.g. "create new"-style rows)
+        &.unset
+        {
+            color: #707a8c !important;
+        }
+    }
+    
+    // Question mark tooltip
+    .fa
+    {
+        color: #80bfff;
+    }
+    
+}
