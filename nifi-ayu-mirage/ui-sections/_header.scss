@@ -6,7 +6,7 @@ md-toolbar#header
 {
     
     // Header bar
-    background-color: #151921;
+    background-color: #242936;
     
     // Palette items
     .component-button
@@ -28,7 +28,7 @@ md-toolbar#header
     // Palette item button grips
     .component-button-grip
     {
-        background: repeating-linear-gradient(90deg, #151921, #151921 4px, #15192100 4px, #15192100 6px);
+        background: repeating-linear-gradient(90deg, #242936, #242936 4px, #15192100 4px, #15192100 6px);
     }
     
     // Currently logged in user text
@@ -41,7 +41,7 @@ md-toolbar#header
     // Menu button
     #global-menu-button
     {
-        background-color: #151921;
+        background-color: #242936;
         
         &:hover
         {
