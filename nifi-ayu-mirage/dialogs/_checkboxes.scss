@@ -1,0 +1,33 @@
+/*============================================================================*\
+| Checkboxes                                                                   |
+\*============================================================================*/
+
+.nf-checkbox
+{
+    
+    color: #80bfff;
+    font-size: 1.2em;
+    
+    margin-top: -4px !important;
+    
+    &.checkbox-unchecked
+    {
+        background: none;
+        
+        &::before
+        {
+            content: "☐";
+        }
+    }
+    
+    &.checkbox-checked
+    {
+        background: none;
+        
+        &::before
+        {
+            content: "☑";
+        }
+    }
+    
+}
