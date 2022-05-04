@@ -2,24 +2,31 @@
 | Input fields                                                                 |
 \*============================================================================*/
 
-.setting-field
+.setting
 {
-    input, textarea
+    
+    .setting-field
     {
-        background: #282e3b;
-        border: 1px solid #282e3b;
-        color: #cccac2;
         
-        &:hover
+        input, textarea
         {
-            background: #293040;
+            background: #282e3b;
+            border: 1px solid #282e3b;
+            color: #cccac2;
+            
+            &:hover
+            {
+                background: #293040;
+            }
+            
+            &:focus
+            {
+                background: #293040;
+                border: 1px solid #80bfff;
+                box-shadow: none;
+            }
         }
         
-        &:focus
-        {
-            background: #293040;
-            border: 1px solid #80bfff;
-            box-shadow: none;
-        }
     }
+    
 }
