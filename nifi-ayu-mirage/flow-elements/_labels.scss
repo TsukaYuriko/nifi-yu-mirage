@@ -1,0 +1,40 @@
+/*============================================================================*\
+| Labels                                                                       |
+\*============================================================================*/
+
+.labels .label
+{
+    
+    // Disable default drop shadow (it affects the border color)
+    .body
+    {
+        filter: none;
+    }
+    
+    // Add better drop shadow (it doesn't affect the border color)
+    filter: url(#component-drop-shadow);
+    
+    // Unselected border
+    .border
+    {
+        stroke: #191d27;
+    }
+    
+    // Selected border
+    &.selected
+    {
+        .border
+        {
+            stroke: #80bfff !important;
+        }
+        
+    }
+    
+    // "Drag to resize" corner
+    .labelpoint
+    {
+        fill: #80bfff;
+        stroke: #80bfff;
+    }
+    
+}
