@@ -1,0 +1,78 @@
+/*============================================================================*\
+| Buttons                                                                      |
+\*============================================================================*/
+
+// Simple buttons
+// These are the usually square-shaped buttons with mostly icons inside
+
+button
+{
+    
+    // Container
+    background: #282e3b;
+    border: 1px solid #293040;
+    color: #80bfff;
+    
+    &:hover
+    {
+        background: #293040;
+        border: 1px solid #80bfff;
+    }
+    
+    // Icons
+    .fa, &.fa
+    {
+        color: #80bfff;
+    }
+    
+    // Disabled buttons
+    &[disabled]
+    {
+        background: #282e3b !important;
+        border: 1px solid #293040 !important;
+        color: #707a8c !important;
+    }
+    
+}
+
+// Fancy buttons
+// These are the elongated buttons with text inside
+
+.dialog-buttons .button
+{
+    // Unfortunately, buttons of different colors don't have different classes.
+    // These are colored using inline styles in NiFi (potentially by a script?).
+    
+    /// Dark buttons (usually "Apply" or other confirming actions)
+    
+    // Idle
+    &[style*="rgb(114, 142, 155)"]
+    {
+        background: #80bfff !important;
+        color: #282e3b !important;
+    }
+    
+    // Hover
+    &[style*="rgb(0, 72, 73)"]
+    {
+        background: #478acc !important;
+        color: #282e3b !important;
+    }
+    
+    /// Bright buttons (usually "Cancel" or other declining actions)
+    
+    // Idle
+    &[style*="rgb(227, 232, 235)"]
+    {
+        background: #282e3b !important;
+        color: #80bfff !important;
+    }
+    
+    // Hover
+    &[style*="rgb(199, 210, 215)"]
+    {
+        background: #293040 !important;
+        color: #80bfff !important;
+    }
+    
+}
