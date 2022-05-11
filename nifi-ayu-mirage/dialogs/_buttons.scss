@@ -76,3 +76,21 @@ button
     }
     
 }
+
+// Fancy buttons in specific contexts (e.g. Configure dialog of process groups, Controller Settings)
+// where there's only an "Apply" button and no others. Unfortunately, these don't share selectors with
+// the buttons above because they (fortunately?) lack the "style=..." BS the ones above have.
+
+.settings-buttons .button
+{
+    
+    background: #80bfff;
+    color: #282e3b;
+    
+    &:hover:not(.disabled-button)
+    {
+        background: #478acc;
+        color: #282e3b;
+    }
+    
+}
