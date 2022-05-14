@@ -1,0 +1,19 @@
+/*============================================================================*\
+| Theme colors                                                                 |
+\*============================================================================*/
+
+/*
+All "theme" colors are defined here.
+These are roughly categorized into contexts where they are used.
+Stylesheets always reference the theme colors, never the source colors directly.
+This makes it possible to change specific usages of potentially-identical colors without
+changing EVERY usage of that color, keeping the theme as modular as possible.
+This two-tier structure also preserves integrity of the source colors so they can be
+traced to their origins while also providing friendly names for actual use.
+*/
+
+// Bottom layer of the UI like the flow canvas
+$color-theme-ui-back: opacify($color-source-mirage-ui-panel-shadow, 1);
+
+// Highlights like grid lines, outlines...
+$color-theme-ui-back-highlight: $color-source-mirage-editor-line;
