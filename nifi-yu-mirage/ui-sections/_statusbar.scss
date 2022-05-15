@@ -124,12 +124,14 @@
     // Search button
     #search-button
     {
-        background: #1c212b !important;
-        border-left: 1px solid #242936 !important;
+        background: $color-theme-button !important;
+        border: 1px solid $color-theme-button !important;
+        border-left: 1px solid $color-theme-button-border !important;
         
         &:hover
         {
-            background: #293040 !important;
+            background: $color-theme-button-hover !important;
+            border: 1px solid $color-theme-button-border-hover !important;
         }
         
         // Search button icon
@@ -142,15 +144,26 @@
     // Search field
     #search-container, #search-field
     {
-        background: #1c212b;
-        color: #cccac2;
+        background: $color-theme-input;
+        color: $color-theme-text;
+        
+        &::placeholder
+        {
+            color: $color-source-mirage-ui-fg;
+        }
+        
+        &:hover
+        {
+            background: $color-theme-input-hover;
+        }
     }
     
     // Bulletin button
     #bulletin-button
     {
-        background: #1c212b;
-        border-left: 1px solid #242936;
+        background: $color-theme-button;
+        border: 1px solid $color-theme-button;
+        border-left: 1px solid $color-theme-button-border;
     }
     
 }
