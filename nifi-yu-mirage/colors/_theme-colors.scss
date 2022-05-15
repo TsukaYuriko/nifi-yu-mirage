@@ -12,8 +12,46 @@ This two-tier structure also preserves integrity of the source colors so they ca
 traced to their origins while also providing friendly names for actual use.
 */
 
-// Bottom layer of the UI like the flow canvas
+/*----------------------------------------------------------------------------*\
+| Accent colors                                                                |
+\*----------------------------------------------------------------------------*/
+
+// Main accent color
+$color-theme-accent: $color-source-mirage-vcs-modified;
+
+
+/*----------------------------------------------------------------------------*\
+| Text                                                                         |
+\*----------------------------------------------------------------------------*/
+
+// Default text color
+$color-theme-text: $color-source-mirage-editor-fg;
+
+
+/*----------------------------------------------------------------------------*\
+| UI Back layer                                                                |
+\*----------------------------------------------------------------------------*/
+// e.g. flow canvas
+
+// Background
 $color-theme-ui-back: $color-source-mirage-ui-panel-shadow-premultiplied;
 
 // Highlights like grid lines, outlines...
 $color-theme-ui-back-highlight: $color-source-mirage-editor-line;
+
+
+/*----------------------------------------------------------------------------*\
+| UI Panel layer                                                                 |
+\*----------------------------------------------------------------------------*/
+/// e.g. panels like the header, navigation...
+
+// Background
+$color-theme-ui-panel: $color-source-mirage-editor-bg;
+
+
+/*----------------------------------------------------------------------------*\
+| Buttons                                                                      |
+\*----------------------------------------------------------------------------*/
+
+// Hover highlight
+$color-theme-button-hover: $color-source-mirage-ui-selection-active-premultiplied;

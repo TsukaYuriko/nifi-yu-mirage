@@ -2,56 +2,65 @@
 | Header / Palette                                                             |
 \*============================================================================*/
 
+$color-background: $color-theme-ui-panel;
+$color-palette-background: $color-theme-ui-panel;
+$color-palette-icon: $color-theme-accent;
+$color-palette-hover: $color-theme-button-hover;
+$color-hamburger-background: $color-theme-ui-panel;
+$color-hamburger-icon: $color-theme-accent;
+$color-hamburger-hover: $color-theme-button-hover;
+$color-text: $color-theme-text;
+
 md-toolbar#header
 {
     
     // Header bar
-    background-color: #242936;
+    background-color: $color-background;
     
     // Palette items
     .component-button
     {
-        color: #80bfff;
+        color: $color-palette-icon;
         
         &:hover
         {
-            background: #293040;
+            background: $color-palette-hover;
         }
     }
     
     // Palette items being dragged
     .ui-draggable-dragging
     {
-        color: #80bfff;
+        color: $color-palette-icon;
     }
     
     // Palette item button grips
     .component-button-grip
     {
-        background: repeating-linear-gradient(90deg, #242936, #242936 4px, #15192100 4px, #15192100 6px);
+        background: repeating-linear-gradient(90deg, $color-palette-background, $color-palette-background 4px, transparent 4px, transparent 6px);
     }
     
     // Currently logged in user text
     #current-user
     {
-        color: #cccac2;
+        color: $color-text;
         font-family: Roboto, sans-serif;
     }
     
     // Menu button
     #global-menu-button
     {
-        background-color: #242936;
+        background-color: $color-hamburger-background;
         
         &:hover
         {
-            background: #293040;
+            background: $color-hamburger-hover;
         }
         
         // Hamburger icon
         .fa
         {
-            color: #80bfff;
+            color: $color-hamburger-icon;
         }
     }
     
