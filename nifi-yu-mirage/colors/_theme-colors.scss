@@ -92,10 +92,10 @@ $color-theme-icon-processor-invalid: $color-source-mirage-syntax-func;
 $color-theme-icon-processor-stopped: $color-source-light-syntax-markup;
 
 // Version control
-$color-theme-icon-vcs-uptodate: $color-source-mirage-vcs-added;
+$color-theme-icon-vcs-uptodate: $color-source-light-vcs-added;
 $color-theme-icon-vcs-modified: $color-source-light-syntax-entity;
-$color-theme-icon-vcs-stale: $color-source-mirage-vcs-added;
-$color-theme-icon-vcs-modified-stale: $color-source-mirage-syntax-func;
+$color-theme-icon-vcs-stale: $color-source-light-syntax-func;
+$color-theme-icon-vcs-modified-stale: $color-source-light-syntax-markup;
 $color-theme-icon-vcs-sync-fail: $color-source-light-syntax-markup;
 
 
