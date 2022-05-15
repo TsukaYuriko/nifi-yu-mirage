@@ -35,6 +35,14 @@ $color-theme-text-footnote: $color-source-mirage-editor-gutter-active-premultipl
 
 
 /*----------------------------------------------------------------------------*\
+| Splash screen                                                                |
+\*----------------------------------------------------------------------------*/
+
+$color-theme-splash: $color-source-mirage-ui-panel-bg;
+$color-theme-splash-circle: $color-theme-accent;
+
+
+/*----------------------------------------------------------------------------*\
 | UI Back layer                                                                |
 \*----------------------------------------------------------------------------*/
 // e.g. flow canvas

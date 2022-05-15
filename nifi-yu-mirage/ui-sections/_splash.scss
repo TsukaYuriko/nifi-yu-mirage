@@ -5,11 +5,11 @@
 // Background
 #splash
 {
-    background: #1c212b !important;
+    background: $color-theme-splash !important;
 }
 
 // Loading circle
 #splash-img svg path
 {
-    stroke: #80bfff;
+    stroke: $color-theme-splash-circle;
 }
