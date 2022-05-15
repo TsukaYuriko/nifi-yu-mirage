@@ -20,6 +20,12 @@
     #data-flow-title-container span.link
     {
         color: $color-theme-accent;
+        border-bottom: 1px solid $color-theme-text-footnote;
+        
+        &:hover
+        {
+            border-bottom: 1px solid $color-theme-accent;
+        }
     }
 
     // Arrows
