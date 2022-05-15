@@ -5,26 +5,27 @@
 #breadcrumbs
 {
     
-    // Breadcrumbs bar at the bottom
-    background-color: #1f2430;
-    border-top: 1px solid #171b24;
+    background-color: $color-theme-ui-bar;
+    border-top: 1px solid $color-theme-ui-bar-border;
     
-    // Breadcrumbs borders
+    // Remove borders on the sides
+    // These are barely visible in the original theme due to bad contrast.
+    // Here, they'd just look bad and won't fit the style anyway.
     #breadcrumbs-left-border, #breadcrumbs-right-border
     {
         background: none;
     }
 
-    // Breadcrumbs links
+    // Links
     #data-flow-title-container span.link
     {
-        color: #73d0ff;
+        color: $color-theme-accent;
     }
 
-    // Breadcrumbs arrows
+    // Arrows
     #data-flow-title-container span span
     {
-        color: #cccac2;
+        color: $color-theme-text;
     }
     
 }
