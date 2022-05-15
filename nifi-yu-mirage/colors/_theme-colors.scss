@@ -27,6 +27,12 @@ $color-theme-accent: $color-source-mirage-vcs-modified;
 // Default text color
 $color-theme-text: $color-source-mirage-editor-fg;
 
+// For subtle text such as labels
+$color-theme-text-label: $color-source-mirage-ui-fg;
+
+// For really subtle text such as footnotes
+$color-theme-text-footnote: $color-source-mirage-editor-gutter-active-premultiplied;
+
 
 /*----------------------------------------------------------------------------*\
 | UI Back layer                                                                |
