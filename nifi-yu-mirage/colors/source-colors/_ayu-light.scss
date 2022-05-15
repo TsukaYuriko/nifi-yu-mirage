@@ -38,3 +38,19 @@ $color-source-light-ui-panel-bg: #F3F4F5;
 $color-source-light-ui-panel-shadow: #00000026;
 $color-source-light-common-accent: #FFAA33;
 $color-source-light-common-error: #E65050;
+
+// Colors with alpha components, premultiplied with ui.bg
+$color-source-light-syntax-comment-premultiplied: #ABACB1;
+$color-source-light-editor-line-premultiplied: #EDEFF1;
+$color-source-light-editor-selection-active-premultiplied: #D3E1F5;
+$color-source-light-editor-selection-inactive-premultiplied: #E7EDF7;
+$color-source-light-editor-findMatch-active-premultiplied: #E9DAFB;
+$color-source-light-editor-findMatch-inactive-premultiplied: #B065FE;
+$color-source-light-editor-gutter-active-premultiplied: #9FA6AC;
+$color-source-light-editor-gutter-normal-premultiplied: #CCD0D3;
+$color-source-light-editor-indentGuide-active-premultiplied: #D2D4D8;
+$color-source-light-editor-indentGuide-normal-premultiplied: #E4E6E9;
+$color-source-light-ui-line-premultiplied: #E7EAED;
+$color-source-light-ui-selection-active-premultiplied: #E4E9ED;
+$color-source-light-ui-selection-normal-premultiplied: #E7EAED;
+$color-source-light-ui-panel-shadow-premultiplied: #D3D4D5;

@@ -38,3 +38,16 @@ $color-source-dark-ui-panel-bg: #0F131A;
 $color-source-dark-ui-panel-shadow: #00000080;
 $color-source-dark-common-accent: #E6B450;
 $color-source-dark-common-error: #D95757;
+
+// Colors with alpha components, premultiplied with ui.bg
+$color-source-dark-syntax-comment-premultiplied: #636A72;
+$color-source-dark-editor-selection-active-premultiplied: #1B3A5B;
+$color-source-dark-editor-selection-inactive-premultiplied: #122132;
+$color-source-dark-editor-findMatch-inactive-premultiplied: #322B3F;
+$color-source-dark-editor-gutter-active-premultiplied: #626875;
+$color-source-dark-editor-gutter-normal-premultiplied: #444B55;
+$color-source-dark-editor-indentGuide-active-premultiplied: #3B404A;
+$color-source-dark-editor-indentGuide-normal-premultiplied: #1E222A;
+$color-source-dark-ui-selection-active-premultiplied: #1A1F28;
+$color-source-dark-ui-selection-normal-premultiplied: #171B24;
+$color-source-dark-ui-panel-shadow-premultiplied: #05070A;

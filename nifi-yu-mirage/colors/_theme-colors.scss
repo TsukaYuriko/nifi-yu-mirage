@@ -13,7 +13,7 @@ traced to their origins while also providing friendly names for actual use.
 */
 
 // Bottom layer of the UI like the flow canvas
-$color-theme-ui-back: opacify($color-source-mirage-ui-panel-shadow, 1);
+$color-theme-ui-back: $color-source-mirage-ui-panel-shadow-premultiplied;
 
 // Highlights like grid lines, outlines...
 $color-theme-ui-back-highlight: $color-source-mirage-editor-line;
