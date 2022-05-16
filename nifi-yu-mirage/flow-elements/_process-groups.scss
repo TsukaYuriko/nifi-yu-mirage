@@ -188,6 +188,16 @@
             
             // Fix icon position
             transform: translateX(-2px);
+            
+            &.transmitting
+            {
+                fill: $color-theme-icon-rpg !important;
+            }
+            
+            &.not-transmitting
+            {
+                fill: $color-theme-icon-inactive !important;
+            }
         }
         
         // Transmission security icon
