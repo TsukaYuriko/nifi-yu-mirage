@@ -65,25 +65,25 @@
         // Running
         &[fill="#7dc7a0"]
         {
-            fill: $color-icon-processor-running;
+            fill: $color-flow-component-state-running;
         }
         
         // Invalid
         &[fill="#cf9f5d"]
         {
-            fill: $color-icon-processor-invalid;
+            fill: $color-flow-component-state-invalid;
         }
         
         // Stopped
         &[fill="#d18686"]
         {
-            fill: $color-icon-processor-stopped;
+            fill: $color-flow-component-state-stopped;
         }
         
         // Disabled
         &[fill="#728e9b"]
         {
-            fill: $color-icon-inactive;
+            fill: $color-flow-component-state-disabled;
         }
     }
     

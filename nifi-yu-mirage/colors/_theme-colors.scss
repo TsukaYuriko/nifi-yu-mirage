@@ -92,6 +92,12 @@ $color-flow-component-row-odd: $color-source-mirage-editor-bg;
 $color-flow-component-row-even: $color-flow-component;
 $color-flow-component-row-separator: $color-source-mirage-ui-line;
 
+// Flow component state
+$color-flow-component-state-running: $color-source-mirage-vcs-added;
+$color-flow-component-state-invalid: $color-source-mirage-syntax-func;
+$color-flow-component-state-stopped: $color-source-light-syntax-markup;
+$color-flow-component-state-disabled: $color-source-mirage-editor-gutter-normal-premultiplied;
+
 // Processor groups
 $color-process-group-status-bar: $color-flow-component-row-odd;
 
@@ -136,10 +142,11 @@ $color-icon-inactive: $color-source-mirage-editor-gutter-normal-premultiplied;
 // Remote Process Group
 $color-icon-rpg: $color-source-light-syntax-entity;
 
-// Processor state
-$color-icon-processor-running: $color-source-mirage-vcs-added;
-$color-icon-processor-invalid: $color-source-mirage-syntax-func;
-$color-icon-processor-stopped: $color-source-light-syntax-markup;
+// Flow component state
+$color-icon-processor-running: $color-flow-component-state-running;
+$color-icon-processor-invalid: $color-flow-component-state-invalid;
+$color-icon-processor-stopped: $color-flow-component-state-stopped;
+$color-icon-processor-disabled: $color-icon-active;
 
 // Version control
 $color-icon-vcs-uptodate: $color-source-light-vcs-added;
