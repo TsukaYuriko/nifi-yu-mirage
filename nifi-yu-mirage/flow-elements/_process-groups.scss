@@ -8,18 +8,18 @@
     // Border
     &.border
     {
-        stroke: $color-theme-flow-component-border;
+        stroke: $color-flow-component-border;
     }
     
     &.selected rect.border
     {
-        stroke: $color-theme-flow-component-border-selected !important;
+        stroke: $color-flow-component-border-selected !important;
     }
     
     // Header
     rect:nth-child(3)
     {
-        fill: $color-theme-flow-component-header;
+        fill: $color-flow-component-header;
     }
     
     // Disable version control icon glow
@@ -31,7 +31,7 @@
     // Name in header
     text.process-group-name, text.remote-process-group-name
     {
-        fill: $color-theme-text;
+        fill: $color-text;
     }
     
     .process-group-details
@@ -39,75 +39,75 @@
         // Status bars (top/bottom)
         rect:first-child, rect:nth-child(2)
         {
-            fill: $color-theme-process-group-status-bar;
+            fill: $color-process-group-status-bar;
         }
         
         // Status bar icons
         .process-group-contents-icon
         {
-            fill: $color-theme-icon-inactive !important;
+            fill: $color-icon-inactive !important;
             text-shadow: none;
             
             &.transmitting
             {
-                fill: $color-theme-icon-rpg !important;
+                fill: $color-icon-rpg !important;
             }
             
             &.not-transmitting
             {
-                fill: $color-theme-icon-active !important;
+                fill: $color-icon-active !important;
             }
             
             &.running
             {
-                fill: $color-theme-icon-processor-running !important;
+                fill: $color-icon-processor-running !important;
             }
             
             &.stopped
             {
-                fill: $color-theme-icon-processor-stopped !important;
+                fill: $color-icon-processor-stopped !important;
             }
             
             &.invalid
             {
-                fill: $color-theme-icon-processor-invalid !important;
+                fill: $color-icon-processor-invalid !important;
             }
             
             &.disabled
             {
-                fill: $color-theme-icon-active !important;
+                fill: $color-icon-active !important;
             }
             
             &.up-to-date
             {
-                fill: $color-theme-icon-vcs-uptodate !important;
+                fill: $color-icon-vcs-uptodate !important;
             }
             
             &.locally-modified
             {
-                fill: $color-theme-icon-vcs-modified !important;
+                fill: $color-icon-vcs-modified !important;
             }
             
             &.stale
             {
-                fill: $color-theme-icon-vcs-stale !important;
+                fill: $color-icon-vcs-stale !important;
             }
             
             &.locally-modified-and-stale
             {
-                fill: $color-theme-icon-vcs-modified-stale !important;
+                fill: $color-icon-vcs-modified-stale !important;
             }
             
             &.sync-failure
             {
-                fill: $color-theme-icon-vcs-sync-fail !important;
+                fill: $color-icon-vcs-sync-fail !important;
             }
         }
         
         // Status bar numbers
         .process-group-contents-count
         {
-            fill: $color-theme-text;
+            fill: $color-text;
         }
         
         rect
@@ -115,57 +115,57 @@
             // Odd rows
             &:nth-child(4n+5)
             {
-                fill: $color-theme-flow-component-row-odd;
+                fill: $color-flow-component-row-odd;
             }
             
             // Even rows
             &:nth-child(4n+7)
             {
-                fill: $color-theme-flow-component-row-even;
+                fill: $color-flow-component-row-even;
                 opacity: 1;
             }
             
             // Row delimiters
             &:nth-child(2n+6)
             {
-                fill: $color-theme-flow-component-row-separator;
+                fill: $color-flow-component-row-separator;
             }
         }
         
         // Error bulletin
         rect.bulletin-background
         {
-            fill: $color-theme-error;
+            fill: $color-error;
         }
         
         .bulletin-icon
         {
-            fill: $color-theme-flow-component;
+            fill: $color-flow-component;
         }
     }
     
     // Stats labels
     .stats-label
     {
-        fill: $color-theme-text-label;
+        fill: $color-text-label;
     }
     
     // Stats counters
     .stats-value
     {
-        fill: $color-theme-text;
+        fill: $color-text;
     }
     
     // Timers
     .stats-info
     {
-        fill: $color-theme-text-footnote;
+        fill: $color-text-footnote;
     }
     
     // Body (empty space / not otherwise specified)
     .body
     {
-        fill: $color-theme-flow-component;
+        fill: $color-flow-component;
         filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 0.25));
     }
     
@@ -191,25 +191,25 @@
             
             &.transmitting
             {
-                fill: $color-theme-icon-rpg !important;
+                fill: $color-icon-rpg !important;
             }
             
             &.not-transmitting
             {
-                fill: $color-theme-icon-inactive !important;
+                fill: $color-icon-inactive !important;
             }
         }
         
         // Transmission security icon
         text.remote-process-group-transmission-secure
         {
-            fill: $color-theme-text-label;
+            fill: $color-text-label;
         }
         
         // Address
         text.remote-process-group-uri
         {
-            fill: $color-theme-text;
+            fill: $color-text;
         }
         
         rect
@@ -217,39 +217,39 @@
             // Address bar
             &:nth-child(2)
             {
-                fill: $color-theme-process-group-status-bar;
+                fill: $color-process-group-status-bar;
             }
             
             // First row
             &:nth-child(5)
             {
-                fill: $color-theme-flow-component-row-odd;
+                fill: $color-flow-component-row-odd;
             }
             
             // Second row
             &:nth-child(7)
             {
-                fill: $color-theme-flow-component-row-even;
+                fill: $color-flow-component-row-even;
                 opacity: 1;
             }
             
             // Row delimiter
             &:nth-child(6)
             {
-                fill: $color-theme-flow-component-row-separator;
+                fill: $color-flow-component-row-separator;
             }
             
             // Status bar
             &:nth-child(11)
             {
-                fill: $color-theme-process-group-status-bar;
+                fill: $color-process-group-status-bar;
             }
         }
         
         // Last refresh time
         .remote-process-group-last-refresh
         {
-            fill: $color-theme-text-footnote;
+            fill: $color-text-footnote;
         }
     }
      

@@ -10,10 +10,10 @@ div.graph-control
     \*============================================================================*/
     
     // Containers
-    background-color: $color-theme-ui-panel;
-    border-top: 1px solid $color-theme-ui-panel-border;
-    border-right: 1px solid $color-theme-ui-panel-border;
-    border-bottom: 1px solid $color-theme-ui-panel-border;
+    background-color: $color-ui-panel;
+    border-top: 1px solid $color-ui-panel-border;
+    border-right: 1px solid $color-ui-panel-border;
+    border-bottom: 1px solid $color-ui-panel-border;
     
     // Slight shadow on containers for contrast
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -24,40 +24,40 @@ div.graph-control
         // Highlight on hover
         &:hover
         {
-            background: $color-theme-button-hover;
+            background: $color-button-hover;
         }
         
         // Header text
         div.graph-control-header
         {
-            color: $color-theme-text;
+            color: $color-text;
             font-family: Roboto, sans-serif;
         }
         
         // Icons
         .graph-control-header-icon.fa
         {
-            color: $color-theme-button-icon-active;
+            color: $color-button-icon-active;
         }
     }
     
     // Expand/Collapse buttons
     div.graph-control-expansion
     {
-        color: $color-theme-button-icon-active;
+        color: $color-button-icon-active;
     }
     
     // Header icons when docked
     div.graph-control-docked
     {
-        color: $color-theme-button-icon-active;
+        color: $color-button-icon-active;
     }
     
     // Headers on hover when docked
     &.docked:hover
     {
-        border: 1px solid $color-theme-button-border-hover;
-        background: $color-theme-button-hover;
+        border: 1px solid $color-button-border-hover;
+        background: $color-button-hover;
     }
     
     .graph-control-docked
@@ -68,24 +68,24 @@ div.graph-control
     // Action buttons
     div.action-button button
     {
-        background: $color-theme-button;
-        border: 1px solid $color-theme-button-border;
-        color: $color-theme-button-icon-active;
+        background: $color-button;
+        border: 1px solid $color-button-border;
+        color: $color-button-icon-active;
         
         &:hover
         {
-            background: $color-theme-button-hover;
-            border: 1px solid $color-theme-button-border-hover;
+            background: $color-button-hover;
+            border: 1px solid $color-button-border-hover;
         }
         
         &:disabled
         {
-            border: 1px solid $color-theme-button;
+            border: 1px solid $color-button;
             background: none;
             
             .fa, .icon, span
             {
-                color: $color-theme-button-icon-inactive;
+                color: $color-button-icon-inactive;
             }
         }
     }
@@ -99,13 +99,13 @@ div.graph-control
         // Minimap
         #birdseye
         {
-            background: $color-theme-minimap;
-            border: 1px solid $color-theme-minimap-border;
+            background: $color-minimap;
+            border: 1px solid $color-minimap-border;
             
             // Minimap viewport
             .birdseye-brush-container .birdseye-brush
             {
-                stroke: $color-theme-minimap-birdseye;
+                stroke: $color-minimap-birdseye;
             }
         }
         
@@ -139,25 +139,25 @@ div.graph-control
         // NiFi logo in Operate panel
         #operation-context-logo i.icon
         {
-            color: $color-theme-text-label;
+            color: $color-text-label;
         }
         
         // Current context name
         #operation-context-name
         {
-            color: $color-theme-text;
+            color: $color-text;
         }
         
         // Current context type
         #operation-context-type
         {
-            color: $color-theme-text-footnote;
+            color: $color-text-footnote;
         }
         
         // Current context ID
         #operation-context-id
         {
-            color: $color-theme-text-label;
+            color: $color-text-label;
         }
         
         // Fix icon padding

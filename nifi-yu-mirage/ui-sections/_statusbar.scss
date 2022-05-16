@@ -6,8 +6,8 @@
 {
     
     // Status bar at the top, below the menu bar
-    background: $color-theme-ui-bar;
-    border-bottom: 1px solid $color-theme-ui-bar-border;
+    background: $color-ui-bar;
+    border-bottom: 1px solid $color-ui-bar-border;
     
     // Icons
     div .icon, div .fa
@@ -21,91 +21,91 @@
         // Threads
         &.icon-threads::before
         {
-            color: $color-theme-icon-active;
+            color: $color-icon-active;
         }
         
         // Total queued data
         &.fa-list::before
         {
-            color: $color-theme-icon-active;
+            color: $color-icon-active;
         }
         
         // Transmitting RPGs
         &.fa-bullseye::before
         {
-            color: $color-theme-icon-rpg;
+            color: $color-icon-rpg;
         }
         
         // Not Transmitting RPGs
         &.icon-transmit-false::before
         {
-            color: $color-theme-icon-active;
+            color: $color-icon-active;
         }
         
         // Running Components
         &.fa-play::before
         {
-            color: $color-theme-icon-processor-running;
+            color: $color-icon-processor-running;
         }
         
         // Stopped Components
         &.fa-stop::before
         {
-            color: $color-theme-icon-processor-stopped;
+            color: $color-icon-processor-stopped;
         }
         
         // Invalid Components
         &.fa-warning::before
         {
-            color: $color-theme-icon-processor-invalid;
+            color: $color-icon-processor-invalid;
         }
         
         // Disabled Components
         &.icon-enable-false::before
         {
-            color: $color-theme-icon-active;
+            color: $color-icon-active;
         }
         
         // Up to date Versioned PGs
         &.fa-check::before
         {
-            color: $color-theme-icon-vcs-uptodate;
+            color: $color-icon-vcs-uptodate;
         }
         
         // Locally modified Versioned PGs
         &.fa-asterisk::before
         {
-            color: $color-theme-icon-vcs-modified;
+            color: $color-icon-vcs-modified;
         }
         
         // Stale Versioned PGs
         &.fa-arrow-circle-up::before
         {
-            color: $color-theme-icon-vcs-stale;
+            color: $color-icon-vcs-stale;
         }
         
         // Locally modified and stale Versioned PGs
         &.fa-exclamation-circle::before
         {
-            color: $color-theme-icon-vcs-modified-stale;
+            color: $color-icon-vcs-modified-stale;
         }
         
         // Sync failure Versioned PGs
         &.fa-question::before
         {
-            color: $color-theme-icon-vcs-sync-fail;
+            color: $color-icon-vcs-sync-fail;
         }
         
         // Last refresh
         &.fa-refresh::before
         {
-            color: $color-theme-icon-active;
+            color: $color-icon-active;
         }
         
         // Any icon when inactive / counter is 0
         &.zero::before
         {
-            color: $color-theme-icon-inactive;
+            color: $color-icon-inactive;
         }
     }
     
@@ -116,7 +116,7 @@
         {
             span
             {
-                color: $color-theme-text;
+                color: $color-text;
             }
         }
     }
@@ -124,28 +124,28 @@
     // Search button
     #search-button
     {
-        background: $color-theme-button !important;
-        border: 1px solid $color-theme-button !important;
-        border-left: 1px solid $color-theme-button-border !important;
+        background: $color-button !important;
+        border: 1px solid $color-button !important;
+        border-left: 1px solid $color-button-border !important;
         
         &:hover
         {
-            background: $color-theme-button-hover !important;
-            border: 1px solid $color-theme-button-border-hover !important;
+            background: $color-button-hover !important;
+            border: 1px solid $color-button-border-hover !important;
         }
         
         // Search button icon
         .fa-search
         {
-            color: $color-theme-icon-default;
+            color: $color-icon-default;
         }
     }
     
     // Search field
     #search-container, #search-field
     {
-        background: $color-theme-input;
-        color: $color-theme-text;
+        background: $color-input;
+        color: $color-text;
         
         &::placeholder
         {
@@ -154,16 +154,16 @@
         
         &:hover
         {
-            background: $color-theme-input-hover;
+            background: $color-input-hover;
         }
     }
     
     // Bulletin button
     #bulletin-button
     {
-        background: $color-theme-button;
-        border: 1px solid $color-theme-button;
-        border-left: 1px solid $color-theme-button-border;
+        background: $color-button;
+        border: 1px solid $color-button;
+        border-left: 1px solid $color-button-border;
     }
     
 }

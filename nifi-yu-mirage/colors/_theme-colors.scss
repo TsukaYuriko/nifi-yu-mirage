@@ -17,31 +17,31 @@ traced to their origins while also providing friendly names for actual use.
 \*----------------------------------------------------------------------------*/
 
 // Main accent color
-$color-theme-accent: $color-source-mirage-vcs-modified;
+$color-accent: $color-source-mirage-vcs-modified;
 
 // Anything that indicates "error" or a negative state, e.g. bulletins
-$color-theme-error: $color-source-light-syntax-markup;
+$color-error: $color-source-light-syntax-markup;
 
 /*----------------------------------------------------------------------------*\
 | Text                                                                         |
 \*----------------------------------------------------------------------------*/
 
 // Default text color
-$color-theme-text: $color-source-mirage-editor-fg;
+$color-text: $color-source-mirage-editor-fg;
 
 // For subtle text such as labels
-$color-theme-text-label: $color-source-mirage-ui-fg;
+$color-text-label: $color-source-mirage-ui-fg;
 
 // For really subtle text such as footnotes
-$color-theme-text-footnote: $color-source-mirage-editor-gutter-active-premultiplied;
+$color-text-footnote: $color-source-mirage-editor-gutter-active-premultiplied;
 
 
 /*----------------------------------------------------------------------------*\
 | Splash screen                                                                |
 \*----------------------------------------------------------------------------*/
 
-$color-theme-splash: $color-source-mirage-ui-panel-bg;
-$color-theme-splash-circle: $color-theme-accent;
+$color-splash: $color-source-mirage-ui-panel-bg;
+$color-splash-circle: $color-accent;
 
 
 /*----------------------------------------------------------------------------*\
@@ -49,8 +49,8 @@ $color-theme-splash-circle: $color-theme-accent;
 \*----------------------------------------------------------------------------*/
 // e.g. flow canvas
 
-$color-theme-ui-back: $color-source-mirage-ui-panel-shadow-premultiplied;
-$color-theme-ui-back-highlight: $color-source-mirage-editor-line;
+$color-ui-back: $color-source-mirage-ui-panel-shadow-premultiplied;
+$color-ui-back-highlight: $color-source-mirage-editor-line;
 
 
 /*----------------------------------------------------------------------------*\
@@ -58,25 +58,25 @@ $color-theme-ui-back-highlight: $color-source-mirage-editor-line;
 \*----------------------------------------------------------------------------*/
 // e.g. status bar, breadcrumbs...
 
-$color-theme-ui-bar: $color-source-mirage-ui-bg;
-$color-theme-ui-bar-border: $color-source-mirage-ui-line;
+$color-ui-bar: $color-source-mirage-ui-bg;
+$color-ui-bar-border: $color-source-mirage-ui-line;
 
 /*----------------------------------------------------------------------------*\
 | UI Panel layer                                                               |
 \*----------------------------------------------------------------------------*/
 /// e.g. panels like the header, navigation...
 
-$color-theme-ui-panel: $color-source-mirage-editor-bg;
-$color-theme-ui-panel-border: $color-source-mirage-ui-panel-shadow-premultiplied;
+$color-ui-panel: $color-source-mirage-editor-bg;
+$color-ui-panel-border: $color-source-mirage-ui-panel-shadow-premultiplied;
 
 
 /*----------------------------------------------------------------------------*\
 | Minimap                                                                      |
 \*----------------------------------------------------------------------------*/
 
-$color-theme-minimap: $color-source-mirage-ui-bg;
-$color-theme-minimap-border: $color-source-mirage-ui-line;
-$color-theme-minimap-birdseye: $color-theme-accent;
+$color-minimap: $color-source-mirage-ui-bg;
+$color-minimap-border: $color-source-mirage-ui-line;
+$color-minimap-birdseye: $color-accent;
 
 
 /*----------------------------------------------------------------------------*\
@@ -84,42 +84,42 @@ $color-theme-minimap-birdseye: $color-theme-accent;
 \*----------------------------------------------------------------------------*/
 
 // Generic
-$color-theme-flow-component: $color-source-mirage-ui-bg;
-$color-theme-flow-component-border: $color-source-mirage-ui-panel-shadow-premultiplied;
-$color-theme-flow-component-border-selected: $color-theme-accent;
-$color-theme-flow-component-header: $color-source-mirage-ui-selection-active-premultiplied;
-$color-theme-flow-component-row-odd: $color-source-mirage-editor-bg;
-$color-theme-flow-component-row-even: $color-theme-flow-component;
-$color-theme-flow-component-row-separator: $color-source-mirage-ui-line;
+$color-flow-component: $color-source-mirage-ui-bg;
+$color-flow-component-border: $color-source-mirage-ui-panel-shadow-premultiplied;
+$color-flow-component-border-selected: $color-accent;
+$color-flow-component-header: $color-source-mirage-ui-selection-active-premultiplied;
+$color-flow-component-row-odd: $color-source-mirage-editor-bg;
+$color-flow-component-row-even: $color-flow-component;
+$color-flow-component-row-separator: $color-source-mirage-ui-line;
 
 // Processor groups
-$color-theme-process-group-status-bar: $color-theme-flow-component-row-odd;
+$color-process-group-status-bar: $color-flow-component-row-odd;
 
 // Icons (funnel, ports, processors...)
-$color-theme-flow-component-icon: $color-source-mirage-ui-fg;
+$color-flow-component-icon: $color-source-mirage-ui-fg;
 
 // Queues
-$color-theme-queue-line: $color-theme-text;
-$color-theme-queue-line-selected: $color-theme-accent;
-$color-theme-queue-startpoint: $color-source-light-common-error;
-$color-theme-queue-midpoint: $color-theme-accent;
-$color-theme-queue-endpoint: $color-source-light-syntax-string;
-$color-theme-queue-backpressure: $color-source-mirage-ui-selection-active-premultiplied;
-$color-theme-queue-backpressure-ok: $color-source-light-syntax-string;
-$color-theme-queue-backpressure-warning: $color-source-light-common-accent;
-$color-theme-queue-backpressure-critical: $color-source-light-common-error;
+$color-queue-line: $color-text;
+$color-queue-line-selected: $color-accent;
+$color-queue-startpoint: $color-source-light-common-error;
+$color-queue-midpoint: $color-accent;
+$color-queue-endpoint: $color-source-light-syntax-string;
+$color-queue-backpressure: $color-source-mirage-ui-selection-active-premultiplied;
+$color-queue-backpressure-ok: $color-source-light-syntax-string;
+$color-queue-backpressure-warning: $color-source-light-common-accent;
+$color-queue-backpressure-critical: $color-source-light-common-error;
 
 
 /*----------------------------------------------------------------------------*\
 | Buttons                                                                      |
 \*----------------------------------------------------------------------------*/
 
-$color-theme-button: $color-source-mirage-ui-selection-normal-premultiplied;
-$color-theme-button-border: $color-theme-button;
-$color-theme-button-hover: $color-source-mirage-ui-selection-active-premultiplied;
-$color-theme-button-border-hover: $color-theme-accent;
-$color-theme-button-icon-active: $color-theme-accent;
-$color-theme-button-icon-inactive: $color-source-mirage-ui-fg;
+$color-button: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-button-border: $color-button;
+$color-button-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-button-border-hover: $color-accent;
+$color-button-icon-active: $color-accent;
+$color-button-icon-inactive: $color-source-mirage-ui-fg;
 
 
 /*----------------------------------------------------------------------------*\
@@ -127,32 +127,32 @@ $color-theme-button-icon-inactive: $color-source-mirage-ui-fg;
 \*----------------------------------------------------------------------------*/
 
 // Default icon color unless it has another semantic meaning
-$color-theme-icon-default: $color-theme-accent;
+$color-icon-default: $color-accent;
 
 // Generic info/stat/counter with active/inactive states
-$color-theme-icon-active: $color-source-light-editor-gutter-active-premultiplied;
-$color-theme-icon-inactive: $color-source-mirage-editor-gutter-normal-premultiplied;
+$color-icon-active: $color-source-light-editor-gutter-active-premultiplied;
+$color-icon-inactive: $color-source-mirage-editor-gutter-normal-premultiplied;
 
 // Remote Process Group
-$color-theme-icon-rpg: $color-source-light-syntax-entity;
+$color-icon-rpg: $color-source-light-syntax-entity;
 
 // Processor state
-$color-theme-icon-processor-running: $color-source-mirage-vcs-added;
-$color-theme-icon-processor-invalid: $color-source-mirage-syntax-func;
-$color-theme-icon-processor-stopped: $color-source-light-syntax-markup;
+$color-icon-processor-running: $color-source-mirage-vcs-added;
+$color-icon-processor-invalid: $color-source-mirage-syntax-func;
+$color-icon-processor-stopped: $color-source-light-syntax-markup;
 
 // Version control
-$color-theme-icon-vcs-uptodate: $color-source-light-vcs-added;
-$color-theme-icon-vcs-modified: $color-source-light-syntax-entity;
-$color-theme-icon-vcs-stale: $color-source-light-syntax-func;
-$color-theme-icon-vcs-modified-stale: $color-source-light-syntax-markup;
-$color-theme-icon-vcs-sync-fail: $color-source-light-syntax-markup;
+$color-icon-vcs-uptodate: $color-source-light-vcs-added;
+$color-icon-vcs-modified: $color-source-light-syntax-entity;
+$color-icon-vcs-stale: $color-source-light-syntax-func;
+$color-icon-vcs-modified-stale: $color-source-light-syntax-markup;
+$color-icon-vcs-sync-fail: $color-source-light-syntax-markup;
 
 
 /*----------------------------------------------------------------------------*\
 | Input fields                                                                 |
 \*----------------------------------------------------------------------------*/
 
-$color-theme-input: $color-source-mirage-ui-selection-normal-premultiplied;
-$color-theme-input-border: $color-theme-input; 
-$color-theme-input-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-input: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-input-border: $color-input; 
+$color-input-hover: $color-source-mirage-ui-selection-active-premultiplied;

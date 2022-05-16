@@ -2,14 +2,14 @@
 | Header / Palette                                                             |
 \*============================================================================*/
 
-$color-background: $color-theme-ui-panel;
-$color-palette-background: $color-theme-ui-panel;
-$color-palette-icon: $color-theme-accent;
-$color-palette-hover: $color-theme-button-hover;
-$color-hamburger-background: $color-theme-ui-panel;
-$color-hamburger-icon: $color-theme-accent;
-$color-hamburger-hover: $color-theme-button-hover;
-$color-text: $color-theme-text;
+$color-background: $color-ui-panel;
+$color-palette-background: $color-ui-panel;
+$color-palette-icon: $color-accent;
+$color-palette-hover: $color-button-hover;
+$color-hamburger-background: $color-ui-panel;
+$color-hamburger-icon: $color-accent;
+$color-hamburger-hover: $color-button-hover;
+$color-text: $color-text;
 
 md-toolbar#header
 {

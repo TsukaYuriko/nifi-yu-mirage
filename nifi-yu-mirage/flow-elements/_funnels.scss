@@ -10,17 +10,17 @@
     
     rect.border
     {
-        stroke: $color-theme-flow-component-border;
+        stroke: $color-flow-component-border;
     }
     
     &.selected rect.border
     {
-        stroke: $color-theme-flow-component-border-selected !important;
+        stroke: $color-flow-component-border-selected !important;
     }
     
     rect.body
     {
-        fill: $color-theme-flow-component;
+        fill: $color-flow-component;
         
         // Remove default drop shadow, messes up the colors
         filter: none;
@@ -28,7 +28,7 @@
     
     .funnel-icon
     {
-        fill: $color-theme-flow-component-icon;
+        fill: $color-flow-component-icon;
     }
     
 }
