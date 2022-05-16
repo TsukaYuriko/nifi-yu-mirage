@@ -5,7 +5,7 @@
 // Line arrows
 marker#normal
 {
-    fill: #cccac2;
+    fill: $color-theme-queue-line;
 }
 
 .connections .connection
@@ -17,13 +17,13 @@ marker#normal
     
     .connection-path
     {
-        stroke: #cccac2;
+        stroke: $color-theme-queue-line;
     }
     
     // Selected lines
     .connection-selection-path
     {
-        stroke: #80bfff;
+        stroke: $color-theme-queue-line-selected;
         stroke-width: 2;
     }
     
@@ -32,20 +32,20 @@ marker#normal
     {
         &.startpoint
         {
-            stroke: #e65050;
-            fill: #e65050;
+            stroke: $color-theme-queue-startpoint;
+            fill: $color-theme-queue-startpoint;
         }
         
         &.midpoint
         {
-            stroke: #80bfff;
-            fill: #80bfff;
+            stroke: $color-theme-queue-midpoint;
+            fill: $color-theme-queue-midpoint;
         }
         
         &.endpoint
         {
-            stroke: #86b300;
-            fill: #86b300;
+            stroke: $color-theme-queue-endpoint;
+            fill: $color-theme-queue-endpoint;
         }
     }
     
@@ -56,7 +56,7 @@ marker#normal
     // Border when selected
     &.selected .connection-label-container .border
     {
-        stroke: #80bfff;
+        stroke: $color-theme-flow-component-border-selected;
     }
     
     .connection-label-container
@@ -64,19 +64,19 @@ marker#normal
         // Border that covers up the shadow insets
         .body
         {
-            fill: #242936;
+            fill: $color-theme-flow-component;
         }
         
         // Label text
         .stats-label
         {
-            fill: #747b84;
+            fill: $color-theme-text-label;
         }
         
         // Label value
         .stats-value
         {
-            fill: #cccac2;
+            fill: $color-theme-text;
         }
         
         // Rows
@@ -85,19 +85,19 @@ marker#normal
             // Odd
             &:nth-of-type(odd) .connection-label-background
             {
-                fill: #242936;
+                fill: $color-theme-flow-component-row-odd;
             }
             
             // Even
             &:nth-of-type(even) .connection-label-background
             {
-                fill: #1f2430;
+                fill: $color-theme-flow-component-row-even;
             }
             
             // Separators
             &:nth-of-type(1n + 2) .connection-label-border
             {
-                fill: #191d27;
+                fill: $color-theme-flow-component-row-separator;
             }
         }
         
@@ -109,25 +109,25 @@ marker#normal
                 // Background
                 .backpressure-object, .backpressure-data-size
                 {
-                    fill: #293040;
+                    fill: $color-theme-queue-backpressure;
                 }
                 
                 // Percent bar
                 .backpressure-percent
                 {
                     // Default
-                    fill: #86b300;
+                    fill: $color-theme-queue-backpressure-ok;
                     
                     // At warning threshold
                     &.warning
                     {
-                        fill: #ffaa33;
+                        fill: $color-theme-queue-backpressure-warning;
                     }
                     
                     // Not actually error, but at critical threshold
                     &.error
                     {
-                        fill: #e65050;
+                        fill: $color-theme-queue-backpressure-critical;
                     }
                 }
             }
@@ -140,19 +140,19 @@ marker#normal
             
             &.running
             {
-                fill: #87d96c !important;
+                fill: $color-theme-icon-processor-running !important;
             }
             
             &.stopped
             {
-                fill: #f07171 !important;
+                fill: $color-theme-icon-processor-stopped !important;
             }
         }
         
         // Additional status icons
         .load-balance-icon, .expiration-icon
         {
-            fill: #707a8c;
+            fill: $color-theme-text-footnote;
             text-shadow: none;
         }
     }
