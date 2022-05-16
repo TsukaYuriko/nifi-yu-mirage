@@ -53,6 +53,12 @@ marker#normal
     | Labels                                                                       |
     \*============================================================================*/
     
+    // Border when not selected
+    .connection-label-container .border
+    {
+        stroke: $color-flow-component-border;
+    }
+    
     // Border when selected
     &.selected .connection-label-container .border
     {
