@@ -92,9 +92,11 @@ $color-theme-flow-component-row-odd: $color-source-mirage-editor-bg;
 $color-theme-flow-component-row-even: $color-theme-flow-component;
 $color-theme-flow-component-row-separator: $color-source-mirage-ui-line;
 
-
 // Processor groups
 $color-theme-process-group-status-bar: $color-theme-flow-component-row-odd;
+
+// Icons (funnel, ports, processors...)
+$color-theme-flow-component-icon: $color-source-mirage-ui-fg;
 
 
 /*----------------------------------------------------------------------------*\

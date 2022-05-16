@@ -7,22 +7,22 @@
     
     rect.border
     {
-        stroke: #191d27;
+        stroke: $color-theme-flow-component-border;
     }
     
     &.selected rect.border
     {
-        stroke: #80bfff !important;
+        stroke: $color-theme-flow-component-border-selected !important;
     }
     
     rect.body
     {
-        fill: #242936;
+        fill: $color-theme-flow-component;
     }
     
     .funnel-icon
     {
-        fill: #707a8c;
+        fill: $color-theme-flow-component-icon;
     }
     
 }
