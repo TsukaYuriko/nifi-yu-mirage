@@ -47,10 +47,7 @@ $color-theme-splash-circle: $color-theme-accent;
 \*----------------------------------------------------------------------------*/
 // e.g. flow canvas
 
-// Background
 $color-theme-ui-back: $color-source-mirage-ui-panel-shadow-premultiplied;
-
-// Highlights like grid lines, outlines...
 $color-theme-ui-back-highlight: $color-source-mirage-editor-line;
 
 
@@ -59,10 +56,7 @@ $color-theme-ui-back-highlight: $color-source-mirage-editor-line;
 \*----------------------------------------------------------------------------*/
 // e.g. status bar, breadcrumbs...
 
-// Background
 $color-theme-ui-bar: $color-source-mirage-ui-bg;
-
-// Borders (bordering on the flow canvas)
 $color-theme-ui-bar-border: $color-source-mirage-ui-line;
 
 /*----------------------------------------------------------------------------*\
