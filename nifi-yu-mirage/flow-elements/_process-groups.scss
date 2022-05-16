@@ -8,18 +8,18 @@
     // Border
     &.border
     {
-        stroke: #191d27;
+        stroke: $color-theme-flow-component-border;
     }
     
     &.selected rect.border
     {
-        stroke: #80bfff !important;
+        stroke: $color-theme-flow-component-border-selected !important;
     }
     
     // Header
     rect:nth-child(3)
     {
-        fill: #2a3140;
+        fill: $color-theme-flow-component-header;
     }
     
     // Disable version control icon glow
@@ -31,7 +31,7 @@
     // Name in header
     text.process-group-name, text.remote-process-group-name
     {
-        fill: #cccac2;
+        fill: $color-theme-text;
     }
     
     .process-group-details
@@ -39,75 +39,75 @@
         // Status bars (top/bottom)
         rect:first-child, rect:nth-child(2)
         {
-            fill: #242936;
+            fill: $color-theme-process-group-status-bar;
         }
         
         // Status bar icons
         .process-group-contents-icon
         {
-            fill: #747b84 !important;
+            fill: $color-theme-icon-inactive !important;
             text-shadow: none;
             
             &.transmitting
             {
-                fill: #399ee6 !important;
+                fill: $color-theme-icon-rpg !important;
             }
             
             &.not-transmitting
             {
-                fill: #d3e1f5 !important;
+                fill: $color-theme-icon-active !important;
             }
             
             &.running
             {
-                fill: #87d96c !important;
+                fill: $color-theme-icon-processor-running !important;
             }
             
             &.stopped
             {
-                fill: #f07171 !important;
+                fill: $color-theme-icon-processor-stopped !important;
             }
             
             &.invalid
             {
-                fill: #ffd173 !important;
+                fill: $color-theme-icon-processor-invalid !important;
             }
             
             &.disabled
             {
-                fill: #d3e1f5 !important;
+                fill: $color-theme-icon-active !important;
             }
             
             &.up-to-date
             {
-                fill: #87d96c !important;
+                fill: $color-theme-icon-vcs-uptodate !important;
             }
             
             &.locally-modified
             {
-                fill: #399ee6 !important;
+                fill: $color-theme-icon-vcs-modified !important;
             }
             
             &.stale
             {
-                fill: #ffd173 !important;
+                fill: $color-theme-icon-vcs-stale !important;
             }
             
             &.locally-modified-and-stale
             {
-                fill: #f07171 !important;
+                fill: $color-theme-icon-vcs-modified-stale !important;
             }
             
             &.sync-failure
             {
-                fill: #f07171 !important;
+                fill: $color-theme-icon-vcs-sync-fail !important;
             }
         }
         
         // Status bar numbers
         .process-group-contents-count
         {
-            fill: #cccac2;
+            fill: $color-theme-text;
         }
         
         rect
@@ -115,57 +115,57 @@
             // Odd rows
             &:nth-child(4n+5)
             {
-                fill: #242936;
+                fill: $color-theme-flow-component-row-odd;
             }
             
             // Even rows
             &:nth-child(4n+7)
             {
-                fill: #1f2430;
+                fill: $color-theme-flow-component-row-even;
                 opacity: 1;
             }
             
             // Row delimiters
             &:nth-child(2n+6)
             {
-                fill: #191d27;
+                fill: $color-theme-flow-component-row-separator;
             }
         }
         
         // Error bulletin
         rect.bulletin-background
         {
-            fill: #f07171;
+            fill: $color-theme-error;
         }
         
         .bulletin-icon
         {
-            fill: #151921;
+            fill: $color-theme-flow-component;
         }
     }
     
     // Stats labels
     .stats-label
     {
-        fill: #747b84;
+        fill: $color-theme-text-label;
     }
     
     // Stats counters
     .stats-value
     {
-        fill: #cccac2;
+        fill: $color-theme-text;
     }
     
     // Timers
     .stats-info
     {
-        fill: #707a8c;
+        fill: $color-theme-text-footnote;
     }
     
     // Body (empty space / not otherwise specified)
     .body
     {
-        fill: #1f2430;
+        fill: $color-theme-flow-component;
         filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 0.25));
     }
     
@@ -193,13 +193,13 @@
         // Transmission security icon
         text.remote-process-group-transmission-secure
         {
-            fill: #747b84;
+            fill: $color-theme-text-label;
         }
         
         // Address
         text.remote-process-group-uri
         {
-            fill: #747b84;
+            fill: $color-theme-text;
         }
         
         rect
@@ -207,39 +207,39 @@
             // Address bar
             &:nth-child(2)
             {
-                fill: #242936;
+                fill: $color-theme-process-group-status-bar;
             }
             
             // First row
             &:nth-child(5)
             {
-                fill: #242936;
+                fill: $color-theme-flow-component-row-odd;
             }
             
             // Second row
             &:nth-child(7)
             {
-                fill: #1f2430;
+                fill: $color-theme-flow-component-row-even;
                 opacity: 1;
             }
             
             // Row delimiter
             &:nth-child(6)
             {
-                fill: #191d27;
+                fill: $color-theme-flow-component-row-separator;
             }
             
             // Status bar
             &:nth-child(11)
             {
-                fill: #242936;
+                fill: $color-theme-process-group-status-bar;
             }
         }
         
         // Last refresh time
         .remote-process-group-last-refresh
         {
-            fill: #707a8c;
+            fill: $color-theme-text-footnote;
         }
     }
      

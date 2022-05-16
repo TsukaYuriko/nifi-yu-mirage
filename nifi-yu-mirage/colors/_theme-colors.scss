@@ -19,6 +19,8 @@ traced to their origins while also providing friendly names for actual use.
 // Main accent color
 $color-theme-accent: $color-source-mirage-vcs-modified;
 
+// Anything that indicates "error" or a negative state, e.g. bulletins
+$color-theme-error: $color-source-light-syntax-markup;
 
 /*----------------------------------------------------------------------------*\
 | Text                                                                         |
@@ -75,6 +77,25 @@ $color-theme-ui-panel-border: $color-source-mirage-ui-panel-shadow-premultiplied
 $color-theme-minimap: $color-source-mirage-ui-bg;
 $color-theme-minimap-border: $color-source-mirage-ui-line;
 $color-theme-minimap-birdseye: $color-theme-accent;
+
+
+/*----------------------------------------------------------------------------*\
+| Flow components                                                              |
+\*----------------------------------------------------------------------------*/
+
+// Generic
+$color-theme-flow-component: $color-source-mirage-ui-bg;
+$color-theme-flow-component-border: $color-source-mirage-ui-panel-shadow-premultiplied;
+$color-theme-flow-component-border-selected: $color-theme-accent;
+$color-theme-flow-component-header: $color-source-mirage-ui-selection-active-premultiplied;
+$color-theme-flow-component-row-odd: $color-source-mirage-editor-bg;
+$color-theme-flow-component-row-even: $color-theme-flow-component;
+$color-theme-flow-component-row-separator: $color-source-mirage-ui-line;
+
+
+// Processor groups
+$color-theme-process-group-status-bar: $color-theme-flow-component-row-odd;
+
 
 /*----------------------------------------------------------------------------*\
 | Buttons                                                                      |
