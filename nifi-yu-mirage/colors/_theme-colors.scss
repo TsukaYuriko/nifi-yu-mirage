@@ -70,9 +70,17 @@ $color-theme-ui-bar-border: $color-source-mirage-ui-line;
 \*----------------------------------------------------------------------------*/
 /// e.g. panels like the header, navigation...
 
-// Background
 $color-theme-ui-panel: $color-source-mirage-editor-bg;
+$color-theme-ui-panel-border: $color-source-mirage-ui-panel-shadow-premultiplied;
 
+
+/*----------------------------------------------------------------------------*\
+| Minimap                                                                      |
+\*----------------------------------------------------------------------------*/
+
+$color-theme-minimap: $color-source-mirage-ui-bg;
+$color-theme-minimap-border: $color-source-mirage-ui-line;
+$color-theme-minimap-birdseye: $color-theme-accent;
 
 /*----------------------------------------------------------------------------*\
 | Buttons                                                                      |
