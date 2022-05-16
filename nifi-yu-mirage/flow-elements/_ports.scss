@@ -30,12 +30,12 @@
         
         &.not-transmitting
         {
-            fill: #d3e1f5;
+            fill: #d3e1f5 !important;
         }
         
         &.transmitting
         {
-            fill: #399ee6;
+            fill: #399ee6 !important;
         }
     }
     
