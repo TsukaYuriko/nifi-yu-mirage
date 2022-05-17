@@ -186,5 +186,8 @@ $color-icon-vcs-sync-fail: $color-source-light-syntax-markup;
 \*----------------------------------------------------------------------------*/
 
 $color-input: $color-source-mirage-ui-selection-normal-premultiplied;
-$color-input-border: $color-input; 
 $color-input-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-input-selected: $color-input-hover;
+$color-input-border: $color-input; 
+$color-input-border-hover: $color-accent; 
+$color-input-border-selected: $color-input-border-hover; 
