@@ -71,6 +71,16 @@ $color-ui-panel-border: $color-source-mirage-ui-panel-shadow-premultiplied;
 
 
 /*----------------------------------------------------------------------------*\
+| UI Dialog layer                                                              |
+\*----------------------------------------------------------------------------*/
+/// e.g. shells, modals...
+
+$color-ui-dialog: $color-source-mirage-ui-bg;
+$color-ui-dialog-title: $color-source-mirage-ui-fg;
+$color-ui-dialog-separator: $color-source-mirage-ui-line;
+
+
+/*----------------------------------------------------------------------------*\
 | Minimap                                                                      |
 \*----------------------------------------------------------------------------*/
 

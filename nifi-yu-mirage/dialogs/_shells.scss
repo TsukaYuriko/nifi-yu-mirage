@@ -8,7 +8,7 @@
 {
     
     // Shell window
-    background: #1f2430;
+    background: $color-ui-dialog;
     
     // Title
     // These all have separate IDs and no common class which is stupid but I can't do anything about it
@@ -24,13 +24,13 @@
     #policy-management-header-text,
     #templates-header-text
     {
-        color: #707a8c;
+        color: $color-ui-dialog-title;
     }
     
     // Labels
     .setting-name
     {
-        color: #707a8c;
+        color: $color-text-label;
         font-family: Roboto, sans-serif;
     }
     
@@ -38,19 +38,19 @@
     .last-refreshed-container
     {
         // Label
-        color: #707a8c;
+        color: $color-text-label;
         
         // Timestamp
         span
         {
-            color: #cccac2 !important;
+            color: $color-text !important;
         }
     }
     
     // Horizontal bar at the bottom of scrollable containers
     .scrollable
     {
-        border-bottom: 1px solid #171b24;
+        border-bottom: 1px solid $color-ui-dialog-separator;
     }
     
 }
