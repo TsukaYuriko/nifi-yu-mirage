@@ -83,6 +83,19 @@ $color-ui-dialog-separator: $color-source-mirage-ui-line;
 
 
 /*----------------------------------------------------------------------------*\
+| Tabs                                                                         |
+\*----------------------------------------------------------------------------*/
+
+$color-tab: #1f2430;
+$color-tab-hover: #293040;
+$color-tab-selected: #282e3b;
+$color-tab-border: #1a1f29;
+$color-tab-border-selected: $color-accent;
+$color-tab-title: $color-accent;
+$color-tab-underline: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
 | Minimap                                                                      |
 \*----------------------------------------------------------------------------*/
 
