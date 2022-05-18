@@ -9,28 +9,28 @@ button
 {
     
     // Container
-    background: #282e3b;
-    border: 1px solid #293040;
-    color: #80bfff;
+    background: $color-button;
+    border: 1px solid $color-button-border;
+    color: $color-button-icon-active;
     
     &:hover
     {
-        background: #293040;
-        border: 1px solid #80bfff;
+        background: $color-button-hover;
+        border: 1px solid $color-button-border-hover;
     }
     
     // Icons
     .fa, &.fa
     {
-        color: #80bfff;
+        color: $color-button-icon-active;
     }
     
     // Disabled buttons
     &[disabled]
     {
-        background: #282e3b !important;
-        border: 1px solid #293040 !important;
-        color: #707a8c !important;
+        background: $color-button !important;
+        border: 1px solid $color-button-border !important;
+        color: $color-button-icon-inactive !important;
     }
     
 }
