@@ -6,32 +6,32 @@
 {
     
     /* Container */
-    background: #1f2430;
-    border: 1px solid #1a1f29;
+    background: $color-menu;
+    border: 1px solid $color-menu-border;
     
     // Menu items
     md-menu-item a
     {
         // Text
-        color: #cccac2;
+        color: $color-text;
         
         // Highlight on hover
         &:hover
         {
-            background: #293040;
+            background: $color-menu-hover;
         }
         
         // Icons
         i::before
         {
-            color: #80bfff;
+            color: $color-menu-icon;
         }
     }
     
     // Separator lines
     md-menu-divider
     {
-        background: #1a1f29;
+        background: $color-menu-separator;
     }
     
 }

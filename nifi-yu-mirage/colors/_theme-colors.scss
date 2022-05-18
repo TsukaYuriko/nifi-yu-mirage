@@ -203,3 +203,15 @@ $color-table-row-odd: $color-source-mirage-editor-bg;
 $color-table-row-even: $color-source-mirage-ui-bg;
 $color-table-row-hover: $color-source-mirage-editor-selection-inactive;
 $color-table-row-selected: $color-source-mirage-editor-selection-active;
+
+
+/*----------------------------------------------------------------------------*\
+| Menus                                                                        |
+\*----------------------------------------------------------------------------*/
+// e.g. right click menu, hamburger menu...
+
+$color-menu: $color-source-mirage-ui-bg;
+$color-menu-border: $color-source-mirage-ui-line;
+$color-menu-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-menu-separator: $color-source-mirage-ui-selection-active-premultiplied;
+$color-menu-icon: $color-icon-default;
