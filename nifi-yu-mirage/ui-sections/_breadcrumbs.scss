@@ -15,23 +15,59 @@
     {
         background: none;
     }
-
-    // Links
-    #data-flow-title-container span.link
+    
+    #data-flow-title-container
     {
-        color: $color-accent;
-        border-bottom: 1px solid $color-text-footnote;
-        
-        &:hover
-        {
-            border-bottom: 1px solid $color-accent;
-        }
-    }
-
-    // Arrows
-    #data-flow-title-container span span
-    {
+        // Arrows
         color: $color-text-footnote;
+    
+        // Links
+        .link
+        {
+            color: $color-accent !important;
+            border-bottom: 1px solid $color-text-footnote;
+            
+            &:hover
+            {
+                border-bottom: 1px solid $color-accent;
+            }
+        }
+        
+        // Version control icons
+        .fa
+        {
+            // Unfortunately, these don't have semantic classes
+            
+            // Up to date
+            &.fa-check
+            {
+                color: $color-icon-vcs-uptodate;
+            }
+            
+            // Locally modified
+            &.fa-asterisk
+            {
+                color: $color-icon-vcs-modified;
+            }
+            
+            // Stale
+            &.fa-arrow-circle-up
+            {
+                color: $color-icon-vcs-stale;
+            }
+            
+            // Locally modified and stale
+            &.fa-exclamation-circle
+            {
+                color: $color-icon-vcs-modified-stale;
+            }
+            
+            // Sync failure
+            &.fa-question
+            {
+                color: $color-icon-vcs-sync-fail;
+            }
+        }
     }
     
 }
