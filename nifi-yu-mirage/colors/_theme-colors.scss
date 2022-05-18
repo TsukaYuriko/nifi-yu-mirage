@@ -45,6 +45,15 @@ $color-splash-circle: $color-accent;
 
 
 /*----------------------------------------------------------------------------*\
+| Error screens                                                                |
+\*----------------------------------------------------------------------------*/
+
+$color-errorscreen: $color-source-mirage-ui-bg;
+$color-errorscreen-title: $color-source-mirage-editor-gutter-active-premultiplied;
+$color-errorscreen-links: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
 | UI Back layer                                                                |
 \*----------------------------------------------------------------------------*/
 // e.g. flow canvas
