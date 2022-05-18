@@ -95,10 +95,10 @@ $color-ui-dialog-separator: $color-source-mirage-ui-line;
 | Tabs                                                                         |
 \*----------------------------------------------------------------------------*/
 
-$color-tab: #1f2430;
-$color-tab-hover: #293040;
-$color-tab-selected: #282e3b;
-$color-tab-border: #1a1f29;
+$color-tab: $color-source-mirage-ui-bg;
+$color-tab-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-tab-selected: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-tab-border: $color-source-mirage-editor-line;
 $color-tab-border-selected: $color-accent;
 $color-tab-title: $color-accent;
 $color-tab-underline: $color-accent;
