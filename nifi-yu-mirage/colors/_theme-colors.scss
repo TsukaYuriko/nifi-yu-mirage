@@ -191,3 +191,15 @@ $color-input-selected: $color-input-hover;
 $color-input-border: $color-input; 
 $color-input-border-hover: $color-accent; 
 $color-input-border-selected: $color-input-border-hover; 
+
+
+/*----------------------------------------------------------------------------*\
+| Tables                                                                       |
+\*----------------------------------------------------------------------------*/
+
+$color-table-header: $color-source-mirage-ui-selection-active-premultiplied;
+$color-table-border: $color-source-mirage-editor-line;
+$color-table-row-odd: $color-source-mirage-editor-bg;
+$color-table-row-even: $color-source-mirage-ui-bg;
+$color-table-row-hover: $color-source-mirage-editor-selection-inactive;
+$color-table-row-selected: $color-source-mirage-editor-selection-active;

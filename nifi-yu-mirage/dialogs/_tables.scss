@@ -8,12 +8,12 @@
     .slick-cell
     {
         // General text color
-        color: #cccac2;
+        color: $color-text;
         
         // Icons
         .fa, .icon
         {
-            color: #80bfff;
+            color: $color-icon-default;
         }
     }
     
@@ -24,12 +24,12 @@
         {
             // Background color for the entire row
             // (visible e.g. on the right if the columns don't fill the entire width)
-            background: #1f2430;
+            background: $color-ui-dialog;
             
             .slick-header-column
             {
                 // Background color for a column-wide cell in the header
-                background: #2a3140;
+                background: $color-table-header;
                 
                 // Add some spacing to the left of the header titles
                 // (looks super cramped in the original)
@@ -40,7 +40,7 @@
                 
                 // Add a border because, surprise, these can be resized
                 // (there's no visible border at all in the original?!)
-                border-right: 1px solid #191d27;
+                border-right: 1px solid $color-table-border;
                 
                 // ... except for the rightmost one
                 &:last-child
@@ -60,23 +60,23 @@
         // 0-based, this is the topmost one
         &.even
         {
-            background: #242936;
+            background: $color-table-row-odd;
         }
         
         &.odd
         {
-            background: #1f2430;
+            background: $color-table-row-even;
         }
         
         &:hover
         {
-            background: #409FFF21 !important;
+            background: $color-table-row-hover !important;
         }
         
         // For some reason the child elements are colored, not the parent
         .slick-cell.selected
         {
-            background: #409FFF40;
+            background: $color-table-row-selected;
         }
         
         // Grid lines
@@ -87,8 +87,8 @@
             border-left: none;
             
             // Add proper grid lines
-            border-right: 1px solid #191d27;
-            border-bottom: 1px solid #191d27;
+            border-right: 1px solid $color-table-border;
+            border-bottom: 1px solid $color-table-border;
             
             // ... except for the rightmost ones
             &:last-child
