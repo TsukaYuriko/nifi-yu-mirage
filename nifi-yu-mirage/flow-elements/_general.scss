@@ -5,11 +5,11 @@
 // Queue add button when hovering over flow elements
 .add-connect
 {
-    fill: #80bfff !important;
+    fill: $color-accent !important;
 }
 
 // Placement preview when dragging an element
 .drag-selection
 {
-    stroke: #80bfff !important;
+    stroke: $color-accent !important;
 }

@@ -7,19 +7,20 @@
 {
     
     // Container
-    background: #282e3b !important;
-    border: 1px solid #282e3b !important;
-    color: #cccac2;
+    background: $color-input !important;
+    border: 1px solid $color-input !important;
+    color: $color-text;
     
     &:hover
     {
-        background: #293040 !important;
+        background: $color-input-hover !important;
+        border: $color-input-border-hover !important;
     }
     
     // Arrow
     .combo-arrow
     {
-        color: #80bfff;
+        color: $color-icon-default;
     }
     
 }
@@ -28,26 +29,27 @@
 .combo-options
 {
     // Container
-    border: 1px solid #282e3b;
+    border: 1px solid $color-input;
     
     // Rows
     ul li
     {
-        background: #282e3b !important;
-        border: 1px solid #282e3b;
-        color: #cccac2;
+        background: $color-input !important;
+        border: 1px solid $color-input;
+        color: $color-text;
         
         &.pointer
         {
             &:hover
             {
-                background: #293040 !important;
+                background: $color-input-hover !important;
+                border: 1px solid $color-input-border-hover;
             }
             
             &:focus
             {
-                background: #293040 !important;
-                border: 1px solid #80bfff !important;
+                background: $color-input-selected !important;
+                border: 1px solid $color-input-border-selected !important;
                 box-shadow: none !important;
             }
         }
@@ -55,7 +57,7 @@
         // Alternate rows (e.g. "create new"-style rows)
         &.unset
         {
-            color: #707a8c !important;
+            color: $color-text-label !important;
         }
     }
     

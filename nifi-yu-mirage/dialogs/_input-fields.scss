@@ -10,19 +10,20 @@
         
         input, textarea
         {
-            background: #282e3b;
-            border: 1px solid #282e3b;
-            color: #cccac2;
+            background: $color-input;
+            border: 1px solid $color-input-border;
+            color: $color-text;
             
             &:hover
             {
-                background: #293040;
+                background: $color-input-hover;
+                border: 1px solid $color-input-border-hover;
             }
             
             &:focus
             {
-                background: #293040;
-                border: 1px solid #80bfff;
+                background: $color-input-selected;
+                border: 1px solid $color-input-border-selected;
                 box-shadow: none;
             }
         }

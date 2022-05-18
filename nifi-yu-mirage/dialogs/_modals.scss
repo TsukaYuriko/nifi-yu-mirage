@@ -5,33 +5,34 @@
 
 .modal-glass
 {
-    background: #151921 !important;
+    background: $color-source-mirage-ui-panel-shadow !important;
+    opacity: 1;
 }
 
 .modal
 {
     
     // Body
-    background: #1f2430;
+    background: $color-ui-dialog;
     
     // Header
     .dialog-header
     {
-        background: #2a3140;
+        background: $color-ui-dialog-header;
         font-family: Roboto, sans-serif;
         
         .dialog-header-text
         {
-            color: #707a8c;
+            color: $color-ui-dialog-title;
         }
         
         .dialog-header-subtitle
         {
-            color: #707a8c;
+            color: $color-ui-dialog-title;
             
             &:not(:empty)
             {
-                border-left: 1px solid #707a8c;
+                border-left: 1px solid $color-ui-dialog-title;
             }
         }
     }
@@ -39,24 +40,30 @@
     // Status bar below the header
     .dialog-status-bar
     {
-        background: #242936;
+        background: $color-ui-dialog-status;
         
         .dialog-status-bar-state
         {
-            color: #707a8c;
+            color: $color-text-label;
         }
     }
     
     // Settings
     .setting-name
     {
-        color: #ccdadb;
+        color: $color-text-label;
         font-family: Roboto, sans-serif;
     }
     
     .setting-field
     {
-        color: #707a8c;
+        color: $color-text;
+    }
+    
+    // Processor relationship descriptions
+    .relationship-description
+    {
+        color: $color-text-footnote;
     }
     
 }

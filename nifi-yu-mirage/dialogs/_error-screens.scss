@@ -6,18 +6,18 @@
 {
     
     // Background
-    background-color: #1f2430;
+    background-color: $color-errorscreen;
     
     // Title
     .message-pane-title
     {
-        color: #747b84;
+        color: $color-errorscreen-title;
     }
     
     // Links (home, log out...)
     .links li span, a
     {
-        color: #80bfff;
+        color: $color-errorscreen-links;
         border-bottom: none;
         
         &:hover
@@ -29,7 +29,7 @@
     // Actual message
     .message-pane-content
     {
-        color: #cccac2;
+        color: $color-text;
     }
     
 }

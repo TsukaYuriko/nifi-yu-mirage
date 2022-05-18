@@ -1,0 +1,243 @@
+/*============================================================================*\
+| Theme colors                                                                 |
+\*============================================================================*/
+
+/*
+All "theme" colors are defined here.
+These are roughly categorized into contexts where they are used.
+Stylesheets always reference the theme colors, never the source colors directly.
+This makes it possible to change specific usages of potentially-identical colors without
+changing EVERY usage of that color, keeping the theme as modular as possible.
+This two-tier structure also preserves integrity of the source colors so they can be
+traced to their origins while also providing friendly names for actual use.
+*/
+
+/*----------------------------------------------------------------------------*\
+| Accent colors                                                                |
+\*----------------------------------------------------------------------------*/
+
+// Main accent color
+$color-accent: $color-source-mirage-vcs-modified;
+
+// Anything that indicates "error" or a negative state, e.g. bulletins
+$color-error: $color-source-light-syntax-markup;
+
+/*----------------------------------------------------------------------------*\
+| Text                                                                         |
+\*----------------------------------------------------------------------------*/
+
+// Default text color
+$color-text: $color-source-mirage-editor-fg;
+
+// For subtle text such as labels
+$color-text-label: $color-source-mirage-ui-fg;
+
+// For really subtle text such as footnotes
+$color-text-footnote: $color-source-mirage-editor-gutter-active-premultiplied;
+
+
+/*----------------------------------------------------------------------------*\
+| Splash screen                                                                |
+\*----------------------------------------------------------------------------*/
+
+$color-splash: $color-source-mirage-ui-panel-bg;
+$color-splash-circle: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
+| Error screens                                                                |
+\*----------------------------------------------------------------------------*/
+
+$color-errorscreen: $color-source-mirage-ui-bg;
+$color-errorscreen-title: $color-source-mirage-editor-gutter-active-premultiplied;
+$color-errorscreen-links: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
+| UI Back layer                                                                |
+\*----------------------------------------------------------------------------*/
+// e.g. flow canvas
+
+$color-ui-back: $color-source-mirage-ui-panel-shadow-premultiplied;
+$color-ui-back-highlight: $color-source-mirage-editor-line;
+
+
+/*----------------------------------------------------------------------------*\
+| UI Bar layer                                                                 |
+\*----------------------------------------------------------------------------*/
+// e.g. status bar, breadcrumbs...
+
+$color-ui-bar: $color-source-mirage-ui-bg;
+$color-ui-bar-border: $color-source-mirage-ui-line;
+
+/*----------------------------------------------------------------------------*\
+| UI Panel layer                                                               |
+\*----------------------------------------------------------------------------*/
+/// e.g. panels like the header, navigation...
+
+$color-ui-panel: $color-source-mirage-editor-bg;
+$color-ui-panel-border: $color-source-mirage-ui-panel-shadow-premultiplied;
+
+
+/*----------------------------------------------------------------------------*\
+| UI Dialog layer                                                              |
+\*----------------------------------------------------------------------------*/
+/// e.g. shells, modals...
+
+$color-ui-dialog: $color-source-mirage-ui-bg;
+$color-ui-dialog-header: $color-source-mirage-ui-selection-active-premultiplied;
+$color-ui-dialog-title: $color-source-mirage-ui-fg;
+$color-ui-dialog-status: $color-source-mirage-editor-bg;
+$color-ui-dialog-separator: $color-source-mirage-ui-line;
+
+
+/*----------------------------------------------------------------------------*\
+| Tabs                                                                         |
+\*----------------------------------------------------------------------------*/
+
+$color-tab: $color-source-mirage-ui-bg;
+$color-tab-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-tab-selected: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-tab-border: $color-source-mirage-editor-line;
+$color-tab-border-selected: $color-accent;
+$color-tab-title: $color-accent;
+$color-tab-underline: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
+| Minimap                                                                      |
+\*----------------------------------------------------------------------------*/
+
+$color-minimap: $color-source-mirage-ui-bg;
+$color-minimap-border: $color-source-mirage-ui-line;
+$color-minimap-birdseye: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
+| Flow components                                                              |
+\*----------------------------------------------------------------------------*/
+
+// Generic
+$color-flow-component: $color-source-mirage-ui-bg;
+$color-flow-component-border: $color-source-mirage-ui-panel-shadow-premultiplied;
+$color-flow-component-border-selected: $color-accent;
+$color-flow-component-header: $color-source-mirage-ui-selection-active-premultiplied;
+$color-flow-component-row-odd: $color-source-mirage-editor-bg;
+$color-flow-component-row-even: $color-flow-component;
+$color-flow-component-row-separator: $color-source-mirage-ui-line;
+
+// Flow component state
+$color-flow-component-state-running: $color-source-mirage-vcs-added;
+$color-flow-component-state-invalid: $color-source-mirage-syntax-func;
+$color-flow-component-state-stopped: $color-source-light-syntax-markup;
+$color-flow-component-state-disabled: $color-source-mirage-editor-gutter-normal-premultiplied;
+
+// Processor groups
+$color-process-group-status-bar: $color-flow-component-row-odd;
+
+// Icons (funnel, ports, processors...)
+$color-flow-component-icon: $color-source-mirage-ui-fg;
+
+// Queues
+$color-queue-line: $color-text;
+$color-queue-line-selected: $color-accent;
+$color-queue-startpoint: $color-source-light-common-error;
+$color-queue-midpoint: $color-accent;
+$color-queue-endpoint: $color-source-light-syntax-string;
+$color-queue-backpressure: $color-source-mirage-ui-selection-active-premultiplied;
+$color-queue-backpressure-ok: $color-source-light-syntax-string;
+$color-queue-backpressure-warning: $color-source-light-common-accent;
+$color-queue-backpressure-critical: $color-source-light-common-error;
+
+
+/*----------------------------------------------------------------------------*\
+| Buttons                                                                      |
+\*----------------------------------------------------------------------------*/
+
+$color-button: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-button-border: $color-button;
+$color-button-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-button-border-hover: $color-accent;
+$color-button-icon-active: $color-accent;
+$color-button-icon-inactive: $color-source-mirage-ui-fg;
+
+// Big, "negative" buttons like "Cancel"
+$color-dialog-button-negative: $color-button;
+$color-dialog-button-negative-hover: $color-button-hover;
+$color-dialog-button-negative-text: $color-accent;
+
+// Big, "positive" buttons like "OK" or "Apply"
+$color-dialog-button-positive: $color-accent;
+$color-dialog-button-positive-hover: $color-source-light-vcs-modified;
+$color-dialog-button-positive-text: $color-source-mirage-ui-selection-normal-premultiplied;
+
+
+/*----------------------------------------------------------------------------*\
+| Icons                                                                        |
+\*----------------------------------------------------------------------------*/
+
+// Default icon color unless it has another semantic meaning
+$color-icon-default: $color-accent;
+
+// Generic info/stat/counter with active/inactive states
+$color-icon-active: $color-source-light-editor-gutter-active-premultiplied;
+$color-icon-inactive: $color-source-mirage-editor-gutter-normal-premultiplied;
+
+// Remote Process Group
+$color-icon-rpg: $color-source-light-syntax-entity;
+
+// Flow component state
+$color-icon-processor-running: $color-flow-component-state-running;
+$color-icon-processor-invalid: $color-flow-component-state-invalid;
+$color-icon-processor-stopped: $color-flow-component-state-stopped;
+$color-icon-processor-disabled: $color-icon-active;
+
+// Version control
+$color-icon-vcs-uptodate: $color-source-light-vcs-added;
+$color-icon-vcs-modified: $color-source-light-syntax-entity;
+$color-icon-vcs-stale: $color-source-light-syntax-func;
+$color-icon-vcs-modified-stale: $color-source-light-syntax-markup;
+$color-icon-vcs-sync-fail: $color-source-light-syntax-markup;
+
+
+/*----------------------------------------------------------------------------*\
+| Input fields                                                                 |
+\*----------------------------------------------------------------------------*/
+
+$color-input: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-input-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-input-selected: $color-input-hover;
+$color-input-border: $color-input; 
+$color-input-border-hover: $color-accent; 
+$color-input-border-selected: $color-input-border-hover; 
+
+
+/*----------------------------------------------------------------------------*\
+| Tables                                                                       |
+\*----------------------------------------------------------------------------*/
+
+$color-table-header: $color-source-mirage-ui-selection-active-premultiplied;
+$color-table-border: $color-source-mirage-editor-line;
+$color-table-row-odd: $color-source-mirage-editor-bg;
+$color-table-row-even: $color-source-mirage-ui-bg;
+$color-table-row-hover: $color-source-mirage-editor-selection-inactive;
+$color-table-row-selected: $color-source-mirage-editor-selection-active;
+
+
+/*----------------------------------------------------------------------------*\
+| Menus                                                                        |
+\*----------------------------------------------------------------------------*/
+// e.g. right click menu, hamburger menu...
+
+$color-menu: $color-source-mirage-ui-bg;
+$color-menu-border: $color-source-mirage-ui-line;
+$color-menu-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-menu-separator: $color-source-mirage-ui-selection-active-premultiplied;
+$color-menu-icon: $color-icon-default;
+
+
+/*----------------------------------------------------------------------------*\
+| Checkboxes                                                                   |
+\*----------------------------------------------------------------------------*/
+
+$color-checkbox: $color-accent;

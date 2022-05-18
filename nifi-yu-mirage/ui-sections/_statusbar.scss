@@ -6,8 +6,8 @@
 {
     
     // Status bar at the top, below the menu bar
-    background: #1f2430;
-    border-bottom: 1px solid #0a0e14;
+    background: $color-ui-bar;
+    border-bottom: 1px solid $color-ui-bar-border;
     
     // Icons
     div .icon, div .fa
@@ -21,91 +21,91 @@
         // Threads
         &.icon-threads::before
         {
-            color: #d3e1f5;
+            color: $color-icon-active;
         }
         
         // Total queued data
         &.fa-list::before
         {
-            color: #d3e1f5;
+            color: $color-icon-active;
         }
         
         // Transmitting RPGs
         &.fa-bullseye::before
         {
-            color: #399ee6;
+            color: $color-icon-rpg;
         }
         
         // Not Transmitting RPGs
         &.icon-transmit-false::before
         {
-            color: #d3e1f5;
+            color: $color-icon-active;
         }
         
         // Running Components
         &.fa-play::before
         {
-            color: #87d96c;
+            color: $color-icon-processor-running;
         }
         
         // Stopped Components
         &.fa-stop::before
         {
-            color: #f07171;
+            color: $color-icon-processor-stopped;
         }
         
         // Invalid Components
         &.fa-warning::before
         {
-            color: #ffd173;
+            color: $color-icon-processor-invalid;
         }
         
         // Disabled Components
         &.icon-enable-false::before
         {
-            color: #d3e1f5;
+            color: $color-icon-active;
         }
         
         // Up to date Versioned PGs
         &.fa-check::before
         {
-            color: #87d96c;
+            color: $color-icon-vcs-uptodate;
         }
         
         // Locally modified Versioned PGs
         &.fa-asterisk::before
         {
-            color: #399ee6;
+            color: $color-icon-vcs-modified;
         }
         
         // Stale Versioned PGs
         &.fa-arrow-circle-up::before
         {
-            color: #ffd173;
+            color: $color-icon-vcs-stale;
         }
         
         // Locally modified and stale Versioned PGs
         &.fa-exclamation-circle::before
         {
-            color: #f07171;
+            color: $color-icon-vcs-modified-stale;
         }
         
         // Sync failure Versioned PGs
         &.fa-question::before
         {
-            color: #f07171;
+            color: $color-icon-vcs-sync-fail;
         }
         
         // Last refresh
         &.fa-refresh::before
         {
-            color: #d3e1f5;
+            color: $color-icon-active;
         }
         
         // Any icon when inactive / counter is 0
         &.zero::before
         {
-            color: #747b84;
+            color: $color-icon-inactive;
         }
     }
     
@@ -116,7 +116,7 @@
         {
             span
             {
-                color: #cccac2;
+                color: $color-text;
             }
         }
     }
@@ -124,33 +124,46 @@
     // Search button
     #search-button
     {
-        background: #1c212b !important;
-        border-left: 1px solid #242936 !important;
+        background: $color-button !important;
+        border: 1px solid $color-button !important;
+        border-left: 1px solid $color-button-border !important;
         
         &:hover
         {
-            background: #293040 !important;
+            background: $color-button-hover !important;
+            border: 1px solid $color-button-border-hover !important;
         }
         
         // Search button icon
         .fa-search
         {
-            color: #73d0ff;
+            color: $color-icon-default;
         }
     }
     
     // Search field
     #search-container, #search-field
     {
-        background: #1c212b;
-        color: #cccac2;
+        background: $color-input;
+        color: $color-text;
+        
+        &::placeholder
+        {
+            color: $color-source-mirage-ui-fg;
+        }
+        
+        &:hover
+        {
+            background: $color-input-hover;
+        }
     }
     
     // Bulletin button
     #bulletin-button
     {
-        background: #1c212b;
-        border-left: 1px solid #242936;
+        background: $color-button;
+        border: 1px solid $color-button;
+        border-left: 1px solid $color-button-border;
     }
     
 }

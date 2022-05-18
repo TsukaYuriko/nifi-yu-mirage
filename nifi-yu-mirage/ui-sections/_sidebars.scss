@@ -10,10 +10,10 @@ div.graph-control
     \*============================================================================*/
     
     // Containers
-    background-color: #242936;
-    border: 1px solid #151921;
-    border-right: 1px solid #151921;
-    border-bottom: 1px solid #151921;
+    background-color: $color-ui-panel;
+    border-top: 1px solid $color-ui-panel-border;
+    border-right: 1px solid $color-ui-panel-border;
+    border-bottom: 1px solid $color-ui-panel-border;
     
     // Slight shadow on containers for contrast
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -24,40 +24,40 @@ div.graph-control
         // Highlight on hover
         &:hover
         {
-            background: #293040;
+            background: $color-button-hover;
         }
         
         // Header text
         div.graph-control-header
         {
-            color: #cccac2;
+            color: $color-text;
             font-family: Roboto, sans-serif;
         }
         
         // Icons
         .graph-control-header-icon.fa
         {
-            color: #80bfff;
+            color: $color-button-icon-active;
         }
     }
     
     // Expand/Collapse buttons
     div.graph-control-expansion
     {
-        color: #80bfff;
+        color: $color-button-icon-active;
     }
     
     // Header icons when docked
     div.graph-control-docked
     {
-        color: #80bfff;
+        color: $color-button-icon-active;
     }
     
     // Headers on hover when docked
     &.docked:hover
     {
-        border: 1px solid #80bfff;
-        background: #293040;
+        border: 1px solid $color-button-border-hover;
+        background: $color-button-hover;
     }
     
     .graph-control-docked
@@ -68,24 +68,24 @@ div.graph-control
     // Action buttons
     div.action-button button
     {
-        border: 1px solid #293040;
-        background: #282e3b;
-        color: #80bfff;
+        background: $color-button;
+        border: 1px solid $color-button-border;
+        color: $color-button-icon-active;
         
         &:hover
         {
-            background: #293040;
-            border: 1px solid #80bfff;
+            background: $color-button-hover;
+            border: 1px solid $color-button-border-hover;
         }
         
         &:disabled
         {
-            border: 1px solid #282e3b;
+            border: 1px solid $color-button;
             background: none;
             
             .fa, .icon, span
             {
-                color: #707a8c;
+                color: $color-button-icon-inactive;
             }
         }
     }
@@ -99,13 +99,13 @@ div.graph-control
         // Minimap
         #birdseye
         {
-            background: #1f2430;
-            border: 1px solid #171b24;
+            background: $color-minimap;
+            border: 1px solid $color-minimap-border;
             
             // Minimap viewport
             .birdseye-brush-container .birdseye-brush
             {
-                stroke: #80bfff;
+                stroke: $color-minimap-birdseye;
             }
         }
         
@@ -139,25 +139,25 @@ div.graph-control
         // NiFi logo in Operate panel
         #operation-context-logo i.icon
         {
-            color: #707a8c;
+            color: $color-text-label;
         }
         
         // Current context name
         #operation-context-name
         {
-            color: #ccdadb;
+            color: $color-text;
         }
         
         // Current context type
         #operation-context-type
         {
-            color: #747b84;
+            color: $color-text-footnote;
         }
         
         // Current context ID
         #operation-context-id
         {
-            color: #707a8c;
+            color: $color-text-label;
         }
         
         // Fix icon padding

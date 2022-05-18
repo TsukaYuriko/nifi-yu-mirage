@@ -8,19 +8,19 @@
     // Unselected border
     rect.border
     {
-        stroke: #191d27;
+        stroke: $color-flow-component-border;
     }
     
     // Selected border
     &.selected rect.border
     {
-        stroke: #80bfff !important;
+        stroke: $color-flow-component-border-selected !important;
     }
     
     // Remote port header
     .remote-banner
     {
-        fill: #2a3140;
+        fill: $color-flow-component-header;
     }
     
     // Transmission status icon
@@ -30,31 +30,31 @@
         
         &.not-transmitting
         {
-            fill: #d3e1f5;
+            fill: $color-icon-inactive !important;
         }
         
         &.transmitting
         {
-            fill: #399ee6;
+            fill: $color-icon-rpg !important;
         }
     }
     
     // Body fill
     rect.body
     {
-        fill: #242936;
+        fill: $color-flow-component;
     }
     
     // Input/Output icon
     .port-icon
     {
-        fill: #707a8c;
+        fill: $color-flow-component-icon;
     }
     
     // Port name
     .port-name
     {
-        fill: #cccac2;
+        fill: $color-text;
     }
     
     // Status icons
@@ -63,27 +63,27 @@
         // TODO These have no status-specific classes, unsure if this is the best way to work around it?
         
         // Running
-        &[fill="#7dc7a0"]
+        &[fill="#{$color-source-original-flow-component-state-running}"]
         {
-            fill: #87d96c;
+            fill: $color-flow-component-state-running;
         }
         
         // Invalid
-        &[fill="#cf9f5d"]
+        &[fill="#{$color-source-original-flow-component-state-invalid}"]
         {
-            fill: #ffd173;
+            fill: $color-flow-component-state-invalid;
         }
         
         // Stopped
-        &[fill="#d18686"]
+        &[fill="#{$color-source-original-flow-component-state-stopped}"]
         {
-            fill: #f07171;
+            fill: $color-flow-component-state-stopped;
         }
         
         // Disabled
-        &[fill="#728e9b"]
+        &[fill="#{$color-source-original-flow-component-state-disabled}"]
         {
-            fill: #d3e1f5;
+            fill: $color-flow-component-state-disabled;
         }
     }
     
