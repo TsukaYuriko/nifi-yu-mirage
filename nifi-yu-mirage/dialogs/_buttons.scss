@@ -46,14 +46,14 @@ button
     /// Positive buttons (usually "Apply" or other confirming actions)
     
     // Idle
-    &[style*="rgb(114, 142, 155)"]
+    &[style*="#{$color-source-original-dialog-button-positive}"]
     {
         background: $color-dialog-button-positive !important;
         color: $color-dialog-button-positive-text !important;
     }
     
     // Hover
-    &[style*="rgb(0, 72, 73)"]
+    &[style*="#{$color-source-original-dialog-button-positive-hover}"]
     {
         background: $color-dialog-button-positive-hover !important;
         color: $color-dialog-button-positive-text !important;
@@ -62,14 +62,14 @@ button
     /// Negative buttons (usually "Cancel" or other declining actions)
     
     // Idle
-    &[style*="rgb(227, 232, 235)"]
+    &[style*="#{$color-source-original-dialog-button-negative}"]
     {
         background: $color-dialog-button-negative !important;
         color: $color-dialog-button-negative-text !important;
     }
     
     // Hover
-    &[style*="rgb(199, 210, 215)"]
+    &[style*="#{$color-source-original-dialog-button-negative-hover}"]
     {
         background: $color-dialog-button-negative-hover !important;
         color: $color-dialog-button-negative-text !important;
