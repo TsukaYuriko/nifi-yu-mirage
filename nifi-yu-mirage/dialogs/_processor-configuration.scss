@@ -1,0 +1,15 @@
+/*============================================================================*\
+| Processor configuration dialogs                                              |
+\*============================================================================*/
+
+// Error bulletin
+.dialog-status-bar-bulletins:not([count="0"])
+{
+    
+    background: $color-error;
+    color: $color-ui-dialog;
+    
+    // Fix icon position
+    padding: 9px 7px 8px 9px;
+    
+}
