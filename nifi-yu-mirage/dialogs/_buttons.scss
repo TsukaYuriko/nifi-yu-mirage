@@ -35,62 +35,62 @@ button
     
 }
 
-// Fancy buttons
-// These are the elongated buttons with text inside
+// Dialog buttons
+// These are the elongated buttons with text inside that exit out of dialogs
 
 .dialog-buttons .button
 {
     // Unfortunately, buttons of different colors don't have different classes.
     // These are colored using inline styles in NiFi (potentially by a script?).
     
-    /// Dark buttons (usually "Apply" or other confirming actions)
+    /// Positive buttons (usually "Apply" or other confirming actions)
     
     // Idle
     &[style*="rgb(114, 142, 155)"]
     {
-        background: #80bfff !important;
-        color: #282e3b !important;
+        background: $color-dialog-button-positive !important;
+        color: $color-dialog-button-positive-text !important;
     }
     
     // Hover
     &[style*="rgb(0, 72, 73)"]
     {
-        background: #478acc !important;
-        color: #282e3b !important;
+        background: $color-dialog-button-positive-hover !important;
+        color: $color-dialog-button-positive-text !important;
     }
     
-    /// Bright buttons (usually "Cancel" or other declining actions)
+    /// Negative buttons (usually "Cancel" or other declining actions)
     
     // Idle
     &[style*="rgb(227, 232, 235)"]
     {
-        background: #282e3b !important;
-        color: #80bfff !important;
+        background: $color-dialog-button-negative !important;
+        color: $color-dialog-button-negative-text !important;
     }
     
     // Hover
     &[style*="rgb(199, 210, 215)"]
     {
-        background: #293040 !important;
-        color: #80bfff !important;
+        background: $color-dialog-button-negative-hover !important;
+        color: $color-dialog-button-negative-text !important;
     }
     
 }
 
-// Fancy buttons in specific contexts (e.g. Configure dialog of process groups, Controller Settings)
+// Dialog buttons in specific contexts (e.g. Configure dialog of process groups, Controller Settings)
 // where there's only an "Apply" button and no others. Unfortunately, these don't share selectors with
 // the buttons above because they (fortunately?) lack the "style=..." BS the ones above have.
 
 .settings-buttons .button
 {
     
-    background: #80bfff;
-    color: #282e3b;
+    background: $color-dialog-button-positive;
+    color: $color-dialog-button-positive-text;
     
     &:hover:not(.disabled-button)
     {
-        background: #478acc;
-        color: #282e3b;
+        background: $color-dialog-button-positive-hover;
+        color: $color-dialog-button-positive-text;
     }
     
 }
