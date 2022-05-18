@@ -1,0 +1,15 @@
+/*============================================================================*\
+| Source colors: Apache NiFi                                                   |
+\*============================================================================*/
+
+/*
+This contains a bunch of colors of the original NiFi theme.
+These are mostly used in cases where no class selectors can reach certain elements
+that have inline styles and the only way to address them is by directly
+referring to their inline style colors.
+*/
+
+$color-source-original-flow-component-state-running: #7dc7a0;
+$color-source-original-flow-component-state-invalid: #cf9f5d;
+$color-source-original-flow-component-state-stopped: #d18686;
+$color-source-original-flow-component-state-disabled: #728e9b;

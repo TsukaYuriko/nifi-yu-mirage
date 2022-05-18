@@ -63,25 +63,25 @@
         // TODO These have no status-specific classes, unsure if this is the best way to work around it?
         
         // Running
-        &[fill="#7dc7a0"]
+        &[fill="#{$color-source-original-flow-component-state-running}"]
         {
             fill: $color-flow-component-state-running;
         }
         
         // Invalid
-        &[fill="#cf9f5d"]
+        &[fill="#{$color-source-original-flow-component-state-invalid}"]
         {
             fill: $color-flow-component-state-invalid;
         }
         
         // Stopped
-        &[fill="#d18686"]
+        &[fill="#{$color-source-original-flow-component-state-stopped}"]
         {
             fill: $color-flow-component-state-stopped;
         }
         
         // Disabled
-        &[fill="#728e9b"]
+        &[fill="#{$color-source-original-flow-component-state-disabled}"]
         {
             fill: $color-flow-component-state-disabled;
         }
