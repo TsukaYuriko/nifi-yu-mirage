@@ -35,6 +35,11 @@ $color-text-label: $color-source-mirage-ui-fg;
 // For really subtle text such as footnotes
 $color-text-footnote: $color-source-mirage-editor-gutter-active-premultiplied;
 
+// For link text
+$color-text-link: $color-accent;
+$color-text-link-underline: $color-text-footnote;
+$color-text-link-underline-hover: $color-text-link;
+
 
 /*----------------------------------------------------------------------------*\
 | Splash screen                                                                |
