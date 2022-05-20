@@ -9,3 +9,15 @@ body
     color: $color-text;
     
 }
+
+// Links
+span.link
+{
+    color: $color-text-link !important;
+    border-bottom: 1px solid $color-text-link-underline;
+    
+    &:hover
+    {
+        border-bottom: 1px solid $color-text-link-underline-hover;
+    }
+}
