@@ -48,6 +48,17 @@
         fill: $color-text-footnote;
     }
     
+    // Restricted component icon
+    .restricted-background
+    {
+        fill: $color-processor-restricted;
+    }
+    
+    .restricted
+    {
+        fill: $color-flow-component;
+    }
+    
     // Status icons
     .run-status-icon
     {

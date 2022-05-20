@@ -136,6 +136,9 @@ $color-flow-component-state-invalid: $color-source-mirage-syntax-func;
 $color-flow-component-state-stopped: $color-source-light-syntax-markup;
 $color-flow-component-state-disabled: $color-source-mirage-editor-gutter-normal-premultiplied;
 
+// Processors
+$color-processor-restricted: $color-source-light-syntax-entity;
+
 // Processor groups
 $color-process-group-status-bar: $color-flow-component-row-odd;
 
