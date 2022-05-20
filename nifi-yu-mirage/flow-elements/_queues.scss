@@ -107,9 +107,15 @@ marker#normal
             }
         }
         
-        // Backpressure
         .queued-container
         {
+            // Separator line if queue has a name
+            .connection-label-border
+            {
+                fill: $color-flow-component-row-separator;
+            }
+            
+            // Backpressure
             .backpressure-object-container, .backpressure-data-size-container
             {
                 // Background
