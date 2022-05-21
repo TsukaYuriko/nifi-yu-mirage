@@ -1,0 +1,47 @@
+/*============================================================================*\
+| Policy dialogs                                                               |
+\*============================================================================*/
+
+#policy-management
+{
+
+    // "Showing effective policy inherited from ..." message
+    #policy-message-container
+    {
+        color: $color-text-footnote;
+    }
+    
+    // Component type icon (e.g. processor, input port icon)
+    .policy-selected-component-type-icon i.icon
+    {
+        color: $color-text-label;
+    }
+    
+    // Name of the component
+    .policy-selected-component-name
+    {
+        color: $color-text;
+    }
+    
+    // Type of component, corresponding to icon
+    .policy-selected-component-type
+    {
+        color: $color-text-label;
+    }
+    
+    // "Only listing restriction specific users" for individual "access restricted components" policies message
+    #restriction-message
+    {
+        color: $color-text-footnote;
+    }
+    
+}
+
+// "Override" dialog
+#override-policy-dialog
+{
+    label
+    {
+        color: $color-text;
+    }
+}
