@@ -67,3 +67,9 @@
     }
     
 }
+
+.scrollable
+{
+    // Remove horizontal line at the bottom of scrollable dialogs
+    border-bottom: none;
+}
