@@ -3,7 +3,6 @@
 \*============================================================================*/
 // Note: Shells are the dialog boxes that don't make the background go foggy (those are modals)
 
-
 #shell-container
 {
     
@@ -53,4 +52,28 @@
         border-bottom: 1px solid $color-ui-dialog-separator;
     }
     
+}
+
+/*
+The stuff below is for shell dialogs that are embedded via iframes.
+This method is mainly used by the dialogs accessible from
+the hamburger menu. They have no classes that could be used
+to refer to them, and since embedding via iframes resets
+the selector context, they can't be selected via the element
+that contains the iframe either.
+
+This (somewhat unintentionally) would style the pop-up manual as well, which
+I'm not intending to cover as it's just too much work for too little gain.
+
+I also dislike that this technically styles the root html and body elements
+as well (even though it's not visible because they're fully covered up).
+
+The exclusions are intended to exclude the manual and canvas body.
+The root html element of the document is still styled, though. It has no
+classes or other identifiable attributes that would make it easy to exclude.
+*/
+// TODO think of a better way to handle this
+html:not([xmlns="http://www.w3.org/1999/xhtml"]), body:not([id="canvas-body"]):not([id="documentation-body"]):not([class="article"])
+{
+    background: $color-ui-dialog;
 }
