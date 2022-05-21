@@ -13,5 +13,30 @@
         border: 1px solid $color-scrolllist-border !important;
     }
     
-}
+    // Entity name
+    span.allowed-entity
+    {
+        color: $color-text;
+    }
     
+    // Trash icon
+    .remove-allowed-entity
+    {
+        color: $color-icon-default;
+    }
+    
+    // Separators between items
+    .allowed li
+    {
+        &:not(:last-child)
+        {
+            border-bottom: 1px solid $color-scrolllist-border;
+        }
+        
+        &:last-child
+        {
+            border-bottom: none;
+        }
+    }
+    
+}
