@@ -19,11 +19,15 @@ traced to their origins while also providing friendly names for actual use.
 // Main accent color
 $color-accent: $color-source-mirage-vcs-modified;
 
+// Anything that indicates "valid" or a positive state
+$color-ok: $color-source-light-syntax-string;
+
+// Anything that indicates "warning" or a danger state
+$color-warning: $color-source-light-syntax-func;
+
 // Anything that indicates "error" or a negative state, e.g. bulletins
 $color-error: $color-source-light-syntax-markup;
 
-// Anything that indicates "warning" or a danger state
-$color-warning: $color-source-mirage-syntax-func;
 
 /*----------------------------------------------------------------------------*\
 | Text                                                                         |

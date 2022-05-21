@@ -64,3 +64,49 @@
     }
     
 }
+
+// "Verify properties" results
+.verification-results
+{
+    
+    // Title
+    .verification-results-header
+    {
+        color: $color-text-label;
+    }
+    
+    // Step
+    .verification-result-step-name
+    {
+        color: $color-text;
+    }
+    
+    // Result
+    .verification-result-explanation
+    {
+        color: $color-text-footnote;
+    }
+    
+    // Result icon
+    .verification-result-outcome
+    {
+        // Valid
+        .fa-check
+        {
+            color: $color-ok;
+        }
+        
+        // Warning
+        .fa-exclamation
+        {
+            color: $color-warning;
+        }
+        
+        // Error
+        .fa-times
+        {
+            color: $color-error;
+        }
+    }
+    
+}
