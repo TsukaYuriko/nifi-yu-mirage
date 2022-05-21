@@ -22,6 +22,9 @@ $color-accent: $color-source-mirage-vcs-modified;
 // Anything that indicates "error" or a negative state, e.g. bulletins
 $color-error: $color-source-light-syntax-markup;
 
+// Anything that indicates "warning" or a danger state
+$color-warning: $color-source-mirage-syntax-func;
+
 /*----------------------------------------------------------------------------*\
 | Text                                                                         |
 \*----------------------------------------------------------------------------*/
@@ -224,6 +227,18 @@ $color-input-border-selected: $color-input-border-hover;
 \*----------------------------------------------------------------------------*/
 
 $color-scrolllist-border: $color-source-mirage-ui-line;
+
+
+/*----------------------------------------------------------------------------*\
+| Sliders                                                                      |
+\*----------------------------------------------------------------------------*/
+
+$color-slider: $color-source-mirage-ui-bg;
+$color-slider-border: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-slider-handle: $color-source-mirage-ui-bg;
+$color-slider-handle-active: $color-source-mirage-ui-selection-active-premultiplied;
+$color-slider-handle-border: $color-accent;
+$color-slider-handle-border-active: $color-accent;
 
 
 /*----------------------------------------------------------------------------*\

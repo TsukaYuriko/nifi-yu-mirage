@@ -13,3 +13,54 @@
     padding: 9px 7px 8px 9px;
     
 }
+
+// Run duration slider
+#run-duration-container
+{
+    
+    /*
+    This is for the "0ms" / "25ms" ... run duration labels.
+    The class has "labels" in the name but uses a non-label text style.
+    This is intentional. This text style is used for anything that
+    represents a value, and here, these labels indicate the run duration.
+    */
+    #run-duration-labels
+    {
+        color: $color-text;
+    }
+    
+    // "Lower latency" / "Higher throughput"
+    #run-duration-explanation
+    {
+        color: $color-text-footnote;
+    }
+    
+    #run-duration-slider
+    {
+        background: $color-slider;
+        border: 1px solid $color-slider-border;
+        
+        .ui-slider-handle
+        {
+            background: $color-slider-handle;
+            border: 1px solid $color-slider-handle-border;
+            
+            &.ui-state-active
+            {
+                background: $color-slider-handle-active !important;
+                border: 1px solid $color-slider-handle-border-active !important;
+            }
+        }
+    }
+    
+    // "run duration > 0ms and no incoming connections" data loss warning
+    #run-duration-data-loss
+    {
+        /*
+        The original color is red, but that should be reserved for errors.
+        This is a warning and should have a warning color.
+        */
+        color: $color-warning;
+    }
+    
+}
