@@ -2,7 +2,7 @@
 | Input fields                                                                 |
 \*============================================================================*/
 
-.setting
+.setting, .dialog-content
 {
     
     .setting-field
@@ -28,6 +28,11 @@
             }
         }
         
+        // "Selected Users/Groups" in policies
+        &.allowed-container
+        {
+            border: 1px solid $color-scrolllist-border !important;
+        }
     }
     
 }
