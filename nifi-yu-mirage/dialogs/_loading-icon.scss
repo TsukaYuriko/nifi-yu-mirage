@@ -1,0 +1,21 @@
+/*=============================================================================*\
+| Loading icon                                                                  |
+\*============================================================================*/
+// The loading icon that's displayed e.g. when clicking the refresh button in a dialog
+
+div.ajax-loading
+{
+    
+    // Disable default ugly icon
+    background-image: none;
+    
+    // Add better icon
+    &::before
+    {
+        font-family: FontAwesome;
+        content: "\f254";
+        font-size: 16px;
+        color: $color-icon-default;
+    }
+    
+}
