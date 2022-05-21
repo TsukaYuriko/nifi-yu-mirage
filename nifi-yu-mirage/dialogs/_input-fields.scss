@@ -5,34 +5,31 @@
 .setting, .dialog-content
 {
     
-    .setting-field
+    // General input fields
+    input, textarea
     {
+        background: $color-input;
+        border: 1px solid $color-input-border;
+        color: $color-text;
         
-        input, textarea
+        &:hover
         {
-            background: $color-input;
-            border: 1px solid $color-input-border;
-            color: $color-text;
-            
-            &:hover
-            {
-                background: $color-input-hover;
-                border: 1px solid $color-input-border-hover;
-            }
-            
-            &:focus
-            {
-                background: $color-input-selected;
-                border: 1px solid $color-input-border-selected;
-                box-shadow: none;
-            }
+            background: $color-input-hover;
+            border: 1px solid $color-input-border-hover;
         }
         
-        // "Selected Users/Groups" in policies
-        &.allowed-container
+        &:focus
         {
-            border: 1px solid $color-scrolllist-border !important;
+            background: $color-input-selected;
+            border: 1px solid $color-input-border-selected;
+            box-shadow: none;
         }
+    }
+    
+    // "Selected Users/Groups" in policies
+    .allowed-container
+    {
+        border: 1px solid $color-scrolllist-border !important;
     }
     
 }
