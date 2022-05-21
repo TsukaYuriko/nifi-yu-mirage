@@ -5,6 +5,12 @@
 .ui-widget
 {
     
+    // Background / empty space around an embedded table
+    .slick-viewport
+    {
+        background: $color-ui-dialog;
+    }
+    
     .slick-cell
     {
         // General text color
