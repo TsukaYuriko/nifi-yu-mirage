@@ -24,6 +24,11 @@
             border: 1px solid $color-input-border-selected;
             box-shadow: none;
         }
+        
+        &::placeholder
+        {
+            color: $color-source-mirage-ui-fg;
+        }
     }
     
     // "Selected Users/Groups" in policies
