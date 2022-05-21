@@ -1,0 +1,25 @@
+/*============================================================================*\
+| Progress bar                                                                 |
+\*============================================================================*/
+
+md-progress-linear
+{
+    
+    // Background
+    .md-container
+    {
+        background: $color-progress-bar-background !important;
+    }
+    
+    // Bar
+    .md-bar
+    {
+        background: $color-progress-bar !important;
+    }
+    
+}
+
+div.progress-label
+{
+    color: $color-text;
+}
