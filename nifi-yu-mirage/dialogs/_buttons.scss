@@ -36,61 +36,82 @@ button
 }
 
 // Dialog buttons
-// These are the elongated buttons with text inside that exit out of dialogs
+/*
+These are the elongated buttons with text inside that exit out of dialogs.
+Unfortunately, buttons of different colors tend to not have different classes,
+or any classes at all, for that matter. Sometimes, they do have different
+classes, so not all buttons that look like this are set up the same way,
+which makes this even more messy to handle. They are usually colored using
+inline styles in NiFi (potentially by a script?).
+The only reliable way to address them seems to be by their inline styles.
+*/
 
-.dialog-buttons .button
+// Positive buttons (usually "Apply" or other confirming actions)
+@mixin dialog-button-positive
 {
-    // Unfortunately, buttons of different colors don't have different classes.
-    // These are colored using inline styles in NiFi (potentially by a script?).
-    
-    /// Positive buttons (usually "Apply" or other confirming actions)
-    
-    // Idle
-    &[style*="#{$color-source-original-dialog-button-positive}"]
-    {
-        background: $color-dialog-button-positive !important;
-        color: $color-dialog-button-positive-text !important;
-    }
-    
-    // Hover
-    &[style*="#{$color-source-original-dialog-button-positive-hover}"]
-    {
-        background: $color-dialog-button-positive-hover !important;
-        color: $color-dialog-button-positive-text !important;
-    }
-    
-    /// Negative buttons (usually "Cancel" or other declining actions)
-    
-    // Idle
-    &[style*="#{$color-source-original-dialog-button-negative}"]
-    {
-        background: $color-dialog-button-negative !important;
-        color: $color-dialog-button-negative-text !important;
-    }
-    
-    // Hover
-    &[style*="#{$color-source-original-dialog-button-negative-hover}"]
-    {
-        background: $color-dialog-button-negative-hover !important;
-        color: $color-dialog-button-negative-text !important;
-    }
-    
+    background: $color-dialog-button-positive !important;
+    color: $color-dialog-button-positive-text !important;
 }
 
-// Dialog buttons in specific contexts (e.g. Configure dialog of process groups, Controller Settings)
-// where there's only an "Apply" button and no others. Unfortunately, these don't share selectors with
-// the buttons above because they (fortunately?) lack the "style=..." BS the ones above have.
+@mixin dialog-button-positive-hover
+{
+    background: $color-dialog-button-positive-hover !important;
+    color: $color-dialog-button-positive-text !important;
+}
+
+// Negative buttons (usually "Cancel" or other declining actions)
+@mixin dialog-button-negative
+{
+    background: $color-dialog-button-negative !important;
+    color: $color-dialog-button-negative-text !important;
+}
+
+@mixin dialog-button-negative-hover
+{
+    background: $color-dialog-button-negative-hover !important;
+    color: $color-dialog-button-negative-text !important;
+}
+
+.dialog-buttons .button,
+.combo-editor div .button, .combo-editor div .secondary-button
+{
+    &[style*="#{$color-source-original-dialog-button-positive}"]
+    {
+        @include dialog-button-positive;
+    }
+    
+    &[style*="#{$color-source-original-dialog-button-positive-hover}"]
+    {
+        @include dialog-button-positive-hover;
+    }
+    
+    &[style*="#{$color-source-original-dialog-button-negative}"]
+    {
+        @include dialog-button-negative;
+    }
+    
+    &[style*="#{$color-source-original-dialog-button-negative-hover}"]
+    {
+        @include dialog-button-negative-hover;
+    }
+}
+
+/*
+Dialog buttons in specific contexts (e.g. Configure dialog of
+process groups, Controller Settings) where there's only an "Apply"
+button and no others. Unfortunately, these don't share selectors with
+/the buttons above because they (fortunately?) lack the "style=..."
+BS the ones above have.
+*/
 
 .settings-buttons .button
 {
     
-    background: $color-dialog-button-positive;
-    color: $color-dialog-button-positive-text;
+    @include dialog-button-positive;
     
     &:hover:not(.disabled-button)
     {
-        background: $color-dialog-button-positive-hover;
-        color: $color-dialog-button-positive-text;
+        @include dialog-button-positive-hover;
     }
     
 }
