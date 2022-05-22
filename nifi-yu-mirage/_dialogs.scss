@@ -1,20 +1,10 @@
-@import 'dialogs/_context-menu';
-@import 'dialogs/_hamburger-menu';
+@import 'dialogs/_components';
+@import 'dialogs/_popups';
+
 @import 'dialogs/_error-screens';
-@import 'dialogs/_shells';
 @import 'dialogs/_modals';
-@import 'dialogs/_loading-icon';
-@import 'dialogs/_progress-bars';
-@import 'dialogs/_tabs';
-@import 'dialogs/_input-fields';
-@import 'dialogs/_combo-boxes';
-@import 'dialogs/_scroll-lists';
-@import 'dialogs/_menus';
-@import 'dialogs/_buttons';
-@import 'dialogs/_tooltips';
-@import 'dialogs/_checkboxes';
-@import 'dialogs/_tables';
-@import 'dialogs/_processor-configuration';
-@import 'dialogs/_processor-group-configuration';
-@import 'dialogs/_variables';
 @import 'dialogs/_policies';
+@import 'dialogs/_processors';
+@import 'dialogs/_processor-groups';
+@import 'dialogs/_shells';
+@import 'dialogs/_variables';
