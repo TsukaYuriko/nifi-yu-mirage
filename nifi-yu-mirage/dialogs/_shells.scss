@@ -33,25 +33,25 @@
         font-family: Roboto, sans-serif;
     }
     
-    // Last updated timestamp
-    .last-refreshed-container
-    {
-        // Label
-        color: $color-text-label;
-        
-        // Timestamp
-        span
-        {
-            color: $color-text !important;
-        }
-    }
-    
     // Horizontal bar at the bottom of scrollable containers
     .scrollable
     {
         border-bottom: 1px solid $color-ui-dialog-separator;
     }
     
+}
+
+// Last updated timestamp
+.last-refreshed-container
+{
+    // Label
+    color: $color-text-label;
+    
+    // Timestamp
+    span
+    {
+        color: $color-text !important;
+    }
 }
 
 /*
