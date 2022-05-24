@@ -1,0 +1,44 @@
+/*============================================================================*\
+| Toggles                                                                      |
+\*============================================================================*/
+
+md-switch
+{
+    
+    // Button, off
+    &:not([disabled]).md-primary .md-thumb
+    {
+        background: $color-toggle-button-off;
+    }
+    
+    // Button, on
+    &:not([disabled]).md-primary.md-checked .md-thumb
+    {
+        background: $color-toggle-button-on;
+    }
+    
+    // Background, off
+    &:not([disabled]).md-primary .md-bar
+    {
+        background: $color-toggle-background-off;
+    }
+    
+    // Background, on
+    &.md-checked:not([disabled]).md-primary .md-bar
+    {
+        background: $color-toggle-background-on;
+    }
+    
+    // On/Off ripple, when turning on... sometimes
+    .md-ink-ripple
+    {
+        color: $color-toggle-ripple-on;
+    }
+    
+    // On/Off ripple, when turning off... sometimes
+    &.md-checked:not([disabled]).md-primary .md-ink-ripple
+    {
+        color: $color-toggle-ripple-off;
+    }
+    
+}

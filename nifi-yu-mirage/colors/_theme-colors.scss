@@ -285,6 +285,18 @@ $color-progress-bar: $color-accent;
 
 
 /*----------------------------------------------------------------------------*\
+| Toggles                                                                      |
+\*----------------------------------------------------------------------------*/
+
+$color-toggle-button-off: $color-button-hover;
+$color-toggle-button-on: $color-accent;
+$color-toggle-background-off: $color-button-border;
+$color-toggle-background-on: $color-button;
+$color-toggle-ripple-off: $color-toggle-button-off;
+$color-toggle-ripple-on: $color-toggle-button-on;
+
+
+/*----------------------------------------------------------------------------*\
 | Bulletin Board                                                               |
 \*----------------------------------------------------------------------------*/
 
