@@ -282,3 +282,14 @@ $color-checkbox: $color-accent;
 
 $color-progress-bar-background: $color-source-mirage-ui-selection-active-premultiplied;
 $color-progress-bar: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
+| Bulletin Board                                                               |
+\*----------------------------------------------------------------------------*/
+
+$color-bulletin-board-separator: $color-ui-dialog-separator;
+$color-bulletin-board-timestamp: $color-text-label;
+$color-bulletin-board-level-error: $color-error;
+$color-bulletin-board-level-warn: $color-warning;
+$color-bulletin-board-message: $color-text;
