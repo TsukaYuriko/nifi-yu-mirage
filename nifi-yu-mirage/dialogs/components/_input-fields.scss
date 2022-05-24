@@ -36,11 +36,8 @@
     }
 }
 
-// User filter fields
-#users-filter-container
+// Filter fields
+input.filter
 {
-    .filter
-    {
-        @include input-field;
-    }
+    @include input-field;
 }
