@@ -9,23 +9,6 @@
     // Shell window
     background: $color-ui-dialog;
     
-    // Title
-    // These all have separate IDs and no common class which is stupid but I can't do anything about it
-    #process-group-configuration-header-text,
-    #summary-header-text,
-    #counters-header-text,
-    #bulletin-board-header-text,
-    #provenance-header-text,
-    #settings-header-text,
-    #parameter-contexts-header-text,
-    #history-header-text,
-    #users-header-text,
-    #policy-management-header-text,
-    #templates-header-text
-    {
-        color: $color-ui-dialog-title;
-    }
-    
     // Labels
     .setting-name
     {
@@ -39,6 +22,23 @@
         border-bottom: 1px solid $color-ui-dialog-separator;
     }
     
+}
+
+// Title
+// These all have separate IDs and no common class which is stupid but I can't do anything about it
+#process-group-configuration-header-text,
+#summary-header-text,
+#counters-header-text,
+#bulletin-board-header-text,
+#provenance-header-text,
+#settings-header-text,
+#parameter-contexts-header-text,
+#history-header-text,
+#users-header-text,
+#policy-management-header-text,
+#templates-header-text
+{
+    color: $color-ui-dialog-title;
 }
 
 // Last updated timestamp
