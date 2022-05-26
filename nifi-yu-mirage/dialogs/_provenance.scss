@@ -1,0 +1,24 @@
+/*=============================================================================*\
+| Data Provenance                                                               |
+\*============================================================================*/
+
+// "Oldest event available" message
+#oldest-event-message
+{
+    
+    // Label
+    color: $color-text-label;
+    
+    // Timestamp
+    #oldest-event
+    {
+        color: $color-text;
+    }
+    
+}
+
+// "Showing x out of y events" message
+#provenance-query-message
+{
+    color: $color-text-footnote;
+}
