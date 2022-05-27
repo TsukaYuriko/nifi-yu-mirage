@@ -1,0 +1,51 @@
+/*============================================================================*\
+| Parameter Contexts                                                           |
+\*============================================================================*/
+
+// Referencing Components panel in Parameter Context settings
+#parameter-referencing-components-container
+{
+    
+    // Scroll list border
+    border: 1px solid $color-scrolllist-border !important;
+    
+    // Expand button
+    .expansion-button::before
+    {
+        color: $color-icon-default;
+    }
+    
+    .referencing-component-state
+    {
+        // Disable glow
+        &::before
+        {
+            text-shadow: none;
+        }
+        
+        // Running Components
+        &.running::before
+        {
+            color: $color-icon-processor-running;
+        }
+        
+        // Stopped Components
+        &.stopped::before
+        {
+            color: $color-icon-processor-stopped;
+        }
+        
+        // Invalid Components
+        &.invalid::before
+        {
+            color: $color-icon-processor-invalid;
+        }
+        
+        // Disabled Components
+        &.disabled::before
+        {
+            color: $color-icon-processor-disabled;
+        }
+    }
+    
+}
