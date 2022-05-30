@@ -49,3 +49,21 @@
     }
     
 }
+
+// Inheritance
+
+// "Inherited Parameter Contexts have been modified" message
+#inherited-parameter-contexts-message
+{
+    color: $color-text-footnote;
+}
+
+// "Remove" button in inheritance sort boxes
+#parameter-context-available,
+#parameter-context-selected
+{
+    .fa
+    {
+        color: $color-icon-default;
+    }
+}
