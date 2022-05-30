@@ -285,6 +285,19 @@ $color-progress-bar: $color-accent;
 
 
 /*----------------------------------------------------------------------------*\
+| Sort boxes                                                                   |
+\*----------------------------------------------------------------------------*/
+
+$color-sort-box: $color-input;
+$color-sort-box-item: $color-source-mirage-ui-bg;
+$color-sort-box-item-border: $color-source-mirage-ui-line;
+$color-sort-box-item-border-hover: $color-accent;
+$color-sort-box-item-selected: $color-source-mirage-ui-selection-active-premultiplied;
+$color-sort-box-item-border-selected: $color-source-mirage-editor-line;
+$color-sort-box-text: $color-accent;
+
+
+/*----------------------------------------------------------------------------*\
 | Toggles                                                                      |
 \*----------------------------------------------------------------------------*/
 

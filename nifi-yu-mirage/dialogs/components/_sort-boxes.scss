@@ -1,0 +1,57 @@
+/*============================================================================*\
+| Sort Boxes                                                                   |
+\*============================================================================*/
+// as seen in e.g. Parameter Context inheritance, queue prioritizers...
+
+#prioritizer-available,
+#prioritizer-selected,
+#parameter-context-available,
+#parameter-context-selected
+{
+    
+    // Container
+    &.ui-sortable
+    {
+        
+        background: $color-sort-box;
+        
+        // Individual items
+        li
+        {
+            background: $color-sort-box-item;
+            border: 1px solid $color-sort-box-item-border;
+            
+            &:hover
+            {
+                border: 1px solid $color-sort-box-item-border-hover;
+            }
+            
+            span
+            {
+                color: $color-sort-box-text;
+            }
+        }
+        
+        .ui-sortable-placeholder
+        {
+            background: $color-sort-box;
+            border: 1px solid $color-sort-box;
+        }
+        
+    }
+        
+}
+
+// Elements in "selected" boxes
+#prioritizer-selected,
+#parameter-context-selected
+{
+    &.ui-sortable
+    {
+        li
+        {
+            background: $color-sort-box-item-selected;
+            border: 1px solid $color-sort-box-item-border-selected;
+        }
+    }
+}
