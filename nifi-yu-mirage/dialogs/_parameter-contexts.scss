@@ -67,3 +67,22 @@
         color: $color-icon-default;
     }
 }
+
+// Parameter editor
+
+// "Set empty string" label
+span.string-check-label
+{
+    color: $color-text-label;
+}
+
+// Empty string checkbox
+#parameter-set-empty-string-field.nf-checkbox
+{
+    /*
+    The default NiFi theme applies an offset to this,
+    which works fine with the original checkbox icon,
+    but not with the one this theme uses.
+    */
+    margin-top: 0px !important;
+}
