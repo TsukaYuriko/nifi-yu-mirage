@@ -318,3 +318,11 @@ $color-bulletin-board-timestamp: $color-text-label;
 $color-bulletin-board-level-error: $color-error;
 $color-bulletin-board-level-warn: $color-warning;
 $color-bulletin-board-message: $color-text;
+
+
+/*----------------------------------------------------------------------------*\
+| Code Editor                                                                  |
+\*----------------------------------------------------------------------------*/
+
+$color-code-editor-mode-supported: $color-source-light-vcs-added;
+$color-code-editor-mode-unsupported: $color-source-light-vcs-removed;

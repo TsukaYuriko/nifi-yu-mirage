@@ -1,0 +1,69 @@
+/*============================================================================*\
+| Editors                                                                      |
+\*============================================================================*/
+
+.slickgrid-nf-editor
+{
+    
+    background: #1f2430 !important;
+    
+    // Expression Language / Parameter allowance
+    .mode-hint-container
+    {
+        color: $color-text-footnote;
+        
+        .fa-check
+        {
+            color: $color-code-editor-mode-supported;
+        }
+        
+        .fa-ban
+        {
+            color: $color-code-editor-mode-unsupported;
+        }
+    }
+    
+    // Code editor
+    .CodeMirror
+    {
+        background: $color-input;
+        border: $color-input-border;
+        color: $color-text;
+        
+        // Gutter
+        .CodeMirror-gutters
+        {
+            background: $color-input;
+            border-right: $color-input-border;;
+        }
+        
+        // Cursor
+        .CodeMirror-cursor
+        {
+            border-left: 1px solid $color-text;
+        }
+        
+        // Line numbers
+        .CodeMirror-linenumber
+        {
+            color: $color-text-label;
+        }
+    }
+    
+    // "Set empty string" checkbox
+    .nf-checkbox
+    {
+        /*
+        The default NiFi theme applies an offset to this,
+        which works fine with the original checkbox icon,
+        but not with the one this theme uses.
+        */
+        margin-top: 0px !important;
+    }
+    
+    .nf-checkbox-label
+    {
+        color: $color-text-footnote;
+    }
+    
+}
