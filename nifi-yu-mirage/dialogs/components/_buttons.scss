@@ -73,7 +73,8 @@ The only reliable way to address them seems to be by their inline styles.
 }
 
 .dialog-buttons .button,
-.combo-editor div .button, .combo-editor div .secondary-button
+.combo-editor div .button, .combo-editor div .secondary-button,
+.slickgrid-nf-editor .button, .slickgrid-nf-editor .secondary-button
 {
     &[style*="#{$color-source-original-dialog-button-positive}"]
     {
