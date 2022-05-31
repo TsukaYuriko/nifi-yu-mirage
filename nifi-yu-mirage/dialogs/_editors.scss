@@ -46,15 +46,15 @@
 .CodeMirror
 {
     
-    background: $color-input;
-    border: $color-input-border;
+    background: $color-code-editor;
+    border: $color-code-editor-border;
     color: $color-text;
     
     // Gutter
     .CodeMirror-gutters
     {
-        background: $color-input;
-        border-right: $color-input-border;
+        background: $color-code-editor;
+        border-right: $color-code-editor-border;
     }
     
     // Cursor
@@ -75,22 +75,22 @@
 #hexview-content
 {
     
-    background: $color-hexviewer;
-    border: 1px solid $color-hexviewer-border;
+    background: $color-hex-viewer;
+    border: 1px solid $color-hex-viewer-border;
     
     table.hexviewerwindow_table
     {
-        background: $color-hexviewer;
+        background: $color-hex-viewer;
     }
     
     .hexviewerwindow_offset
     {
-        background: $color-hexviewer-offset;
+        background: $color-hex-viewer-offset;
     }
     
     .hexviewerwindow_visual
     {
-        background: $color-hexviewer-visual;
+        background: $color-hex-viewer-visual;
     }
     
 }
