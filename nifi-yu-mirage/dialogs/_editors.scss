@@ -71,6 +71,35 @@
     
 }
 
+// Hex Viewer
+#hexview-content
+{
+    
+    background: $color-hexviewer;
+    border: 1px solid $color-hexviewer-border;
+    
+    table.hexviewerwindow_table
+    {
+        background: $color-hexviewer;
+    }
+    
+    .hexviewerwindow_offset
+    {
+        background: $color-hexviewer-offset;
+    }
+    
+    .hexviewerwindow_visual
+    {
+        background: $color-hexviewer-visual;
+    }
+    
+}
+
+#truncation-message
+{
+    color: $color-text-footnote;
+}
+
 // Flowfile Viewer                                                               |
 
 #view-as-label

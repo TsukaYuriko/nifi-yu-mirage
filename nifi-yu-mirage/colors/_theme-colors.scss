@@ -326,3 +326,13 @@ $color-bulletin-board-message: $color-text;
 
 $color-code-editor-mode-supported: $color-source-light-vcs-added;
 $color-code-editor-mode-unsupported: $color-source-light-vcs-removed;
+
+
+/*----------------------------------------------------------------------------*\
+| Hex Viewer                                                                   |
+\*----------------------------------------------------------------------------*/
+
+$color-hexviewer: $color-input;
+$color-hexviewer-border: $color-input-border;
+$color-hexviewer-offset: $color-source-dark-editor-selection-inactive;
+$color-hexviewer-visual: $color-source-dark-editor-selection-active;
