@@ -33,12 +33,14 @@ ul.usersGroupsList
     }
     
     // Group icon
-    /*
-    This doesn't have an offset but desperately needs one,
-    both in the original theme as well as this one.
-    */
     .fa
     {
+        color: $color-icon-default;
+        
+        /*
+        This doesn't have an offset but desperately needs one,
+        both in the original theme as well as this one.
+        */
         margin-top: 4px;
     }
     
