@@ -2,23 +2,71 @@
 | Data Provenance                                                               |
 \*============================================================================*/
 
-// "Oldest event available" message
-#oldest-event-message
+// Event list
+#provenance
 {
     
-    // Label
-    color: $color-text-label;
-    
-    // Timestamp
-    #oldest-event
+    // "Oldest event available" message
+    #oldest-event-message
     {
-        color: $color-text;
+        
+        // Label
+        color: $color-text-label;
+        
+        // Timestamp
+        #oldest-event
+        {
+            color: $color-text;
+        }
+        
+    }
+
+    // "Showing x out of y events" message
+    #provenance-query-message
+    {
+        color: $color-text-footnote;
     }
     
 }
 
-// "Showing x out of y events" message
-#provenance-query-message
+// Event details
+#event-details-dialog
 {
-    color: $color-text-footnote;
+    
+    // Headers
+    .event-header
+    {
+        color: $color-text-label;
+        font-family: Roboto, sans-serif;
+    }
+    
+    // Labels
+    .detail-name, .attribute-name, .content-detail-name
+    {
+        color: $color-text-label;
+        font-family: Roboto, sans-serif;
+    }
+    
+    // Values
+    .detail-value, .attribute-value, .content-detail-value
+    {
+        color: $color-text;
+    }
+    
+    // "No value set" values
+    .unset
+    {
+        color: $color-text-footnote !important;
+    }
+    
+    /*
+    The default NiFi theme applies an offset to this,
+    which works fine with the original checkbox icon,
+    but not with the one this theme uses.
+    */
+    .nf-checkbox
+    {
+        margin-top: 3px !important;
+    }
+    
 }
