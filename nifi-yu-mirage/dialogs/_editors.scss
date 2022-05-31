@@ -2,6 +2,7 @@
 | Editors                                                                      |
 \*============================================================================*/
 
+// General editor containers
 .slickgrid-nf-editor
 {
     
@@ -23,33 +24,6 @@
         }
     }
     
-    // Code editor
-    .CodeMirror
-    {
-        background: $color-input;
-        border: $color-input-border;
-        color: $color-text;
-        
-        // Gutter
-        .CodeMirror-gutters
-        {
-            background: $color-input;
-            border-right: $color-input-border;;
-        }
-        
-        // Cursor
-        .CodeMirror-cursor
-        {
-            border-left: 1px solid $color-text;
-        }
-        
-        // Line numbers
-        .CodeMirror-linenumber
-        {
-            color: $color-text-label;
-        }
-    }
-    
     // "Set empty string" checkbox
     .nf-checkbox
     {
@@ -64,6 +38,35 @@
     .nf-checkbox-label
     {
         color: $color-text-footnote;
+    }
+    
+}
+
+// Code editor
+.CodeMirror
+{
+    
+    background: $color-input;
+    border: $color-input-border;
+    color: $color-text;
+    
+    // Gutter
+    .CodeMirror-gutters
+    {
+        background: $color-input;
+        border-right: $color-input-border;
+    }
+    
+    // Cursor
+    .CodeMirror-cursor
+    {
+        border-left: 1px solid $color-text;
+    }
+    
+    // Line numbers
+    .CodeMirror-linenumber
+    {
+        color: $color-text-label;
     }
     
 }
