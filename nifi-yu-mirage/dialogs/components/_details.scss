@@ -4,7 +4,8 @@
 // any "details" style dialog, e.g. flowfiles, provenance events...
 
 // Event details
-#event-details-dialog
+#event-details-dialog,
+#flowfile-details-dialog
 {
     
     // Headers
@@ -42,6 +43,19 @@
     .nf-checkbox
     {
         margin-top: 3px !important;
+    }
+    
+    // Buttons (e.g. download/view flowfile contents)
+    .secondary-button
+    {
+        // TODO I don't like the "negative" implications, refactor?
+        color: $color-dialog-button-negative-text;
+        background: $color-dialog-button-negative;
+        
+        &:hover
+        {
+            background: $color-dialog-button-negative-hover;
+        }
     }
     
 }
