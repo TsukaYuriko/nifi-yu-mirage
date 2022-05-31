@@ -55,7 +55,7 @@
     .CodeMirror-gutters
     {
         background: $color-code-editor;
-        border-right: $color-code-editor-border;
+        border-right: 1px solid $color-code-editor-gutter;
     }
     
     // Cursor
