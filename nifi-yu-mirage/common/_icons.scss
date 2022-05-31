@@ -3,6 +3,12 @@
 \*============================================================================*/
 // General icon settings
 
+// Default icon color
+.fa
+{
+    color: $color-icon-default;
+}
+
 #flow-status, .settings-container, #summary, #queue-listing-container
 {
     div.fa, div.icon
