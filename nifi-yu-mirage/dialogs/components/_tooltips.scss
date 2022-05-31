@@ -1,12 +1,9 @@
 /*============================================================================*\
 | Tooltips                                                                     |
 \*============================================================================*/
-
 // Question mark tooltip
-.combo-options, .setting
+
+.setting-name .fa
 {
-    .fa
-    {
-        color: $color-icon-default;
-    }
+    color: $color-icon-default;
 }
