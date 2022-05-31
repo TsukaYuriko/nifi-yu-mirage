@@ -75,7 +75,8 @@ The root html element of the document is still styled, though. It has no
 classes or other identifiable attributes that would make it easy to exclude.
 */
 // TODO think of a better way to handle this
-html:not([xmlns="http://www.w3.org/1999/xhtml"]), body:not([id="canvas-body"]):not([id="documentation-body"]):not([class="article"])
+html:not([xmlns="http://www.w3.org/1999/xhtml"]),
+body:not([id="canvas-body"]):not([id="documentation-body"]):not([class="article"]):not([class="message-pane"])
 {
     background: $color-ui-dialog;
 }
