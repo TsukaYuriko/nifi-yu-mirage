@@ -43,7 +43,7 @@
 }
 
 // Code editor
-.CodeMirror,
+div.CodeMirror,
 .nf-editor .CodeMirror
 {
     
@@ -68,6 +68,56 @@
     .CodeMirror-linenumber
     {
         color: $color-text-label;
+    }
+    
+    .CodeMirror-code span
+    {
+        // Brackets that are part of a parameter/property access
+        &.cm-bracket
+        {
+            color: $color-code-editor-bracket;
+        }
+        
+        // TODO what happened to variable 1?
+        
+        // Properties
+        &.cm-variable-2
+        {
+            color: $color-code-editor-variable;
+        }
+        
+        // Strings
+        &.cm-string
+        {
+            color: $color-code-editor-string;
+        }
+        
+        // Comments
+        &.cm-comment
+        {
+            color: $color-code-editor-comment;
+        }
+        
+        // NiFi functions
+        &.cm-builtin
+        {
+            color: $color-code-editor-function;
+        }
+        
+        // Matching brackets/parentheses
+        &.CodeMirror-matchingbracket
+        {
+            background: $color-code-editor-bracket-matching;
+            color: $color-text !important;
+            opacity: 1;
+        }
+        
+        // Unmatching brackets/parentheses
+        &.CodeMirror-nonmatchingbracket
+        {
+            background: $color-code-editor-bracket-unmatching;
+            color: $color-text !important;
+        }
     }
     
 }

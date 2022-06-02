@@ -330,6 +330,14 @@ $color-code-editor-mode-supported: $color-source-light-vcs-added;
 $color-code-editor-mode-unsupported: $color-source-light-vcs-removed;
 $color-code-editor-gutter: $color-source-mirage-editor-gutter-normal;
 
+$color-code-editor-bracket: $color-source-mirage-syntax-keyword;
+$color-code-editor-bracket-matching: $color-source-mirage-editor-selection-active;
+$color-code-editor-bracket-unmatching: $color-error;
+$color-code-editor-variable: $color-source-mirage-syntax-entity;
+$color-code-editor-string: $color-source-mirage-syntax-string;
+$color-code-editor-comment: $color-source-mirage-syntax-comment;
+$color-code-editor-function: $color-source-mirage-syntax-func;
+
 
 /*----------------------------------------------------------------------------*\
 | Hex Viewer                                                                   |
