@@ -1,0 +1,88 @@
+/*============================================================================*\
+| Parameter Contexts                                                           |
+\*============================================================================*/
+
+// Referencing Components panel in Parameter Context settings
+#parameter-referencing-components-container
+{
+    
+    // Scroll list border
+    border: 1px solid $color-scrolllist-border !important;
+    
+    // Expand button
+    .expansion-button::before
+    {
+        color: $color-icon-default;
+    }
+    
+    .referencing-component-state
+    {
+        // Disable glow
+        &::before
+        {
+            text-shadow: none;
+        }
+        
+        // Running Components
+        &.running::before
+        {
+            color: $color-icon-processor-running;
+        }
+        
+        // Stopped Components
+        &.stopped::before
+        {
+            color: $color-icon-processor-stopped;
+        }
+        
+        // Invalid Components
+        &.invalid::before
+        {
+            color: $color-icon-processor-invalid;
+        }
+        
+        // Disabled Components
+        &.disabled::before
+        {
+            color: $color-icon-processor-disabled;
+        }
+    }
+    
+}
+
+// Inheritance
+
+// "Inherited Parameter Contexts have been modified" message
+#inherited-parameter-contexts-message
+{
+    color: $color-text-footnote;
+}
+
+// "Remove" button in inheritance sort boxes
+#parameter-context-available,
+#parameter-context-selected
+{
+    .fa
+    {
+        color: $color-icon-default;
+    }
+}
+
+// Parameter editor
+
+// "Set empty string" label
+span.string-check-label
+{
+    color: $color-text-label;
+}
+
+// Empty string checkbox
+#parameter-set-empty-string-field.nf-checkbox
+{
+    /*
+    The default NiFi theme applies an offset to this,
+    which works fine with the original checkbox icon,
+    but not with the one this theme uses.
+    */
+    margin-top: 0px !important;
+}

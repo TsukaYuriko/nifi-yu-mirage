@@ -1,0 +1,64 @@
+/*============================================================================*\
+| Combo boxes                                                                  |
+\*============================================================================*/
+
+// Closed
+.combo
+{
+    
+    // Container
+    background: $color-input !important;
+    border: 1px solid $color-input !important;
+    color: $color-text;
+    
+    &:hover
+    {
+        background: $color-input-hover !important;
+        border: 1px solid $color-input-border-hover !important;
+    }
+    
+    // Arrow
+    .combo-arrow
+    {
+        color: $color-icon-default;
+    }
+    
+}
+
+// Expanded
+.combo-options
+{
+    // Container
+    border: 1px solid $color-input;
+    
+    // Rows
+    ul li
+    {
+        background: $color-input !important;
+        border: 1px solid $color-input;
+        color: $color-text;
+        
+        &.pointer
+        {
+            &:hover
+            {
+                background: $color-input-hover !important;
+                border: 1px solid $color-input-border-hover;
+            }
+            
+            &:focus
+            {
+                background: $color-input-selected !important;
+                border: 1px solid $color-input-border-selected !important;
+                box-shadow: none !important;
+            }
+        }
+    
+        // Alternate rows (e.g. "create new"-style rows)
+        &.unset
+        {
+            color: $color-text-label !important;
+        }
+    }
+    
+}

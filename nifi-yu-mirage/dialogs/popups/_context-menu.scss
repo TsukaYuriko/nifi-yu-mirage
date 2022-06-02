@@ -1,0 +1,48 @@
+/*============================================================================*\
+| Context menu                                                                 |
+\*============================================================================*/
+
+.context-menu
+{
+    
+    // Container
+    background: $color-menu;
+    border: 1px solid $color-menu-border;
+
+    // Icons
+    .context-menu-item-img
+    {
+        color: $color-menu-icon;
+        text-align: center;
+    }
+    
+    // Item rows
+    .context-menu-item
+    {
+        // Text
+        .context-menu-item-text
+        {
+            color: $color-text;
+        }
+        
+        // Highlight on hover
+        &.hover
+        {
+            background: $color-menu-hover;
+            box-shadow: none;
+        }
+        
+        // Expand arrow
+        .context-menu-group-item-img
+        {
+            color: $color-menu-icon;
+        }
+    }
+    
+    // Separator lines
+    .context-menu-item-separator
+    {
+        background: $color-menu-separator;
+    }
+    
+}

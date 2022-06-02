@@ -1,0 +1,43 @@
+/*============================================================================*\
+| Input fields                                                                 |
+\*============================================================================*/
+
+@mixin input-field
+{
+    background: $color-input;
+    border: 1px solid $color-input-border;
+    color: $color-text;
+    
+    &:hover
+    {
+        background: $color-input-hover;
+        border: 1px solid $color-input-border-hover;
+    }
+    
+    &:focus
+    {
+        background: $color-input-selected;
+        border: 1px solid $color-input-border-selected;
+        box-shadow: none;
+    }
+    
+    &::placeholder
+    {
+        color: $color-source-mirage-ui-fg;
+    }
+}
+
+// General input fields
+.setting, .dialog-content
+{
+    input, textarea
+    {
+        @include input-field;
+    }
+}
+
+// Filter fields
+input.filter
+{
+    @include input-field;
+}

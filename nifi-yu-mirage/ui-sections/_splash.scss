@@ -1,0 +1,15 @@
+/*============================================================================*\
+| Splash                                                                       |
+\*============================================================================*/
+
+// Background
+#splash
+{
+    background: $color-splash !important;
+}
+
+// Loading circle
+#splash-img svg path
+{
+    stroke: $color-splash-circle;
+}

@@ -1,0 +1,75 @@
+/*============================================================================*\
+| Modals                                                                       |
+\*============================================================================*/
+// Note: Modals are the dialog boxes that make the background go foggy (the ones that don't are shells)
+
+.modal-glass
+{
+    background: $color-source-mirage-ui-panel-shadow !important;
+    opacity: 1;
+}
+
+.modal
+{
+    
+    // Body
+    background: $color-ui-dialog;
+    
+    // Header
+    .dialog-header
+    {
+        background: $color-ui-dialog-header;
+        font-family: Roboto, sans-serif;
+        
+        .dialog-header-text
+        {
+            color: $color-ui-dialog-title;
+        }
+        
+        .dialog-header-subtitle
+        {
+            color: $color-ui-dialog-title;
+            
+            &:not(:empty)
+            {
+                border-left: 1px solid $color-ui-dialog-title;
+            }
+        }
+    }
+    
+    // Status bar below the header
+    .dialog-status-bar
+    {
+        background: $color-ui-dialog-status;
+        
+        .dialog-status-bar-state
+        {
+            color: $color-text-label;
+        }
+    }
+    
+    // Settings
+    .setting-name
+    {
+        color: $color-text-label;
+        font-family: Roboto, sans-serif;
+    }
+    
+    .setting-field
+    {
+        color: $color-text;
+    }
+    
+    // Processor relationship descriptions
+    .relationship-description
+    {
+        color: $color-text-footnote;
+    }
+    
+}
+
+.scrollable
+{
+    // Remove horizontal line at the bottom of scrollable dialogs
+    border-bottom: none;
+}

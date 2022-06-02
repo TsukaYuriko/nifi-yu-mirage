@@ -1,0 +1,118 @@
+/*============================================================================*\
+| Processor configuration dialogs                                              |
+\*============================================================================*/
+
+// Error bulletin
+.dialog-status-bar-bulletins:not([count="0"])
+{
+    
+    background: $color-error;
+    color: $color-ui-dialog;
+    
+    // Fix icon position
+    padding: 9px 7px 8px 9px;
+    
+}
+
+// Run duration slider
+#run-duration-container
+{
+    
+    /*
+    This is for the "0ms" / "25ms" ... run duration labels.
+    The class has "labels" in the name but uses a non-label text style.
+    This is intentional. This text style is used for anything that
+    represents a value, and here, these labels indicate the run duration.
+    */
+    #run-duration-labels
+    {
+        color: $color-text;
+    }
+    
+    // "Lower latency" / "Higher throughput"
+    #run-duration-explanation
+    {
+        color: $color-text-footnote;
+    }
+    
+    #run-duration-slider
+    {
+        background: $color-slider;
+        border: 1px solid $color-slider-border;
+        
+        .ui-slider-handle
+        {
+            background: $color-slider-handle;
+            border: 1px solid $color-slider-handle-border;
+            
+            &.ui-state-active
+            {
+                background: $color-slider-handle-active !important;
+                border: 1px solid $color-slider-handle-border-active !important;
+            }
+        }
+    }
+    
+    // "run duration > 0ms and no incoming connections" data loss warning
+    #run-duration-data-loss
+    {
+        /*
+        The original color is red, but that should be reserved for errors.
+        This is a warning and should have a warning color.
+        */
+        color: $color-warning;
+    }
+    
+}
+
+// "Verify properties" results
+.verification-results
+{
+    
+    // Title
+    .verification-results-header
+    {
+        color: $color-text-label;
+    }
+    
+    // Step
+    .verification-result-step-name
+    {
+        color: $color-text;
+    }
+    
+    // Result
+    .verification-result-explanation
+    {
+        color: $color-text-footnote;
+    }
+    
+    // Result icon
+    .verification-result-outcome
+    {
+        // Valid
+        .fa-check
+        {
+            color: $color-ok;
+        }
+        
+        // Warning
+        .fa-exclamation
+        {
+            color: $color-warning;
+        }
+        
+        // Error
+        .fa-times
+        {
+            color: $color-error;
+        }
+    }
+    
+}
+
+// Value editor container
+.combo-editor
+{
+    background: #1f2430 !important;
+}

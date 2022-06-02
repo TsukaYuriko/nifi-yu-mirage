@@ -1,0 +1,15 @@
+/*============================================================================*\
+| Process group configuration dialogs                                          |
+\*============================================================================*/
+
+// "Listed services are available to all descendant..." message
+#flow-cs-availability
+{
+    color: $color-text-footnote;
+}
+
+// "Browse" button when selecting template to upload
+#select-file-button button
+{
+    color: $color-icon-default;
+}

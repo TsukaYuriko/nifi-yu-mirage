@@ -1,0 +1,20 @@
+/*=============================================================================*\
+| Queues                                                                        |
+\*============================================================================*/
+
+#queue-listing-container
+{
+    
+    // "Destination of this queue is currently running" message
+    #queue-listing-message
+    {
+        color: $color-warning;
+    }
+
+    // Disabled icons
+    .fa.disabled
+    {
+        color: $color-icon-inactive !important;
+    }
+    
+}

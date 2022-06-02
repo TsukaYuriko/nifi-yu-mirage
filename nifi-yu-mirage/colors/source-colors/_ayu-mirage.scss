@@ -1,0 +1,53 @@
+/*============================================================================*\
+| Source colors: Ayu Mirage                                                    |
+\*============================================================================*/
+
+// Source: https://github.com/ayu-theme/ayu-colors
+
+$color-source-mirage-syntax-tag: #5CCFE6;
+$color-source-mirage-syntax-func: #FFD173;
+$color-source-mirage-syntax-entity: #73D0FF;
+$color-source-mirage-syntax-string: #D5FF80;
+$color-source-mirage-syntax-regexp: #95E6CB;
+$color-source-mirage-syntax-markup: #F28779;
+$color-source-mirage-syntax-keyword: #FFAD66;
+$color-source-mirage-syntax-special: #FFDFB3;
+$color-source-mirage-syntax-comment: #B8CFE680;
+$color-source-mirage-syntax-constant: #DFBFFF;
+$color-source-mirage-syntax-operator: #F29E74;
+$color-source-mirage-vcs-added: #87D96C;
+$color-source-mirage-vcs-modified: #80BFFF;
+$color-source-mirage-vcs-removed: #F27983;
+$color-source-mirage-editor-fg: #CCCAC2;
+$color-source-mirage-editor-bg: #242936;
+$color-source-mirage-editor-line: #1A1F29;
+$color-source-mirage-editor-selection-active: #409FFF40;
+$color-source-mirage-editor-selection-inactive: #409FFF21;
+$color-source-mirage-editor-findMatch-active: #695380;
+$color-source-mirage-editor-findMatch-inactive: #69538066;
+$color-source-mirage-editor-gutter-active: #8A9199CC;
+$color-source-mirage-editor-gutter-normal: #8A919966;
+$color-source-mirage-editor-indentGuide-active: #8A919959;
+$color-source-mirage-editor-indentGuide-normal: #8A91992E;
+$color-source-mirage-ui-fg: #707A8C;
+$color-source-mirage-ui-bg: #1F2430;
+$color-source-mirage-ui-line: #171B24;
+$color-source-mirage-ui-selection-active: #63759926;
+$color-source-mirage-ui-selection-normal: #69758C1F;
+$color-source-mirage-ui-panel-bg: #1C212B;
+$color-source-mirage-ui-panel-shadow: #12151CB3;
+$color-source-mirage-common-accent: #FFCC66;
+$color-source-mirage-common-error: #FF6666;
+
+// Colors with alpha components, premultiplied with ui.bg
+$color-source-mirage-syntax-comment-premultiplied: #6B7A8B;
+$color-source-mirage-editor-selection-active-premultiplied: #274364;
+$color-source-mirage-editor-selection-inactive-premultiplied: #23344B;
+$color-source-mirage-editor-findMatch-inactive-premultiplied: #3D3750;
+$color-source-mirage-editor-gutter-active-premultiplied: #747B84;
+$color-source-mirage-editor-gutter-normal-premultiplied: #4A505A;
+$color-source-mirage-editor-indentGuide-active-premultiplied: #444954;
+$color-source-mirage-editor-indentGuide-normal-premultiplied: #323843;
+$color-source-mirage-ui-selection-active-premultiplied: #293040;
+$color-source-mirage-ui-selection-normal-premultiplied: #282E3B;
+$color-source-mirage-ui-panel-shadow-premultiplied: #151921;

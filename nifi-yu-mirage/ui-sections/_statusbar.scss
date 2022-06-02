@@ -1,0 +1,69 @@
+/*============================================================================*\
+| Status bar                                                                   |
+\*============================================================================*/
+
+#flow-status
+{
+    
+    // Status bar at the top, below the menu bar
+    background: $color-ui-bar;
+    border-bottom: 1px solid $color-ui-bar-border;
+    
+    // Text next to the icons
+    #flow-status-container
+    {
+        .icon, .fa
+        {
+            span
+            {
+                color: $color-text;
+            }
+        }
+    }
+    
+    // Search button
+    #search-button
+    {
+        background: $color-button !important;
+        border: 1px solid $color-button !important;
+        border-left: 1px solid $color-button-border !important;
+        
+        &:hover
+        {
+            background: $color-button-hover !important;
+            border: 1px solid $color-button-border-hover !important;
+        }
+        
+        // Search button icon
+        .fa-search
+        {
+            color: $color-icon-default;
+        }
+    }
+    
+    // Search field
+    #search-container, #search-field
+    {
+        background: $color-input;
+        color: $color-text;
+        
+        &::placeholder
+        {
+            color: $color-source-mirage-ui-fg;
+        }
+        
+        &:hover
+        {
+            background: $color-input-hover;
+        }
+    }
+    
+    // Bulletin button
+    #bulletin-button
+    {
+        background: $color-button;
+        border: 1px solid $color-button;
+        border-left: 1px solid $color-button-border;
+    }
+    
+}

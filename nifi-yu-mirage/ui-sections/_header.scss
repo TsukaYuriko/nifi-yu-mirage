@@ -1,0 +1,67 @@
+/*============================================================================*\
+| Header / Palette                                                             |
+\*============================================================================*/
+
+$color-background: $color-ui-panel;
+$color-palette-background: $color-ui-panel;
+$color-palette-icon: $color-accent;
+$color-palette-hover: $color-button-hover;
+$color-hamburger-background: $color-ui-panel;
+$color-hamburger-icon: $color-accent;
+$color-hamburger-hover: $color-button-hover;
+$color-text: $color-text;
+
+md-toolbar#header
+{
+    
+    // Header bar
+    background-color: $color-background;
+    
+    // Palette items
+    .component-button
+    {
+        color: $color-palette-icon;
+        
+        &:hover
+        {
+            background: $color-palette-hover;
+        }
+    }
+    
+    // Palette items being dragged
+    .ui-draggable-dragging
+    {
+        color: $color-palette-icon;
+    }
+    
+    // Palette item button grips
+    .component-button-grip
+    {
+        background: repeating-linear-gradient(90deg, $color-palette-background, $color-palette-background 4px, transparent 4px, transparent 6px);
+    }
+    
+    // Currently logged in user text
+    #current-user
+    {
+        color: $color-text;
+        font-family: Roboto, sans-serif;
+    }
+    
+    // Menu button
+    #global-menu-button
+    {
+        background-color: $color-hamburger-background;
+        
+        &:hover
+        {
+            background: $color-hamburger-hover;
+        }
+        
+        // Hamburger icon
+        .fa
+        {
+            color: $color-hamburger-icon;
+        }
+    }
+    
+}

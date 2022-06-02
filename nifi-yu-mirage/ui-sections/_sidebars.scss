@@ -1,0 +1,235 @@
+/*============================================================================*\
+| Sidebars                                                                     |
+\*============================================================================*/
+
+div.graph-control
+{
+    
+    /*============================================================================*\
+    | General                                                                      |
+    \*============================================================================*/
+    
+    // Containers
+    background-color: $color-ui-panel;
+    border-top: 1px solid $color-ui-panel-border;
+    border-right: 1px solid $color-ui-panel-border;
+    border-bottom: 1px solid $color-ui-panel-border;
+    
+    // Slight shadow on containers for contrast
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    
+    // Headers
+    .graph-control-header-container
+    {
+        // Highlight on hover
+        &:hover
+        {
+            background: $color-button-hover;
+        }
+        
+        // Header text
+        div.graph-control-header
+        {
+            color: $color-text;
+            font-family: Roboto, sans-serif;
+        }
+        
+        // Icons
+        .graph-control-header-icon.fa
+        {
+            color: $color-button-icon-active;
+        }
+    }
+    
+    // Expand/Collapse buttons
+    div.graph-control-expansion
+    {
+        color: $color-button-icon-active;
+    }
+    
+    // Header icons when docked
+    div.graph-control-docked
+    {
+        color: $color-button-icon-active;
+    }
+    
+    // Headers on hover when docked
+    &.docked:hover
+    {
+        border: 1px solid $color-button-border-hover;
+        background: $color-button-hover;
+    }
+    
+    .graph-control-docked
+    {
+        padding-left: 2px;
+    }
+    
+    // Action buttons
+    div.action-button button
+    {
+        background: $color-button;
+        border: 1px solid $color-button-border;
+        color: $color-button-icon-active;
+        
+        &:hover
+        {
+            background: $color-button-hover;
+            border: 1px solid $color-button-border-hover;
+        }
+        
+        &:disabled
+        {
+            border: 1px solid $color-button;
+            background: none;
+            
+            .fa, .icon, span
+            {
+                color: $color-button-icon-inactive;
+            }
+        }
+    }
+    
+    /*============================================================================*\
+    | Navigate                                                                     |
+    \*============================================================================*/
+    
+    &#navigation-control
+    {
+        // Minimap
+        #birdseye
+        {
+            background: $color-minimap;
+            border: 1px solid $color-minimap-border;
+            
+            // Minimap viewport
+            .birdseye-brush-container .birdseye-brush
+            {
+                stroke: $color-minimap-birdseye;
+            }
+        }
+        
+        // Fix icon padding
+        div.action-button button .graph-control-action-icon
+        {
+            &.fa-search-plus, &.fa-search-minus
+            {
+                padding-left: 3px;
+            }
+            
+            &.icon-zoom-fit
+            {
+                padding-left: 2px;
+                padding-top: 1px;
+            }
+            
+            &.icon-zoom-actual
+            {
+                padding-left: 2px;
+            }
+        }
+    }
+    
+    /*============================================================================*\
+    | Operate                                                                      |
+    \*============================================================================*/
+    
+    &#operation-control
+    {
+        // NiFi logo in Operate panel
+        #operation-context-logo i.icon
+        {
+            color: $color-text-label;
+        }
+        
+        // Current context name
+        #operation-context-name
+        {
+            color: $color-text;
+        }
+        
+        // Current context type
+        #operation-context-type
+        {
+            color: $color-text-footnote;
+        }
+        
+        // Current context ID
+        #operation-context-id
+        {
+            color: $color-text-label;
+        }
+        
+        // Fix icon padding
+        div.action-button button .graph-control-action-icon
+        {
+            &.fa-gear
+            {
+                padding-left: 2px;
+            }
+            
+            &.fa-key
+            {
+                padding-left: 3px;
+            }
+            
+            &.fa-flash
+            {
+                padding-left: 1px;
+                padding-bottom: 1px;
+            }
+            
+            &.icon-enable-false
+            {
+                padding-left: 2px;
+            }
+            
+            &.fa-play
+            {
+                padding-left: 2px;
+            }
+            
+            &.fa-stop
+            {
+                padding-left: 2px;
+            }
+            
+            &.icon-template-save
+            {
+                padding-left: 3px;
+            }
+            
+            &.icon-template-import
+            {
+                padding-left: 3px;
+            }
+            
+            &.fa-copy
+            {
+                padding-left: 1px;
+            }
+            
+            &.fa-paste
+            {
+                padding-left: 2px;
+            }
+            
+            &.icon-group
+            {
+                padding-left: 2px;
+                padding-top: 1px;
+            }
+            
+            &.fa-paint-brush
+            {
+                padding-left: 1px;
+            }
+            
+            &.fa-trash
+            {
+                padding-left: 1px;
+            }
+        }
+    }
+    
+}

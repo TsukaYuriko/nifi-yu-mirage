@@ -1,0 +1,174 @@
+/*============================================================================*\
+| Editors                                                                      |
+\*============================================================================*/
+
+// General editor containers
+.slickgrid-nf-editor
+{
+    
+    background: $color-ui-dialog !important;
+    
+    // Expression Language / Parameter allowance
+    .mode-hint-container
+    {
+        color: $color-text-footnote;
+        
+        .fa-check
+        {
+            color: $color-code-editor-mode-supported;
+        }
+        
+        .fa-ban
+        {
+            color: $color-code-editor-mode-unsupported;
+        }
+    }
+    
+    // "Set empty string" checkbox
+    .nf-checkbox
+    {
+        /*
+        The default NiFi theme applies an offset to this,
+        which works fine with the original checkbox icon,
+        but not with the one this theme uses.
+        */
+        margin-top: 0px !important;
+    }
+    
+    .nf-checkbox-label
+    {
+        color: $color-text-footnote;
+    }
+    
+}
+
+// Code editor
+div.CodeMirror,
+.nf-editor .CodeMirror
+{
+    
+    background: $color-code-editor;
+    border: $color-code-editor-border;
+    color: $color-text;
+    
+    // Gutter
+    .CodeMirror-gutters
+    {
+        background: $color-code-editor;
+        border-right: 1px solid $color-code-editor-gutter;
+    }
+    
+    // Cursor
+    div.CodeMirror-cursor
+    {
+        border-left: 1px solid $color-text;
+    }
+    
+    // Line numbers
+    .CodeMirror-linenumber
+    {
+        color: $color-text-label;
+    }
+    
+    .CodeMirror-code span
+    {
+        // Brackets that are part of a parameter/property access
+        &.cm-bracket
+        {
+            color: $color-code-editor-bracket;
+        }
+        
+        // TODO what happened to variable 1?
+        
+        // Properties
+        &.cm-variable-2
+        {
+            color: $color-code-editor-variable;
+        }
+        
+        // Strings
+        &.cm-string
+        {
+            color: $color-code-editor-string;
+        }
+        
+        // Comments
+        &.cm-comment
+        {
+            color: $color-code-editor-comment;
+        }
+        
+        // NiFi functions
+        &.cm-builtin
+        {
+            color: $color-code-editor-function;
+        }
+        
+        // Matching brackets/parentheses
+        &.CodeMirror-matchingbracket
+        {
+            background: $color-code-editor-bracket-matching;
+            color: $color-text !important;
+            opacity: 1;
+        }
+        
+        // Unmatching brackets/parentheses
+        &.CodeMirror-nonmatchingbracket
+        {
+            background: $color-code-editor-bracket-unmatching;
+            color: $color-text !important;
+        }
+    }
+    
+}
+
+// Hex Viewer
+#hexview-content
+{
+    
+    background: $color-hex-viewer;
+    border: 1px solid $color-hex-viewer-border;
+    
+    table.hexviewerwindow_table
+    {
+        background: $color-hex-viewer;
+    }
+    
+    .hexviewerwindow_offset
+    {
+        background: $color-hex-viewer-offset;
+    }
+    
+    .hexviewerwindow_visual
+    {
+        background: $color-hex-viewer-visual;
+    }
+    
+}
+
+#truncation-message
+{
+    color: $color-text-footnote;
+}
+
+// Flowfile Viewer                                                               |
+
+#view-as-label
+{
+    color: $color-text-label;
+}
+
+.content-label
+{
+    color: $color-text-label;
+}
+
+#content-filename
+{
+    color: $color-text;
+}
+
+#content-type
+{
+    color: $color-text;
+}

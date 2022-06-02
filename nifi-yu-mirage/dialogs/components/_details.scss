@@ -1,0 +1,61 @@
+/*=============================================================================*\
+| Data Provenance                                                               |
+\*============================================================================*/
+// any "details" style dialog, e.g. flowfiles, provenance events...
+
+// Event details
+#event-details-dialog,
+#flowfile-details-dialog
+{
+    
+    // Headers
+    .event-header,
+    .flowfile-header
+    {
+        color: $color-text-label;
+        font-family: Roboto, sans-serif;
+    }
+    
+    // Labels
+    .detail-name, .attribute-name, .content-detail-name
+    {
+        color: $color-text-label;
+        font-family: Roboto, sans-serif;
+    }
+    
+    // Values
+    .detail-value, .attribute-value, .content-detail-value
+    {
+        color: $color-text;
+    }
+    
+    // "No value set" values
+    .unset
+    {
+        color: $color-text-footnote !important;
+    }
+    
+    /*
+    The default NiFi theme applies an offset to this,
+    which works fine with the original checkbox icon,
+    but not with the one this theme uses.
+    */
+    .nf-checkbox
+    {
+        margin-top: 3px !important;
+    }
+    
+    // Buttons (e.g. download/view flowfile contents)
+    .secondary-button
+    {
+        // TODO I don't like the "negative" implications, refactor?
+        color: $color-dialog-button-negative-text;
+        background: $color-dialog-button-negative;
+        
+        &:hover
+        {
+            background: $color-dialog-button-negative-hover;
+        }
+    }
+    
+}

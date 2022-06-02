@@ -1,0 +1,121 @@
+/*============================================================================*\
+| Icons                                                                        |
+\*============================================================================*/
+// General icon settings
+
+// Default icon color
+.fa
+{
+    color: $color-icon-default;
+}
+
+#flow-status, .settings-container, #summary, #queue-listing-container
+{
+    div.fa, div.icon
+    {
+        
+        // Disable glow which is enabled (but barely visible??) by default
+        &::before
+        {
+            text-shadow: none;
+        }
+        
+        // Threads
+        &.icon-threads::before
+        {
+            color: $color-icon-active;
+        }
+        
+        // Total queued data
+        &.fa-list::before
+        {
+            color: $color-icon-active;
+        }
+        
+        // Transmitting RPGs
+        &.fa-bullseye::before
+        {
+            color: $color-icon-rpg;
+        }
+        
+        // Not Transmitting RPGs
+        &.icon-transmit-false::before
+        {
+            color: $color-icon-active;
+        }
+        
+        // Running Components
+        &.fa-play::before
+        {
+            color: $color-icon-processor-running;
+        }
+        
+        // Stopped Components
+        &.fa-stop::before
+        {
+            color: $color-icon-processor-stopped;
+        }
+        
+        // Invalid Components
+        &.fa-warning::before
+        {
+            color: $color-icon-processor-invalid;
+        }
+        
+        // Disabled Components
+        &.icon-enable-false::before
+        {
+            color: $color-icon-active;
+        }
+        
+        // Up to date Versioned PGs
+        &.fa-check::before
+        {
+            color: $color-icon-vcs-uptodate;
+        }
+        
+        // Locally modified Versioned PGs
+        &.fa-asterisk::before
+        {
+            color: $color-icon-vcs-modified;
+        }
+        
+        // Stale Versioned PGs
+        &.fa-arrow-circle-up::before
+        {
+            color: $color-icon-vcs-stale;
+        }
+        
+        // Locally modified and stale Versioned PGs
+        &.fa-exclamation-circle::before
+        {
+            color: $color-icon-vcs-modified-stale;
+        }
+        
+        // Sync failure Versioned PGs
+        &.fa-question::before
+        {
+            color: $color-icon-vcs-sync-fail;
+        }
+        
+        // Last refresh
+        &.fa-refresh::before
+        {
+            color: $color-icon-active;
+        }
+        
+        // Any icon when inactive / counter is 0
+        &.zero::before
+        {
+            color: $color-icon-inactive;
+        }
+        
+    }
+}
+
+// Tooltip question mark icon
+.setting-name .fa,
+.combo-options .fa
+{
+    color: $color-icon-default;
+}

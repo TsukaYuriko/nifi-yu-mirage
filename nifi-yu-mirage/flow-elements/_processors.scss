@@ -1,0 +1,139 @@
+/*============================================================================*\
+| Processors                                                                   |
+\*============================================================================*/
+
+.processors .processor
+{
+    
+    // Border when not selected
+    rect.border
+    {
+        stroke: $color-flow-component-border;
+    }
+    
+    // Border when selected
+    &.selected rect.border
+    {
+        stroke: $color-flow-component-border-selected !important;
+    }
+    
+    .body
+    {
+        fill: $color-flow-component;
+        filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 0.25));
+    }
+    
+    .processor-icon-container
+    {
+        fill: $color-flow-component;
+    }
+    
+    .processor-icon
+    {
+        fill: $color-flow-component-icon !important;
+    }
+    
+    .processor-name
+    {
+        fill: $color-text;
+    }
+    
+    .processor-type
+    {
+        fill: $color-text-label;
+    }
+    
+    .processor-bundle
+    {
+        fill: $color-text-footnote;
+    }
+    
+    // Restricted component icon
+    .restricted-background
+    {
+        fill: $color-processor-restricted;
+    }
+    
+    .restricted
+    {
+        fill: $color-flow-component;
+    }
+    
+    // Status icons
+    .run-status-icon
+    {
+        // TODO These have no status-specific classes, unsure if this is the best way to work around it?
+        
+        // Running
+        &[fill="#{$color-source-original-flow-component-state-running}"]
+        {
+            fill: $color-flow-component-state-running;
+        }
+        
+        // Invalid
+        &[fill="#{$color-source-original-flow-component-state-invalid}"]
+        {
+            fill: $color-flow-component-state-invalid;
+        }
+        
+        // Stopped
+        &[fill="#{$color-source-original-flow-component-state-stopped}"]
+        {
+            fill: $color-flow-component-state-stopped;
+        }
+        
+        // Disabled
+        &[fill="#{$color-source-original-flow-component-state-disabled}"]
+        {
+            fill: $color-flow-component-state-disabled;
+        }
+    }
+    
+    .processor-canvas-details
+    {
+        rect
+        {
+            // Odd rows
+            &:nth-of-type(4n + 1)
+            {
+                fill: $color-flow-component-row-odd;
+            }
+            
+            // Even rows
+            &:nth-of-type(4n + 3)
+            {
+                fill: $color-flow-component-row-even;
+            }
+            
+            // Row separators
+            &:nth-of-type(2n + 2)
+            {
+                fill: $color-flow-component-row-separator;
+            }
+        }
+        
+        // Thread count icon
+        .active-thread-count-icon
+        {
+            fill: $color-text-label !important;
+        }
+        
+        // Thread count text
+        .active-thread-count
+        {
+            fill: $color-text;
+        }
+        
+        // Error bulletin
+        rect.bulletin-background
+        {
+            fill: $color-error;
+        }
+        
+        .bulletin-icon
+        {
+            fill: $color-flow-component;
+        }
+    }
+    
+}

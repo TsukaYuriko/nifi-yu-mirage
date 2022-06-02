@@ -1,0 +1,29 @@
+/*============================================================================*\
+| Stat labels                                                                  |
+\*============================================================================*/
+// Shared styles for the labels on all flow components
+// e.g. In / Out stats for processors, To / From / Queued for queues...
+
+g#canvas
+{
+    
+    // Labels
+    text.stats-label
+    {
+        fill: $color-text-label;
+        //font-family: Roboto, sans-serif;
+    }
+    
+    // Values
+    text.stats-value
+    {
+        fill: $color-text;
+    }
+    
+    // Footnotes (e.g. timers, load balancing/expiry icons...)
+    text.stats-info
+    {
+        fill: $color-text-footnote;
+    }
+    
+}

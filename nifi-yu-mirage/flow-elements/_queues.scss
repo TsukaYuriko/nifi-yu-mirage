@@ -1,0 +1,160 @@
+/*============================================================================*\
+| Queues                                                                       |
+\*============================================================================*/
+
+// Line arrows
+marker#normal
+{
+    fill: $color-queue-line;
+}
+
+.connections .connection
+{
+    
+    /*============================================================================*\
+    | Lines                                                                        |
+    \*============================================================================*/
+    
+    .connection-path
+    {
+        stroke: $color-queue-line;
+    }
+    
+    // Selected lines
+    .connection-selection-path
+    {
+        stroke: $color-queue-line-selected;
+        stroke-width: 2;
+    }
+    
+    // Connector points
+    .linepoint
+    {
+        &.startpoint
+        {
+            stroke: $color-queue-startpoint;
+            fill: $color-queue-startpoint;
+        }
+        
+        &.midpoint
+        {
+            stroke: $color-queue-midpoint;
+            fill: $color-queue-midpoint;
+        }
+        
+        &.endpoint
+        {
+            stroke: $color-queue-endpoint;
+            fill: $color-queue-endpoint;
+        }
+    }
+    
+    /*============================================================================*\
+    | Labels                                                                       |
+    \*============================================================================*/
+    
+    // Border when not selected
+    .connection-label-container .border
+    {
+        stroke: $color-flow-component-border;
+    }
+    
+    // Border when selected
+    &.selected .connection-label-container .border
+    {
+        stroke: $color-flow-component-border-selected;
+    }
+    
+    .connection-label-container
+    {
+        // Border that covers up the shadow insets
+        .body
+        {
+            fill: $color-flow-component;
+        }
+        
+        // Rows
+        g
+        {
+            // Odd
+            &:nth-of-type(odd) .connection-label-background
+            {
+                fill: $color-flow-component-row-odd;
+            }
+            
+            // Even
+            &:nth-of-type(even) .connection-label-background
+            {
+                fill: $color-flow-component-row-even;
+            }
+            
+            // Separators
+            &:nth-of-type(1n + 2) .connection-label-border
+            {
+                fill: $color-flow-component-row-separator;
+            }
+        }
+        
+        .queued-container
+        {
+            // Separator line if queue has a name
+            .connection-label-border
+            {
+                fill: $color-flow-component-row-separator;
+            }
+            
+            // Backpressure
+            .backpressure-object-container, .backpressure-data-size-container
+            {
+                // Background
+                .backpressure-object, .backpressure-data-size
+                {
+                    fill: $color-queue-backpressure;
+                }
+                
+                // Percent bar
+                .backpressure-percent
+                {
+                    // Default
+                    fill: $color-queue-backpressure-ok;
+                    
+                    // At warning threshold
+                    &.warning
+                    {
+                        fill: $color-queue-backpressure-warning;
+                    }
+                    
+                    // Not actually error, but at critical threshold
+                    &.error
+                    {
+                        fill: $color-queue-backpressure-critical;
+                    }
+                }
+            }
+        }
+        
+        // Run status
+        .connection-from-run-status, .connection-to-run-status
+        {
+            text-shadow: none;
+            
+            &.running
+            {
+                fill: $color-icon-processor-running !important;
+            }
+            
+            &.stopped
+            {
+                fill: $color-icon-processor-stopped !important;
+            }
+        }
+        
+        // Additional status icons
+        .load-balance-icon, .expiration-icon
+        {
+            fill: $color-text-footnote;
+            text-shadow: none;
+        }
+    }
+    
+}

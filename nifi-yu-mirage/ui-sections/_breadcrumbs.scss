@@ -1,0 +1,61 @@
+/*============================================================================*\
+| Breadcrumbs                                                                  |
+\*============================================================================*/
+
+#breadcrumbs
+{
+    
+    background-color: $color-ui-bar;
+    border-top: 1px solid $color-ui-bar-border;
+    
+    // Remove borders on the sides
+    // These are barely visible in the original theme due to bad contrast.
+    // Here, they'd just look bad and won't fit the style anyway.
+    #breadcrumbs-left-border, #breadcrumbs-right-border
+    {
+        background: none;
+    }
+    
+    #data-flow-title-container
+    {
+        // Arrows
+        color: $color-text-footnote;
+        
+        // Version control icons
+        .fa
+        {
+            // Unfortunately, these don't have semantic classes
+            
+            // Up to date
+            &.fa-check
+            {
+                color: $color-icon-vcs-uptodate;
+            }
+            
+            // Locally modified
+            &.fa-asterisk
+            {
+                color: $color-icon-vcs-modified;
+            }
+            
+            // Stale
+            &.fa-arrow-circle-up
+            {
+                color: $color-icon-vcs-stale;
+            }
+            
+            // Locally modified and stale
+            &.fa-exclamation-circle
+            {
+                color: $color-icon-vcs-modified-stale;
+            }
+            
+            // Sync failure
+            &.fa-question
+            {
+                color: $color-icon-vcs-sync-fail;
+            }
+        }
+    }
+    
+}

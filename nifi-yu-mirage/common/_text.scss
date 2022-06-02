@@ -1,0 +1,23 @@
+/*============================================================================*\
+| Text                                                                         |
+\*============================================================================*/
+
+// Default text color
+body
+{
+    
+    color: $color-text;
+    
+}
+
+// Links
+span.link, div.bulletin-link
+{
+    color: $color-text-link !important;
+    border-bottom: 1px solid $color-text-link-underline;
+    
+    &:hover
+    {
+        border-bottom: 1px solid $color-text-link-underline-hover;
+    }
+}

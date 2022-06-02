@@ -1,0 +1,82 @@
+/*=============================================================================*\
+| Shells                                                                        |
+\*============================================================================*/
+// Note: Shells are the dialog boxes that don't make the background go foggy (those are modals)
+
+#shell-container
+{
+    
+    // Shell window
+    background: $color-ui-dialog;
+    
+    // Labels
+    .setting-name
+    {
+        color: $color-text-label;
+        font-family: Roboto, sans-serif;
+    }
+    
+    // Horizontal bar at the bottom of scrollable containers
+    .scrollable
+    {
+        border-bottom: 1px solid $color-ui-dialog-separator;
+    }
+    
+}
+
+// Title
+// These all have separate IDs and no common class which is stupid but I can't do anything about it
+#process-group-configuration-header-text,
+#summary-header-text,
+#counters-header-text,
+#bulletin-board-header-text,
+#provenance-header-text,
+#settings-header-text,
+#parameter-contexts-header-text,
+#history-header-text,
+#users-header-text,
+#policy-management-header-text,
+#templates-header-text,
+#queue-listing-header-text
+{
+    color: $color-ui-dialog-title;
+    font-family: Roboto, sans-serif;
+}
+
+// Last updated timestamp
+.last-refreshed-container
+{
+    // Label
+    color: $color-text-label;
+    
+    // Timestamp
+    span
+    {
+        color: $color-text !important;
+    }
+}
+
+/*
+The stuff below is for shell dialogs that are embedded via iframes.
+This method is mainly used by the dialogs accessible from
+the hamburger menu. They have no classes that could be used
+to refer to them, and since embedding via iframes resets
+the selector context, they can't be selected via the element
+that contains the iframe either.
+
+This (somewhat unintentionally) would style the pop-up manual as well, which
+I'm not intending to cover as it's just too much work for too little gain.
+
+I also dislike that this technically styles the root html and body elements
+as well (even though it's not visible because they're fully covered up).
+
+The exclusions are intended to exclude the manual and canvas body.
+The root html element of the document is still styled, though. It has no
+classes or other identifiable attributes that would make it easy to exclude.
+*/
+// TODO think of a better way to handle this
+html:not([xmlns="http://www.w3.org/1999/xhtml"]),
+body:not([id="canvas-body"]):not([id="documentation-body"]):not([class="article"]):not([class="message-pane"])
+{
+    background: $color-ui-dialog;
+}

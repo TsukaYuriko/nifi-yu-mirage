@@ -1,0 +1,35 @@
+/*============================================================================*\
+| Error screens                                                                |
+\*============================================================================*/
+
+.message-pane
+{
+    
+    // Background
+    background-color: $color-errorscreen;
+    
+    // Title
+    .message-pane-title
+    {
+        color: $color-errorscreen-title;
+    }
+    
+    // Links (home, log out...)
+    .links li span, a
+    {
+        color: $color-text-link;
+        border-bottom: none;
+        
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+    
+    // Actual message
+    .message-pane-content
+    {
+        color: $color-text;
+    }
+    
+}

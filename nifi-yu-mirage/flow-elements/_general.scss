@@ -1,0 +1,15 @@
+/*================================================================================================================*\
+| General                                                                                                          |
+\*================================================================================================================*/
+
+// Queue add button when hovering over flow elements
+.add-connect
+{
+    fill: $color-accent !important;
+}
+
+// Placement preview when dragging an element
+.drag-selection
+{
+    stroke: $color-accent !important;
+}

@@ -1,0 +1,33 @@
+/*============================================================================*\
+| Variables dialog                                                             |
+\*============================================================================*/
+
+// "Referencing XYZ" components
+#variable-affected-components-context,
+#variable-registry-affected-processors,
+#variable-registry-affected-controller-services,
+#variable-registry-affected-unauthorized-components
+{
+    .affected-component-container span
+    {
+        color: $color-text !important;
+    }
+}
+
+// "Parameters are replacing variables..." message
+#variable-message
+{
+    color: $color-text-footnote;
+}
+
+// "Learn more" about parameters link
+#parameters-documentation-link
+{
+    color: $color-text-link;
+    border-bottom: 1px solid $color-text-link-underline;
+    
+    &:hover
+    {
+        border-bottom: 1px solid $color-text-link-underline-hover;
+    }
+}

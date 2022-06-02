@@ -1,0 +1,90 @@
+/*============================================================================*\
+| Ports                                                                        |
+\*============================================================================*/
+
+.ports .component
+{
+    
+    // Unselected border
+    rect.border
+    {
+        stroke: $color-flow-component-border;
+    }
+    
+    // Selected border
+    &.selected rect.border
+    {
+        stroke: $color-flow-component-border-selected !important;
+    }
+    
+    // Remote port header
+    .remote-banner
+    {
+        fill: $color-flow-component-header;
+    }
+    
+    // Transmission status icon
+    text.port-transmission-icon
+    {
+        text-shadow: none;
+        
+        &.not-transmitting
+        {
+            fill: $color-icon-inactive !important;
+        }
+        
+        &.transmitting
+        {
+            fill: $color-icon-rpg !important;
+        }
+    }
+    
+    // Body fill
+    rect.body
+    {
+        fill: $color-flow-component;
+    }
+    
+    // Input/Output icon
+    .port-icon
+    {
+        fill: $color-flow-component-icon;
+    }
+    
+    // Port name
+    .port-name
+    {
+        fill: $color-text;
+    }
+    
+    // Status icons
+    .run-status-icon
+    {
+        // TODO These have no status-specific classes, unsure if this is the best way to work around it?
+        
+        // Running
+        &[fill="#{$color-source-original-flow-component-state-running}"]
+        {
+            fill: $color-flow-component-state-running;
+        }
+        
+        // Invalid
+        &[fill="#{$color-source-original-flow-component-state-invalid}"]
+        {
+            fill: $color-flow-component-state-invalid;
+        }
+        
+        // Stopped
+        &[fill="#{$color-source-original-flow-component-state-stopped}"]
+        {
+            fill: $color-flow-component-state-stopped;
+        }
+        
+        // Disabled
+        &[fill="#{$color-source-original-flow-component-state-disabled}"]
+        {
+            fill: $color-flow-component-state-disabled;
+        }
+    }
+    
+}

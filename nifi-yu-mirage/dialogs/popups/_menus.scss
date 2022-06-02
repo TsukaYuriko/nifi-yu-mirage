@@ -1,0 +1,38 @@
+/*=============================================================================*\
+| Menus                                                                         |
+\*============================================================================*/
+// e.g. the "Search User" result menu
+
+.ui-menu
+{
+    
+    // Container
+    background: $color-input;
+    border: 1px solid $color-input-border !important;
+    
+    //box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    
+    // Rows
+    .ui-menu-item a
+    {
+        // User/group names
+        color: $color-text !important;
+        
+        // Group icon
+        .fa
+        {
+            color: $color-icon-default;
+            
+            // Add some space between icon and name
+            margin-right: 0.5em;
+        }
+        
+        // On hover
+        &.ui-state-active
+        {
+            background: $color-input-hover !important;
+            border: 1px solid transparent;
+        }
+    }
+    
+}

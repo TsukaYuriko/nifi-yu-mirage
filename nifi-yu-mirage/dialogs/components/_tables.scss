@@ -1,0 +1,121 @@
+/*============================================================================*\
+| Tables                                                                       |
+\*============================================================================*/
+
+.ui-widget
+{
+    
+    // Background / empty space around an embedded table
+    .slick-viewport
+    {
+        background: $color-ui-dialog;
+    }
+    
+    .slick-cell
+    {
+        // General text color
+        color: $color-text;
+        
+        // Icons
+        .fa, .icon
+        {
+            color: $color-icon-default;
+        }
+    }
+    
+    // Header
+    .slick-header
+    {
+        .slick-header-columns
+        {
+            // Background color for the entire row
+            // (visible e.g. on the right if the columns don't fill the entire width)
+            background: $color-ui-dialog;
+            
+            .slick-header-column
+            {
+                // Header text
+                color: $color-text;
+                
+                // Background color for a column-wide cell in the header
+                background: $color-table-header;
+                
+                // Add some spacing to the left of the header titles
+                // (looks super cramped in the original)
+                .slick-column-name
+                {
+                    margin-left: 0.5em;
+                }
+                
+                // Add a border because, surprise, these can be resized
+                // (there's no visible border at all in the original?!)
+                border-right: 1px solid $color-table-border;
+                
+                // ... except for the rightmost one
+                &:last-child
+                {
+                    border-right: none;
+                }
+                
+                // Disable pointy cursor because... well, this is not clickable
+                cursor: default;
+            }
+        }
+    }
+    
+    // Body
+    .slick-row
+    {
+        // 0-based, this is the topmost one
+        &.even
+        {
+            background: $color-table-row-odd;
+        }
+        
+        &.odd
+        {
+            background: $color-table-row-even;
+        }
+        
+        &:hover
+        {
+            background: $color-table-row-hover !important;
+        }
+        
+        // For some reason the child elements are colored, not the parent
+        .slick-cell.selected
+        {
+            background: $color-table-row-selected;
+        }
+        
+        // Grid lines
+        .slick-cell
+        {
+            // Disable left border because it doesn't line up with the header borders otherwise
+            // (why are they using different sides to begin with...?!)
+            border-left: none;
+            
+            // Add proper grid lines
+            border-right: 1px solid $color-table-border;
+            border-bottom: 1px solid $color-table-border;
+            
+            // ... except for the rightmost ones
+            &:last-child
+            {
+                border-right: none;
+            }
+        }
+        
+        // ... and the bottommost ones
+        &:last-child .slick-cell
+        {
+            border-bottom: none;
+        }
+    }
+    
+}
+
+.filter-status
+{
+    color: $color-text-footnote;
+}

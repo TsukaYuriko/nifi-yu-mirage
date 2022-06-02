@@ -1,0 +1,53 @@
+/*============================================================================*\
+| Users                                                                        |
+\*============================================================================*/
+// Add/edit dialog for users/groups
+
+ul.usersGroupsList
+{
+    
+    // User/group list rows
+    li
+    {
+        border-bottom: 1px solid $color-table-border;
+        
+        &.even
+        {
+            /*
+            Odd style on even row is correct. Say thanks to
+            whoever had the grandiose idea of treating
+            rows as 0-based.
+            */
+            background: $color-table-row-odd;
+        }
+    }
+    
+    /*
+    The default NiFi theme applies an offset to this,
+    which works fine with the original checkbox icon,
+    but not with the one this theme uses.
+    */
+    .nf-checkbox
+    {
+        margin-top: 0px !important;
+    }
+    
+    // Group icon
+    .fa
+    {
+        color: $color-icon-default;
+        
+        /*
+        This doesn't have an offset but desperately needs one,
+        both in the original theme as well as this one.
+        */
+        margin-top: 4px;
+    }
+    
+}
+
+// "Some policies may be inherited..." message in user policy list
+#user-policy-message
+{
+    color: $color-text-footnote;
+}
