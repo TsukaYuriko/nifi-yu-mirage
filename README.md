@@ -1,6 +1,6 @@
 # NiFi Yu Mirage
 
-![Theme preview](https://github.com/TsukaYuriko/nifi-yu-mirage/blob/master/preview.png)
+![Theme preview](https://github.com/TsukaYuriko/nifi-yu-mirage/blob/main/preview.png)
 
 This is a dark UI theme for [Apache NiFi](https://github.com/apache/nifi).  
 It is heavily inspired by the [Ayu](https://github.com/ayu-theme) theme and uses a mix of the
