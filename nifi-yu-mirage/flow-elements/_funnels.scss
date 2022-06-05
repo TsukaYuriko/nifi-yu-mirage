@@ -24,6 +24,11 @@
         
         // Remove default drop shadow, messes up the colors
         filter: none;
+        
+        &.unauthorized
+        {
+            fill: $color-flow-component;
+        }
     }
     
     .funnel-icon

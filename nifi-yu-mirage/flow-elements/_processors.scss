@@ -21,11 +21,21 @@
     {
         fill: $color-flow-component;
         filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, 0.25));
+        
+        &.unauthorized
+        {
+            fill: $color-flow-component;
+        }
     }
     
     .processor-icon-container
     {
         fill: $color-flow-component;
+        
+        &.unauthorized
+        {
+            fill: $color-flow-component !important;
+        }
     }
     
     .processor-icon

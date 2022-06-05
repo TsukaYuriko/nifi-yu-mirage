@@ -43,6 +43,11 @@
     rect.body
     {
         fill: $color-flow-component;
+        
+        &.unauthorized
+        {
+            fill: $color-flow-component;
+        }
     }
     
     // Input/Output icon
