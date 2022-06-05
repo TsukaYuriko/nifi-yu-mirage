@@ -72,9 +72,22 @@ The only reliable way to address them seems to be by their inline styles.
     color: $color-dialog-button-negative-text !important;
 }
 
+/*
+This fixes an edge case when a user that has no permission
+to modify a component inspects a value in a processor's settings.
+The dialog that pops up doesn't inline-color the button as it would
+when a user with permissions were to open it, but instead draws its
+style from this "default" fallback style.
+*/
+.property-detail div.button
+{
+    @include dialog-button-positive;
+}
+
 .dialog-buttons .button,
 .combo-editor div .button, .combo-editor div .secondary-button,
-.slickgrid-nf-editor .button, .slickgrid-nf-editor .secondary-button
+.ui-draggable .button, .ui-draggable .secondary-button,
+.property-detail .button, .property-detail .secondary-button
 {
     &[style*="#{$color-source-original-dialog-button-positive}"]
     {
