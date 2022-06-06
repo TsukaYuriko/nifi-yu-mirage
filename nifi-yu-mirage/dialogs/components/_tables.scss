@@ -113,6 +113,31 @@
         }
     }
     
+    // Sorting
+    .slick-sort-indicator 
+    {
+        // Disable default icon
+        background: transparent !important;
+        margin-top: 0px;
+        
+        // Add better icon
+        
+        &::before
+        {
+            color: $color-icon-default;
+        }
+        
+        &.slick-sort-indicator-asc::before
+        {
+            content: "▲";
+        }
+        
+        &.slick-sort-indicator-desc::before
+        {
+            content: "▼";
+        }
+    }
+    
 }
 
 .filter-status
