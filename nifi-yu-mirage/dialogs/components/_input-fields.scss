@@ -28,7 +28,7 @@
 }
 
 // General input fields
-input, textarea
+input[type="text"], input[type="password"], textarea
 {
     @include input-field;
 }
