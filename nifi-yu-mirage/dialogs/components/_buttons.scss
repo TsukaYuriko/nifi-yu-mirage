@@ -129,3 +129,33 @@ BS the ones above have.
     }
     
 }
+
+// "Stop & configure" button
+.dialog-status-bar-buttons
+{
+    
+    .button
+    {
+        @include dialog-button-negative;
+        
+        &:hover
+        {
+            @include dialog-button-negative-hover;
+        }
+    }
+    
+    .stop-configure-icon
+    {
+        
+        &::after
+        {
+            // Disable default styles
+            -webkit-text-stroke-width: 0 !important;
+            -webkit-text-stroke-color: $color-accent !important;
+            
+            // Apply better styles
+            color: $color-dialog-button-negative;
+        }
+    }
+    
+}
