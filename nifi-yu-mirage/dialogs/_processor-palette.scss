@@ -2,6 +2,27 @@
 | Processor palette                                                            |
 \*============================================================================*/
 
+#new-processor-dialog
+{
+    
+    #processor-type-name
+    {
+        color: $color-text-label;
+    }
+    
+    #processor-type-bundle
+    {
+        color: $color-text-footnote;
+    }
+    
+    // Restricted icon
+    .view-usage-restriction
+    {
+        color: $color-processor-restricted !important;
+    }
+    
+}
+
 // Tag cloud
 #processor-tag-cloud
 {
