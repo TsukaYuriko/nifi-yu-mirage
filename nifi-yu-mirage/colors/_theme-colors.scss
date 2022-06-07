@@ -348,3 +348,15 @@ $color-hex-viewer: $color-input;
 $color-hex-viewer-border: $color-input-border;
 $color-hex-viewer-offset: $color-source-dark-editor-selection-inactive;
 $color-hex-viewer-visual: $color-source-dark-editor-selection-active;
+
+/*----------------------------------------------------------------------------*\
+| Processor palette                                                            |
+\*----------------------------------------------------------------------------*/
+
+$color-processor-palette-tagcloud-background: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-processor-palette-tagcloud-background-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-processor-palette-tagcloud-text: $color-accent;
+
+$color-processor-palette-tagcloud-background-selected: $color-processor-palette-tagcloud-text;
+$color-processor-palette-tagcloud-background-hover-selected: $color-source-light-vcs-modified;
+$color-processor-palette-tagcloud-text-selected: $color-processor-palette-tagcloud-background;
