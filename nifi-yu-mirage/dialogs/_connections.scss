@@ -1,0 +1,27 @@
+/*============================================================================*\
+| Connections                                                                  |
+\*============================================================================*/
+// Upstream/Downstream Connections
+
+#connections-dialog
+{
+    
+    // Element icons
+    .search-result-icon
+    {
+        color: $color-text-label;
+    }
+    
+    // Links
+    .go-to-link
+    {
+        color: $color-text-link !important;
+        text-decoration-color: $color-text-link-underline;
+        
+        &:hover
+        {
+            text-decoration-color: $color-text-link-underline-hover;
+        }
+    }
+    
+}
