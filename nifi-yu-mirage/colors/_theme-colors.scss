@@ -329,8 +329,6 @@ $color-bulletin-board-message: $color-text;
 
 $color-code-editor: $color-input;
 $color-code-editor-border: $color-input-border;
-$color-code-editor-mode-supported: $color-source-light-vcs-added;
-$color-code-editor-mode-unsupported: $color-source-light-vcs-removed;
 $color-code-editor-gutter: $color-source-mirage-editor-gutter-normal;
 
 $color-code-editor-bracket: $color-source-mirage-syntax-keyword;
@@ -362,3 +360,17 @@ $color-processor-palette-tagcloud-text: $color-accent;
 $color-processor-palette-tagcloud-background-selected: $color-processor-palette-tagcloud-text;
 $color-processor-palette-tagcloud-background-hover-selected: $color-source-light-vcs-modified;
 $color-processor-palette-tagcloud-text-selected: $color-processor-palette-tagcloud-background;
+
+
+/*----------------------------------------------------------------------------*\
+| Mode hints                                                                   |
+\*----------------------------------------------------------------------------*/
+
+$color-modehint-background: $color-source-mirage-editor-bg;
+$color-modehint-border: $color-source-mirage-editor-line;
+$color-modehint-supported-icon: $color-source-light-vcs-added;
+$color-modehint-supported-text: $color-text;
+$color-modehint-unsupported-icon: $color-source-light-vcs-removed;
+$color-modehint-unsupported-text: $color-text-footnote;
+$color-modehint-text: $color-text;
+$color-modehint-pattern: $color-source-mirage-editor-selection-active;
