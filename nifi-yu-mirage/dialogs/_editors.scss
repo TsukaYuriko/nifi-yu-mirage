@@ -122,6 +122,19 @@ div.CodeMirror,
     
 }
 
+// Selected text while editor is unfocused
+.CodeMirror-selected
+{
+    background: $color-code-editor-text-selected;
+}
+
+// Selected text while editor is focused
+.CodeMirror-focused .CodeMirror-selected
+{
+    background: $color-code-editor-text-selected-focused;
+}
+
+
 // Hex Viewer
 #hexview-content
 {

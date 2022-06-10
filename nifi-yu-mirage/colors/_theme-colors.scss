@@ -346,6 +346,8 @@ $color-code-editor: $color-input;
 $color-code-editor-border: $color-input-border;
 $color-code-editor-gutter: $color-source-mirage-editor-gutter-normal;
 
+$color-code-editor-text-selected: $color-source-mirage-editor-selection-inactive;
+$color-code-editor-text-selected-focused: $color-source-mirage-editor-selection-active;
 $color-code-editor-bracket: $color-source-mirage-syntax-keyword;
 $color-code-editor-bracket-matching: $color-source-mirage-editor-selection-active;
 $color-code-editor-bracket-unmatching: $color-error;
