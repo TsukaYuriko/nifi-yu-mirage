@@ -5,6 +5,12 @@
 md-switch
 {
     
+    // Button, disabled
+    &.md-primary .md-thumb
+    {
+        background: $color-toggle-disabled;
+    }
+    
     // Button, off
     &:not([disabled]).md-primary .md-thumb
     {
@@ -15,6 +21,12 @@ md-switch
     &:not([disabled]).md-primary.md-checked .md-thumb
     {
         background: $color-toggle-button-on;
+    }
+    
+    // Background, disabled
+    &.md-primary .md-bar
+    {
+        background: $color-toggle-disabled;
     }
     
     // Background, off

@@ -2,16 +2,13 @@
 | Canvas                                                                       |
 \*============================================================================*/
 
-$color-canvas-background: $color-ui-back;
-$color-canvas-grid: $color-ui-back-highlight;
-
 #canvas-container
 {
     
     // Background
-    background-color: $color-canvas-background;
+    background-color: $color-ui-back;
     
     // Grid
-    background-image: linear-gradient(to right, $color-canvas-grid 1px, transparent 1px), linear-gradient(to bottom, $color-canvas-grid 1px, transparent 1px);
+    background-image: linear-gradient(to right, $color-ui-back-highlight 1px, transparent 1px), linear-gradient(to bottom, $color-ui-back-highlight 1px, transparent 1px);
     
 }

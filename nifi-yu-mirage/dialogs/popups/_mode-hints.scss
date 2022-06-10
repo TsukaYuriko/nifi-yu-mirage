@@ -1,0 +1,45 @@
+/*============================================================================*\
+| Mode hints                                                                   |
+\*============================================================================*/
+
+div.mode-hint-tip
+{
+    
+    // Container
+    background: $color-modehint-background;
+    border: 1px solid $color-modehint-border;
+    
+    div.mode-hint-tip-title-container
+    {
+        .fa-check
+        {
+            color: $color-modehint-supported-icon;
+        }
+        
+        .fa-ban
+        {
+            color: $color-modehint-unsupported-icon;
+        }
+        
+        .mode-supported
+        {
+            color: $color-modehint-supported-text;
+        }
+        
+        .mode-unsupported
+        {
+            color: $color-modehint-unsupported-text;
+        }
+    }
+    
+    div.mode-hint-tip-description-container
+    {
+        color: $color-modehint-text;
+        
+        .hint-pattern
+        {
+            background: $color-modehint-pattern;
+        }
+    }
+    
+}

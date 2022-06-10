@@ -103,6 +103,19 @@ $color-ui-dialog-separator: $color-source-mirage-ui-line;
 
 
 /*----------------------------------------------------------------------------*\
+| Provenance                                                                   |
+\*----------------------------------------------------------------------------*/
+
+$color-provenance-background: $color-source-mirage-editor-bg;
+$color-provenance-border: $color-source-mirage-editor-line;
+$color-provenance-line: $color-source-mirage-editor-fg;
+$color-provenance-line-selected: $color-source-mirage-vcs-modified;
+$color-provenance-event: $color-source-mirage-ui-bg;
+$color-provenance-event-selected: $color-source-mirage-editor-selection-active-premultiplied;
+$color-provenance-event-outline: $color-source-mirage-ui-line;
+
+
+/*----------------------------------------------------------------------------*\
 | Tabs                                                                         |
 \*----------------------------------------------------------------------------*/
 
@@ -145,6 +158,7 @@ $color-flow-component-state-disabled: $color-source-mirage-editor-gutter-normal-
 
 // Processors
 $color-processor-restricted: $color-source-light-syntax-entity;
+$color-processor-primary: $color-source-light-syntax-entity;
 
 // Process groups
 $color-process-group-status-bar: $color-flow-component-row-odd;
@@ -153,11 +167,12 @@ $color-process-group-status-bar: $color-flow-component-row-odd;
 $color-flow-component-icon: $color-source-mirage-ui-fg;
 
 // Queues
-$color-queue-line: $color-text;
+$color-queue-line: $color-source-mirage-editor-fg;
+$color-queue-line-outline: $color-source-mirage-editor-line;
 $color-queue-line-selected: $color-accent;
-$color-queue-startpoint: $color-source-light-common-error;
+$color-queue-startpoint: $color-source-light-vcs-removed;
 $color-queue-midpoint: $color-accent;
-$color-queue-endpoint: $color-source-light-syntax-string;
+$color-queue-endpoint: $color-source-light-vcs-added;
 $color-queue-backpressure: $color-source-mirage-ui-selection-active-premultiplied;
 $color-queue-backpressure-ok: $color-source-light-syntax-string;
 $color-queue-backpressure-warning: $color-source-light-common-accent;
@@ -213,6 +228,8 @@ $color-icon-vcs-stale: $color-source-light-syntax-func;
 $color-icon-vcs-modified-stale: $color-source-light-syntax-func;
 $color-icon-vcs-sync-fail: $color-source-light-syntax-markup;
 
+// Cluster nodes
+$color-icon-cluster: $color-accent;
 
 /*----------------------------------------------------------------------------*\
 | Input fields                                                                 |
@@ -301,6 +318,7 @@ $color-sort-box-text: $color-accent;
 | Toggles                                                                      |
 \*----------------------------------------------------------------------------*/
 
+$color-toggle-disabled: $color-icon-inactive;
 $color-toggle-button-off: $color-button-hover;
 $color-toggle-button-on: $color-accent;
 $color-toggle-background-off: $color-button-border;
@@ -326,10 +344,10 @@ $color-bulletin-board-message: $color-text;
 
 $color-code-editor: $color-input;
 $color-code-editor-border: $color-input-border;
-$color-code-editor-mode-supported: $color-source-light-vcs-added;
-$color-code-editor-mode-unsupported: $color-source-light-vcs-removed;
 $color-code-editor-gutter: $color-source-mirage-editor-gutter-normal;
 
+$color-code-editor-text-selected: $color-source-mirage-editor-selection-inactive;
+$color-code-editor-text-selected-focused: $color-source-mirage-editor-selection-active;
 $color-code-editor-bracket: $color-source-mirage-syntax-keyword;
 $color-code-editor-bracket-matching: $color-source-mirage-editor-selection-active;
 $color-code-editor-bracket-unmatching: $color-error;
@@ -347,3 +365,29 @@ $color-hex-viewer: $color-input;
 $color-hex-viewer-border: $color-input-border;
 $color-hex-viewer-offset: $color-source-dark-editor-selection-inactive;
 $color-hex-viewer-visual: $color-source-dark-editor-selection-active;
+
+/*----------------------------------------------------------------------------*\
+| Processor palette                                                            |
+\*----------------------------------------------------------------------------*/
+
+$color-processor-palette-tagcloud-background: $color-source-mirage-ui-selection-normal-premultiplied;
+$color-processor-palette-tagcloud-background-hover: $color-source-mirage-ui-selection-active-premultiplied;
+$color-processor-palette-tagcloud-text: $color-accent;
+
+$color-processor-palette-tagcloud-background-selected: $color-processor-palette-tagcloud-text;
+$color-processor-palette-tagcloud-background-hover-selected: $color-source-light-vcs-modified;
+$color-processor-palette-tagcloud-text-selected: $color-processor-palette-tagcloud-background;
+
+
+/*----------------------------------------------------------------------------*\
+| Mode hints                                                                   |
+\*----------------------------------------------------------------------------*/
+
+$color-modehint-background: $color-source-mirage-editor-bg;
+$color-modehint-border: $color-source-mirage-editor-line;
+$color-modehint-supported-icon: $color-source-light-vcs-added;
+$color-modehint-supported-text: $color-text;
+$color-modehint-unsupported-icon: $color-source-light-vcs-removed;
+$color-modehint-unsupported-text: $color-text-footnote;
+$color-modehint-text: $color-text;
+$color-modehint-pattern: $color-source-mirage-editor-selection-active;

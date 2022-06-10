@@ -1,0 +1,81 @@
+/*============================================================================*\
+| Processor palette                                                            |
+\*============================================================================*/
+
+#new-processor-dialog
+{
+    
+    #processor-type-name
+    {
+        color: $color-text-label;
+    }
+    
+    #processor-type-bundle
+    {
+        color: $color-text-footnote;
+    }
+    
+    // Restricted icon
+    .view-usage-restriction
+    {
+        color: $color-processor-restricted !important;
+    }
+    
+}
+
+// Tag cloud
+#processor-tag-cloud
+{
+    // Push tags a bit to the right, the left side is cut off otherwise
+    padding-left: 3px !important;
+}
+
+
+// Tag cloud links
+ul.tag-cloud
+{
+    
+    // Required so the bottom border of tags is not cut off
+    overflow: visible;
+    
+    // Extend margin because borders don't do it for whatever reason
+    li
+    {
+        margin: 3px;
+    }
+    
+    // Unselected tags
+    span.link
+    {
+        background: $color-processor-palette-tagcloud-background;
+        color: $color-processor-palette-tagcloud-text;
+        
+        // Disable default underline
+        border: 1px solid transparent;
+        
+        &:hover
+        {
+            // Mimics a button border
+            background: $color-processor-palette-tagcloud-background-hover;
+            border: 1px solid $color-processor-palette-tagcloud-text;
+        }
+    }
+    
+    // Selected tags
+    span.link.selected
+    {
+        background: $color-processor-palette-tagcloud-background-selected;
+        color: $color-processor-palette-tagcloud-text-selected !important;
+        
+        // Disable default underline
+        border: 1px solid transparent;
+        
+        &:hover
+        {
+            // Mimics a button border
+            background: $color-processor-palette-tagcloud-background-hover-selected;
+            border: 1px solid $color-processor-palette-tagcloud-background-hover-selected;
+        }
+    }
+    
+}

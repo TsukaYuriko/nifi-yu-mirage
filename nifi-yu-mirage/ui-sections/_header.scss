@@ -2,42 +2,33 @@
 | Header / Palette                                                             |
 \*============================================================================*/
 
-$color-background: $color-ui-panel;
-$color-palette-background: $color-ui-panel;
-$color-palette-icon: $color-accent;
-$color-palette-hover: $color-button-hover;
-$color-hamburger-background: $color-ui-panel;
-$color-hamburger-icon: $color-accent;
-$color-hamburger-hover: $color-button-hover;
-$color-text: $color-text;
-
 md-toolbar#header
 {
     
     // Header bar
-    background-color: $color-background;
+    background: $color-ui-panel;
     
     // Palette items
     .component-button
     {
-        color: $color-palette-icon;
+        color: $color-icon-default;
         
         &:hover
         {
-            background: $color-palette-hover;
+            background: $color-button-hover;
         }
     }
     
     // Palette items being dragged
     .ui-draggable-dragging
     {
-        color: $color-palette-icon;
+        color: $color-icon-default;
     }
     
     // Palette item button grips
     .component-button-grip
     {
-        background: repeating-linear-gradient(90deg, $color-palette-background, $color-palette-background 4px, transparent 4px, transparent 6px);
+        background: repeating-linear-gradient(90deg, $color-ui-panel, $color-ui-panel 4px, transparent 4px, transparent 6px);
     }
     
     // Currently logged in user text
@@ -50,17 +41,17 @@ md-toolbar#header
     // Menu button
     #global-menu-button
     {
-        background-color: $color-hamburger-background;
+        background: $color-ui-panel;
         
         &:hover
         {
-            background: $color-hamburger-hover;
+            background: $color-button-hover;
         }
         
         // Hamburger icon
         .fa
         {
-            color: $color-hamburger-icon;
+            color: $color-icon-default;
         }
     }
     

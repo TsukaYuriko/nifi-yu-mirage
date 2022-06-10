@@ -28,12 +28,9 @@
 }
 
 // General input fields
-.setting, .dialog-content
+input[type="text"], input[type="password"], textarea
 {
-    input, textarea
-    {
-        @include input-field;
-    }
+    @include input-field;
 }
 
 // Filter fields

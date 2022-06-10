@@ -116,3 +116,31 @@
 {
     background: #1f2430 !important;
 }
+
+// Status icons
+
+.dialog-status-bar[state="RUNNING"] text.run-status-icon::before
+{
+    color: $color-flow-component-state-running;
+}
+
+.dialog-status-bar[state="INVALID"] text.run-status-icon::before
+{
+    color: $color-flow-component-state-invalid;
+}
+
+.dialog-status-bar[state="STOPPED"] text.run-status-icon::before
+{
+    color: $color-flow-component-state-stopped;
+}
+    
+.dialog-status-bar[state="DISABLED"] text.run-status-icon::before
+{
+    color: $color-flow-component-state-disabled;
+}
+
+// Thread count
+.dialog-status-bar-threads:not([count="0"])
+{
+    color: $color-text;
+}

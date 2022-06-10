@@ -9,6 +9,11 @@
     .body
     {
         filter: none;
+        
+        &.unauthorized
+        {
+            fill: $color-flow-component;
+        }
     }
     
     // Add better drop shadow (it doesn't affect the border color)

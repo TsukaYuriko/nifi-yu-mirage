@@ -64,6 +64,21 @@
         background: $color-button;
         border: 1px solid $color-button;
         border-left: 1px solid $color-button-border;
+        
+        i::before
+        {
+            color: $color-icon-inactive;
+        }
+        
+        &.has-bulletins
+        {
+            background: $color-error;
+            
+            i::before
+            {
+                color: $color-button;
+            }
+        }
     }
     
 }

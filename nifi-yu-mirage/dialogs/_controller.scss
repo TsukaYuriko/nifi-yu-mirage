@@ -1,0 +1,47 @@
+/*============================================================================*\
+| Contrioller                                                                  |
+\*============================================================================*/
+
+// "Listed services are available to all..." message
+#controller-cs-availability
+{
+    color: $color-text-footnote;
+}
+
+// "Referencing components" list
+.expansion-button::before
+{
+    color: $color-icon-default;
+}
+
+.referencing-component-state
+{
+    &::before
+    {
+        text-shadow: none;
+    }
+    
+     // Running
+    &.running::before
+    {
+        color: $color-icon-processor-running;
+    }
+    
+    // Stopped
+    &.stopped::before
+    {
+        color: $color-icon-processor-stopped;
+    }
+    
+    // Invalid
+    &.invalid::before
+    {
+        color: $color-icon-processor-invalid;
+    }
+    
+    // Disabled
+    &.disabled::before
+    {
+        color: $color-icon-active;
+    }
+}

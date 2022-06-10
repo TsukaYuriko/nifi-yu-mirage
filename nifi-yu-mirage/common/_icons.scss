@@ -20,6 +20,17 @@
             text-shadow: none;
         }
         
+        // Cluster nodes
+        &.fa-cubes
+        {
+            color: $color-icon-active;
+            
+            &.warning
+            {
+                color: $color-warning !important;
+            }
+        }
+        
         // Threads
         &.icon-threads::before
         {

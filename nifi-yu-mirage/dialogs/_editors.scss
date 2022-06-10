@@ -3,7 +3,7 @@
 \*============================================================================*/
 
 // General editor containers
-.slickgrid-nf-editor
+.slickgrid-nf-editor, .property-detail
 {
     
     background: $color-ui-dialog !important;
@@ -15,12 +15,12 @@
         
         .fa-check
         {
-            color: $color-code-editor-mode-supported;
+            color: $color-modehint-supported-icon;
         }
         
         .fa-ban
         {
-            color: $color-code-editor-mode-unsupported;
+            color: $color-modehint-unsupported-icon;
         }
     }
     
@@ -121,6 +121,19 @@ div.CodeMirror,
     }
     
 }
+
+// Selected text while editor is unfocused
+.CodeMirror-selected
+{
+    background: $color-code-editor-text-selected;
+}
+
+// Selected text while editor is focused
+.CodeMirror-focused .CodeMirror-selected
+{
+    background: $color-code-editor-text-selected-focused;
+}
+
 
 // Hex Viewer
 #hexview-content

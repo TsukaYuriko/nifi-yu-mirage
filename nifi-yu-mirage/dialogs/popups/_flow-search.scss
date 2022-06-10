@@ -1,0 +1,18 @@
+/*============================================================================*\
+| Flow search                                                                  |
+\*============================================================================*/
+
+// Search results
+#search-flow-results
+{
+    // Component group headers
+    li.search-header
+    {
+        color: $color-text-label !important;
+        
+        .icon
+        {
+            color: $color-text-label;
+        }
+    }
+}

@@ -5,7 +5,7 @@
 #global-menu-content
 {
     
-    /* Container */
+    // Container
     background: $color-menu;
     border: 1px solid $color-menu-border;
     
@@ -25,6 +25,20 @@
         i::before
         {
             color: $color-menu-icon;
+        }
+        
+        // Disabled items
+        &.disabled
+        {
+            // Text
+            color: $color-icon-inactive !important;
+            text-shadow: none;
+            
+            // Icons
+            i::before
+            {
+                color: $color-icon-inactive;
+            }
         }
     }
     

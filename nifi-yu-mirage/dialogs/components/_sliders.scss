@@ -1,0 +1,25 @@
+/*============================================================================*\
+| Sliders                                                                      |
+\*============================================================================*/
+
+.ui-slider.ui-widget-content,
+#run-duration-slider, // needs special treatment to avoid specificity fights
+#provenance-lineage-slider // needs special treatment to avoid specificity fights
+{
+    
+    background: $color-slider;
+    border: 1px solid $color-slider-border;
+    
+    .ui-slider-handle
+    {
+        background: $color-slider-handle;
+        border: 1px solid $color-slider-handle-border;
+        
+        &.ui-state-active
+        {
+            background: $color-slider-handle-active !important;
+            border: 1px solid $color-slider-handle-border-active !important;
+        }
+    }
+    
+}
