@@ -103,6 +103,19 @@ $color-ui-dialog-separator: $color-source-mirage-ui-line;
 
 
 /*----------------------------------------------------------------------------*\
+| Provenance                                                                   |
+\*----------------------------------------------------------------------------*/
+
+$color-provenance-background: $color-source-mirage-editor-bg;
+$color-provenance-border: $color-source-mirage-editor-line;
+$color-provenance-line: $color-source-mirage-editor-fg;
+$color-provenance-line-selected: $color-source-mirage-vcs-modified;
+$color-provenance-event: $color-source-mirage-ui-bg;
+$color-provenance-event-selected: $color-source-mirage-editor-selection-active-premultiplied;
+$color-provenance-event-outline: $color-source-mirage-ui-line;
+
+
+/*----------------------------------------------------------------------------*\
 | Tabs                                                                         |
 \*----------------------------------------------------------------------------*/
 

@@ -28,3 +28,106 @@
     }
     
 }
+
+// Lineage
+
+#provenance-lineage
+{
+    // Border around the entire lineage display
+    border: 1px solid $color-provenance-border;
+}
+
+#provenance-lineage-container
+{
+    
+    // Background of the lineage display
+    rect
+    {
+        fill: $color-provenance-background;
+    }
+    
+    // Lines connecting events
+    .link
+    {
+        stroke: $color-provenance-line;
+        
+        filter: drop-shadow(1px 0 0 $color-queue-line-outline)
+                drop-shadow(-1px 0 0 $color-queue-line-outline)
+                drop-shadow(0 1px 0 $color-queue-line-outline)
+                drop-shadow(0 -1px 0 $color-queue-line-outline)
+                drop-shadow(-1px -1px 0 $color-queue-line-outline);
+        
+        &.selected
+        {
+            stroke: $color-provenance-line-selected;
+        }
+    }
+    
+    // Arrow tips
+    #FLOWFILE, #EVENT
+    {
+        fill: $color-provenance-line;
+    }
+    
+    #FLOWFILE-SELECTED, #EVENT-SELECTED
+    {
+        fill: $color-provenance-line-selected;
+    }
+    
+    // Event nodes
+    .node
+    {
+        // Flowfile creation events
+        &.flowfile
+        {
+            // Event node
+            circle
+            {
+                stroke: #171B24;
+                fill: #1F2430;
+            }
+            
+            // Flowfile symbol
+            .flowfile-icon text
+            {
+                fill: $color-text;
+            }
+        }
+        
+        // Other events
+        &.event
+        {
+            // Event node
+            circle
+            {
+                stroke: #80BFFF;
+                fill: #1F2430;
+                
+                // The event the lineage dialog was opened from
+                &.selected
+                {
+                    fill: #274364;
+                }
+            }
+            
+            // Event name
+            .event-type
+            {
+                fill: $color-text;
+            }
+        }
+    }
+    
+}
+
+// Download/Close icons in the upper right corner
+#provenance-lineage-downloader, #provenance-lineage-closer
+{
+    color: $color-icon-default;
+}
+
+// Timestamp
+#event-timeline
+{
+    color: $color-text-footnote;
+}
