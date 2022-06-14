@@ -146,7 +146,12 @@
         // Thread count
         .active-thread-count-icon
         {
-            color: $color-icon-default;
+            fill: $color-text-label !important;
+        }
+        
+        .active-thread-count
+        {
+            fill: $color-text;
         }
     }
     
