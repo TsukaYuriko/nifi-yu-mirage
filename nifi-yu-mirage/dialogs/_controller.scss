@@ -1,5 +1,5 @@
 /*============================================================================*\
-| Contrioller                                                                  |
+| Controller                                                                  |
 \*============================================================================*/
 
 // "Listed services are available to all..." message
@@ -44,4 +44,9 @@
     {
         color: $color-icon-active;
     }
+}
+
+#component-state-description
+{
+    color: $color-text;
 }

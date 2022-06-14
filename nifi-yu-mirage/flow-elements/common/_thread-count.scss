@@ -1,0 +1,16 @@
+/*============================================================================*\
+| Thread count                                                                 |
+\*============================================================================*/
+// Active thread count
+
+// Icon
+text.active-thread-count-icon
+{
+    fill: $color-text-label !important;
+}
+
+// Number
+text.active-thread-count
+{
+    fill: $color-text;
+}
