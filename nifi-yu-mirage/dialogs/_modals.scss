@@ -58,6 +58,16 @@
     .setting-field
     {
         color: $color-text;
+        
+        /*
+        >=1.16: NiFi theme now modifies the line height here for whatever reason,
+        it makes dropdown arrows look off-center so let's actually not do that
+        and hope that this doesn't break anything else that was fixed by this
+        */
+        .fa
+        {
+            line-height: 1;
+        }
     }
     
     // Processor relationship descriptions
