@@ -11,7 +11,9 @@ body
 }
 
 // Links
-span.link, div.bulletin-link
+span.link,
+div.bulletin-link,
+span#import-process-group-link.link
 {
     color: $color-text-link !important;
     border-bottom: 1px solid $color-text-link-underline;
