@@ -3,124 +3,153 @@
 \*============================================================================*/
 // General icon settings
 
-// Default icon color
-.fa
+.fa, .icon
 {
+    
+    // Default icon color
     color: $color-icon-default;
+    fill: $color-icon-default;
+    
+    // Disable glow which is enabled (but barely visible??) by default
+    &::before
+    {
+        text-shadow: none;
+    }
+    
 }
 
-#flow-status, .settings-container, #summary, #queue-listing-container
+// Component state
+.running
 {
-    div.fa, div.icon
+    color: $color-icon-processor-running !important;
+}
+
+.has-errors::before, .invalid::before
+{
+    color: $color-icon-processor-invalid !important;
+}
+
+.stopped
+{
+    color: $color-icon-processor-stopped !important;
+}
+
+.disabled
+{
+    color: $color-icon-active !important;
+}
+
+// Flow state
+#flow-status,
+.process-group-details
+{
+    
+    // Cluster nodes
+    .fa-cubes
     {
+        color: $color-icon-active;
         
-        // Disable glow which is enabled (but barely visible??) by default
-        &::before
+        &.warning
         {
-            text-shadow: none;
+            color: $color-warning !important;
         }
-        
-        // Cluster nodes
-        &.fa-cubes
-        {
-            color: $color-icon-active;
-            
-            &.warning
-            {
-                color: $color-warning !important;
-            }
-        }
-        
-        // Threads
-        &.icon-threads::before
-        {
-            color: $color-icon-active;
-        }
-        
-        // Total queued data
-        &.fa-list::before
-        {
-            color: $color-icon-active;
-        }
-        
-        // Transmitting RPGs
-        &.fa-bullseye::before
-        {
-            color: $color-icon-rpg;
-        }
-        
-        // Not Transmitting RPGs
-        &.icon-transmit-false::before
-        {
-            color: $color-icon-active;
-        }
-        
-        // Running Components
-        &.fa-play::before
-        {
-            color: $color-icon-processor-running;
-        }
-        
-        // Stopped Components
-        &.fa-stop::before
-        {
-            color: $color-icon-processor-stopped;
-        }
-        
-        // Invalid Components
-        &.fa-warning::before
-        {
-            color: $color-icon-processor-invalid;
-        }
-        
-        // Disabled Components
-        &.icon-enable-false::before
-        {
-            color: $color-icon-active;
-        }
-        
-        // Up to date Versioned PGs
-        &.fa-check::before
-        {
-            color: $color-icon-vcs-uptodate;
-        }
-        
-        // Locally modified Versioned PGs
-        &.fa-asterisk::before
-        {
-            color: $color-icon-vcs-modified;
-        }
-        
-        // Stale Versioned PGs
-        &.fa-arrow-circle-up::before
-        {
-            color: $color-icon-vcs-stale;
-        }
-        
-        // Locally modified and stale Versioned PGs
-        &.fa-exclamation-circle::before
-        {
-            color: $color-icon-vcs-modified-stale;
-        }
-        
-        // Sync failure Versioned PGs
-        &.fa-question::before
-        {
-            color: $color-icon-vcs-sync-fail;
-        }
-        
-        // Last refresh
-        &.fa-refresh::before
-        {
-            color: $color-icon-active;
-        }
-        
-        // Any icon when inactive / counter is 0
-        &.zero::before
-        {
-            color: $color-icon-inactive;
-        }
-        
+    }
+    
+    // Threads
+    .icon-threads::before
+    {
+        color: $color-icon-active;
+    }
+    
+    // Total queued data
+    .fa-list::before
+    {
+        color: $color-icon-active;
+    }
+    
+    // Transmitting RPGs
+    .fa-bullseye::before
+    {
+        color: $color-icon-rpg;
+    }
+    
+    // Not Transmitting RPGs
+    .icon-transmit-false::before
+    {
+        color: $color-icon-active;
+    }
+    
+    // Running Components
+    .fa-play::before
+    {
+        color: $color-icon-processor-running;
+    }
+    
+    // Stopped Components
+    .fa-stop::before
+    {
+        color: $color-icon-processor-stopped;
+    }
+    
+    // Invalid Components
+    .fa-warning::before
+    {
+        color: $color-icon-processor-invalid;
+    }
+    
+    // Disabled Components
+    .icon-enable-false::before
+    {
+        color: $color-icon-active;
+    }
+    
+    // Last refresh
+    .fa-refresh::before
+    {
+        color: $color-icon-active;
+    }
+    
+    // Any icon when inactive / counter is 0
+    .zero::before
+    {
+        color: $color-icon-inactive;
+    }
+    
+}
+
+// VCS
+#flow-status-container,
+.process-group-details,
+#breadcrumbs
+{
+    // Up to date Versioned PGs
+    .fa-check::before
+    {
+        color: $color-icon-vcs-uptodate;
+    }
+    
+    // Locally modified Versioned PGs
+    .fa-asterisk::before
+    {
+        color: $color-icon-vcs-modified;
+    }
+    
+    // Stale Versioned PGs
+    .fa-arrow-circle-up::before
+    {
+        color: $color-icon-vcs-stale;
+    }
+    
+    // Locally modified and stale Versioned PGs
+    .fa-exclamation-circle::before
+    {
+        color: $color-icon-vcs-modified-stale;
+    }
+    
+    // Sync failure Versioned PGs
+    .fa-question::before
+    {
+        color: $color-icon-vcs-sync-fail;
     }
 }
 
