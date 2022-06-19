@@ -112,7 +112,7 @@
     // Any icon when inactive / counter is 0
     .zero::before
     {
-        color: $color-icon-inactive;
+        color: $color-icon-inactive !important;
     }
     
 }
