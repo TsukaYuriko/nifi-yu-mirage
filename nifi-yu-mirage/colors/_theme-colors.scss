@@ -391,3 +391,13 @@ $color-modehint-unsupported-icon: $color-source-light-vcs-removed;
 $color-modehint-unsupported-text: $color-text-footnote;
 $color-modehint-text: $color-text;
 $color-modehint-pattern: $color-source-mirage-editor-selection-active;
+
+
+/*----------------------------------------------------------------------------*\
+| Status History                                                               |
+\*----------------------------------------------------------------------------*/
+
+$color-status-history-axis-line: $color-source-mirage-ui-line;
+$color-status-history-axis-label: $color-source-mirage-ui-fg;
+$color-status-history-graph: $color-source-light-syntax-entity;
+
