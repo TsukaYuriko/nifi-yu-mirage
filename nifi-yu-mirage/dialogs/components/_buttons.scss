@@ -72,6 +72,28 @@ The only reliable way to address them seems to be by their inline styles.
     color: $color-dialog-button-negative-text !important;
 }
 
+// Default dialog button styles
+// These should catch a few outlier cases that attempt to use normalized ways of addressing
+div.button
+{
+    @include dialog-button-positive;
+    
+    &:hover
+    {
+        @include dialog-button-positive-hover;
+    }
+}
+
+div.secondary-button
+{
+    @include dialog-button-negative;
+    
+    &:hover
+    {
+        @include dialog-button-negative-hover;
+    }
+}
+
 /*
 This fixes an edge case when a user that has no permission
 to modify a component inspects a value in a processor's settings.
