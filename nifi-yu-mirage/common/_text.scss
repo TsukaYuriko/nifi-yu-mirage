@@ -23,3 +23,9 @@ span#import-process-group-link.link
         border-bottom: 1px solid $color-text-link-underline-hover;
     }
 }
+
+// Labels
+div.large-label
+{
+    color: $color-text-label;
+}
