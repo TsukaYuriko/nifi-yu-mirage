@@ -2,6 +2,8 @@
 | Processor configuration dialogs                                              |
 \*============================================================================*/
 
+@import "processors/update-attribute";
+
 // Error bulletin
 .dialog-status-bar-bulletins:not([count="0"])
 {
