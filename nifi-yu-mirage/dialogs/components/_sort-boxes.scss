@@ -6,7 +6,8 @@
 #prioritizer-available,
 #prioritizer-selected,
 #parameter-context-available,
-#parameter-context-selected
+#parameter-context-selected,
+#rule-list
 {
     
     // Container
@@ -26,12 +27,17 @@
                 border: 1px solid $color-sort-box-item-border-hover;
             }
             
+            // One variant of text, as seen in UpdateAttribute advanced configuration
+            color: $color-sort-box-text;
+            
+            // Other variant of text, as seen in Parameter Context inheritance and queue prioritizers
             span
             {
                 color: $color-sort-box-text;
             }
         }
         
+        // Preview placeholder of where a dragged item will end up
         .ui-sortable-placeholder
         {
             background: $color-sort-box;
