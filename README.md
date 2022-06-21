@@ -17,4 +17,14 @@ due to underlying changes in the structure or naming scheme of NiFi's UI.
 - Download the [latest release](https://github.com/TsukaYuriko/nifi-yu-mirage/releases) of the theme.
 - Add a userstyle extension - e.g. Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)) - to your browser.
 - Using the extension, create a new style. Import the .css file you downloaded.
-- Add a rule that specifies which sites the style should apply to. (The regex `.*/nifi/.*` should target most standard NiFi installations.)
+- Add a regex rule that specifies which sites the style should apply to. See below for an example.
+
+# Application
+
+The regex `^.*(NIFISERVERS).*\/nifi(?!-docs).*$` should target everything the theme intends to modify on most standard NiFi installations. Replace NIFISERVERS with a |-separated, regex-escaped list of sites you use that run NiFi.  
+
+Practical example: Your NiFi servers are located at https://nifi-one.example.com:8443/nifi/ and https://nifi-two.example.com:8443/nifi/. You also use a third-party NiFi located at http://srv02920.foo.test:8080/nifi/. The following regex would apply to all of these:  
+
+`^.*(nifi.*example\.com|srv.*foo\.test).*\/nifi(?!-docs).*$`  
+
+If you're having trouble getting the regex right, you may find it helpful to use a regex debugger such as https://regex101.com/.
