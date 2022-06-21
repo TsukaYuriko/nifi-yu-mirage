@@ -46,51 +46,51 @@ inline styles in NiFi (potentially by a script?).
 The only reliable way to address them seems to be by their inline styles.
 */
 
-// Positive buttons (usually "Apply" or other confirming actions)
-@mixin dialog-button-positive
+// Primary buttons (usually positive, e.g. "Apply" or other confirming actions)
+@mixin dialog-button-primary
 {
-    background: $color-dialog-button-positive !important;
-    color: $color-dialog-button-positive-text !important;
+    background: $color-dialog-button-primary !important;
+    color: $color-dialog-button-primary-text !important;
 }
 
-@mixin dialog-button-positive-hover
+@mixin dialog-button-primary-hover
 {
-    background: $color-dialog-button-positive-hover !important;
-    color: $color-dialog-button-positive-text !important;
+    background: $color-dialog-button-primary-hover !important;
+    color: $color-dialog-button-primary-text !important;
 }
 
-// Negative buttons (usually "Cancel" or other declining actions)
-@mixin dialog-button-negative
+// Secondary buttons (usually negative, e.g. "Cancel" or other declining actions)
+@mixin dialog-button-secondary
 {
-    background: $color-dialog-button-negative !important;
-    color: $color-dialog-button-negative-text !important;
+    background: $color-dialog-button-secondary !important;
+    color: $color-dialog-button-secondary-text !important;
 }
 
-@mixin dialog-button-negative-hover
+@mixin dialog-button-secondary-hover
 {
-    background: $color-dialog-button-negative-hover !important;
-    color: $color-dialog-button-negative-text !important;
+    background: $color-dialog-button-secondary-hover !important;
+    color: $color-dialog-button-secondary-text !important;
 }
 
 // Default dialog button styles
 // These should catch a few outlier cases that attempt to use normalized ways of addressing
 div.button
 {
-    @include dialog-button-positive;
+    @include dialog-button-primary;
     
     &:hover
     {
-        @include dialog-button-positive-hover;
+        @include dialog-button-primary-hover;
     }
 }
 
 div.secondary-button
 {
-    @include dialog-button-negative;
+    @include dialog-button-secondary;
     
     &:hover
     {
-        @include dialog-button-negative-hover;
+        @include dialog-button-secondary-hover;
     }
 }
 
@@ -103,7 +103,7 @@ style from this "default" fallback style.
 */
 .property-detail div.button
 {
-    @include dialog-button-positive;
+    @include dialog-button-primary;
 }
 
 .dialog-buttons .button,
@@ -111,24 +111,24 @@ style from this "default" fallback style.
 .ui-draggable .button, .ui-draggable .secondary-button,
 .property-detail .button, .property-detail .secondary-button
 {
-    &[style*="#{$color-source-original-dialog-button-positive}"]
+    &[style*="#{$color-source-original-dialog-button-primary}"]
     {
-        @include dialog-button-positive;
+        @include dialog-button-primary;
     }
     
-    &[style*="#{$color-source-original-dialog-button-positive-hover}"]
+    &[style*="#{$color-source-original-dialog-button-primary-hover}"]
     {
-        @include dialog-button-positive-hover;
+        @include dialog-button-primary-hover;
     }
     
-    &[style*="#{$color-source-original-dialog-button-negative}"]
+    &[style*="#{$color-source-original-dialog-button-secondary}"]
     {
-        @include dialog-button-negative;
+        @include dialog-button-secondary;
     }
     
-    &[style*="#{$color-source-original-dialog-button-negative-hover}"]
+    &[style*="#{$color-source-original-dialog-button-secondary-hover}"]
     {
-        @include dialog-button-negative-hover;
+        @include dialog-button-secondary-hover;
     }
 }
 
@@ -143,11 +143,11 @@ BS the ones above have.
 .settings-buttons .button
 {
     
-    @include dialog-button-positive;
+    @include dialog-button-primary;
     
     &:hover:not(.disabled-button)
     {
-        @include dialog-button-positive-hover;
+        @include dialog-button-primary-hover;
     }
     
 }
@@ -158,11 +158,11 @@ BS the ones above have.
     
     .button
     {
-        @include dialog-button-negative;
+        @include dialog-button-secondary;
         
         &:hover
         {
-            @include dialog-button-negative-hover;
+            @include dialog-button-secondary-hover;
         }
     }
     
@@ -176,7 +176,7 @@ BS the ones above have.
             -webkit-text-stroke-color: $color-accent !important;
             
             // Apply better styles
-            color: $color-dialog-button-negative;
+            color: $color-dialog-button-secondary;
         }
     }
     

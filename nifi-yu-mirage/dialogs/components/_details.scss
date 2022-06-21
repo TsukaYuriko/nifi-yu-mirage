@@ -48,13 +48,12 @@
     // Buttons (e.g. download/view flowfile contents)
     .secondary-button
     {
-        // TODO I don't like the "negative" implications, refactor?
-        color: $color-dialog-button-negative-text;
-        background: $color-dialog-button-negative;
+        color: $color-dialog-button-secondary-text;
+        background: $color-dialog-button-secondary;
         
         &:hover
         {
-            background: $color-dialog-button-negative-hover;
+            background: $color-dialog-button-secondary-hover;
         }
     }
     
