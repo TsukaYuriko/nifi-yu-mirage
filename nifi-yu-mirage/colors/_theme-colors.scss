@@ -190,15 +190,15 @@ $color-button-border-hover: $color-accent;
 $color-button-icon-active: $color-accent;
 $color-button-icon-inactive: $color-source-mirage-ui-fg;
 
-// Big, "negative" buttons like "Cancel"
-$color-dialog-button-negative: $color-button;
-$color-dialog-button-negative-hover: $color-button-hover;
-$color-dialog-button-negative-text: $color-accent;
+// Big, primary buttons, usually positive, like "OK" or "Apply"
+$color-dialog-button-primary: $color-accent;
+$color-dialog-button-primary-hover: $color-source-light-vcs-modified;
+$color-dialog-button-primary-text: $color-source-mirage-ui-selection-normal-premultiplied;
 
-// Big, "positive" buttons like "OK" or "Apply"
-$color-dialog-button-positive: $color-accent;
-$color-dialog-button-positive-hover: $color-source-light-vcs-modified;
-$color-dialog-button-positive-text: $color-source-mirage-ui-selection-normal-premultiplied;
+// Big, secondary buttons, usually negative, like "Cancel"
+$color-dialog-button-secondary: $color-button;
+$color-dialog-button-secondary-hover: $color-button-hover;
+$color-dialog-button-secondary-text: $color-accent;
 
 
 /*----------------------------------------------------------------------------*\
@@ -391,3 +391,13 @@ $color-modehint-unsupported-icon: $color-source-light-vcs-removed;
 $color-modehint-unsupported-text: $color-text-footnote;
 $color-modehint-text: $color-text;
 $color-modehint-pattern: $color-source-mirage-editor-selection-active;
+
+
+/*----------------------------------------------------------------------------*\
+| Status History                                                               |
+\*----------------------------------------------------------------------------*/
+
+$color-status-history-axis-line: $color-source-mirage-ui-line;
+$color-status-history-axis-label: $color-source-mirage-ui-fg;
+$color-status-history-graph: $color-source-light-syntax-entity;
+

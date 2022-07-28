@@ -1,0 +1,10 @@
+/*============================================================================*\
+| UpdateAttribute                                                              |
+\*============================================================================*/
+
+#rule-details-panel
+{
+    // Disable border at the bottom
+    // (it isn't even visible in the default theme)
+    border-bottom: none !important;
+}

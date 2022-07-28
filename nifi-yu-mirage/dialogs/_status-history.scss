@@ -1,0 +1,57 @@
+/*============================================================================*\
+| Status History                                                              |
+\*============================================================================*/
+
+#status-history-dialog
+{
+    
+    // It's called a label but it's more like a section header?
+    // ("Status History" / "NiFi" headers)
+    div.detail-container-label
+    {
+        color: $color-text-label;
+    }
+    
+    // Default margin doesn't line up nicely with custom checkboxes
+    .nf-checkbox
+    {
+        margin-top: 0px !important;
+    }
+    
+    // Graphs
+    #status-history-chart-container,
+    #status-history-chart-control-container
+    {
+        // Container
+        background: $color-ui-dialog;
+        
+        // Axes
+        .axis
+        {
+            // Axis lines
+            path, line
+            {
+                stroke: $color-status-history-axis-line;
+            }
+            
+            // Tick labels
+            text
+            {
+                fill: $color-status-history-axis-label;
+            }
+        }
+        
+        // Graph line
+        .chart-line
+        {
+            stroke: $color-status-history-graph;
+        }
+        
+        // Graph dots
+        .mark-group .mark
+        {
+            fill: $color-status-history-graph;
+        }
+    }
+    
+}

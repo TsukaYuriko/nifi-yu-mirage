@@ -2,6 +2,8 @@
 | Processor configuration dialogs                                              |
 \*============================================================================*/
 
+@import "processors/update-attribute";
+
 // Error bulletin
 .dialog-status-bar-bulletins:not([count="0"])
 {
@@ -143,4 +145,18 @@
 .dialog-status-bar-threads:not([count="0"])
 {
     color: $color-text;
+}
+
+// 1.16 relationships
+#processor-relationships-tab-content
+{
+    div.relationship-name
+    {
+        color: $color-text;
+    }
+    
+    label
+    {
+        color: $color-text;
+    }
 }
