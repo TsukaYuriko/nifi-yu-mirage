@@ -126,23 +126,11 @@
             }
             
             // Row delimiters
-            &:nth-child(2n+6)
+            &:nth-child(2n+6)[height="1"]
             {
                 fill: $color-flow-component-row-separator;
             }
         }
-        
-        // Error bulletin
-        rect.bulletin-background
-        {
-            fill: $color-error;
-        }
-        
-        .bulletin-icon
-        {
-            fill: $color-flow-component;
-        }
-        
     }
     
     // Body (empty space / not otherwise specified)
@@ -222,7 +210,7 @@
             }
             
             // Row delimiter
-            &:nth-child(6)
+            &:nth-child(6)[height="1"]
             {
                 fill: $color-flow-component-row-separator;
             }
